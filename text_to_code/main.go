@@ -12,10 +12,8 @@ func main() {
 	testFlag := false
 	concurrentNum := 20                                                        //并发量
 	path := "text_to_code/dataset/test_shuffled_with_path_and_id_concode.json" //文件路径
-	accessToken := []string{
-		"EBA1C3EB-C3AC-4D1F-B32A-005B07BD6D59",
-		"C360A8C9-90CD-4A46-BBF4-502B01ECABB8"} // chatGPT token
-	baseURI := []string{"https://pluschat.lidong.xin", "https://pluschat.lidong.xin"} // plus会员URI
+	accessToken := []string{}                                                  // chatGPT token
+	baseURI := []string{}                                                      // plus会员URI
 	testPath := "text_to_code/dataset/test_file.json"
 
 	// 测试标签
