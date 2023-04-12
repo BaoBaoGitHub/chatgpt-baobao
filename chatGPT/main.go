@@ -3,17 +3,18 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"github.com/google/uuid"
 	"log"
 	"os"
 	"strings"
 	"time"
 
-	chatgpt "github.com/xyhelper/chatgpt-go"
+	"github.com/xyhelper/chatgpt-go"
 )
 
 func main() {
 	// new chatgpt client
-	token := `random token`
+	token := uuid.New().String()
 
 	cli := chatgpt.NewClient(
 		chatgpt.WithDebug(false),
