@@ -45,7 +45,7 @@ func main() {
 	wg.Wait()
 	utils.MergeJSONFile(finalRespFilePath)
 
-	// 5. 删除中间文件(还没实现)
+	// 5. 删除中间文件
 	defer utils.DeleteFiles(splitFilePath)
 	defer utils.DeleteFiles(finalRespFilePath)
 }
