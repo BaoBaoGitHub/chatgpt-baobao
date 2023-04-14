@@ -109,11 +109,17 @@ func MergeJSONFile(path []string) {
 
 	// 获取jsonfile文件名
 	filePath := GetMergeFileName(path)
+	// 如果源文件存在，则删除
+	if Exists(filePath) {
+		os.Remove(filePath)
+	}
 	// 将数据写入jsonfile
 	WriteToJSONFileFromSlice(filePath, allData)
 	log.Println("合并响应文件到：" + filePath)
 }
 
+// GetMergeFileName 从path中解析得到合并文件的名称。
+// 如对输入 [test_0_response.txt,test_0_response.txt],输出为 test_response.txt
 func GetMergeFileName(path []string) string {
 	// 获取后缀名
 	s := path[0]
@@ -163,6 +169,8 @@ func WriteToJSONFileFromSlice(fileName string, data []map[string]any) {
 		f, e := os.Create(fileName)
 		f.Close()
 		FatalCheck(e)
+	} else {
+		log.Println("请删除README.md中描述")
 	}
 
 	// 打开文件

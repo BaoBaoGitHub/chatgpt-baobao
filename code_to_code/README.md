@@ -11,4 +11,4 @@
 
 1. 在项目根路径下，运行`go run ./code_to_code/main.go`，或在`code_to_code`目录下运行`go run main.go`
 
-2. 程序在运行大约需要一小时，若中途报错，请删除掉`code_to_code/dataset/test.java-cs.txt_`开头的所有文件，注意不包括`code_to_code/dataset/test.java-cs.txt`文件。
+2. 程序运行大约需要一小时，若中途报错，请删除掉`code_to_code/dataset/test.java-cs.txt_`开头的所有文件，注意不包括`code_to_code/dataset/test.java-cs.txt.cs`和`code_to_code/dataset/test.java-cs.txt.java`文件。
