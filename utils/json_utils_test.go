@@ -14,6 +14,8 @@ var respPath = "../text_to_code/dataset/test_file_response.json"
 var testFilesPath = []string{
 	"../text_to_code/dataset/test_file_1_response.json", "../text_to_code/dataset/test_file_2_response.json",
 }
+var java_cs_path = "../code_to_code/dataset/test.java-cs.txt.cs"
+var cs_java_path = "../code_to_code/dataset/test.java-cs.txt.cs"
 
 func TestGetData(t *testing.T) {
 	data := ReadFromJsonFile(path)
@@ -54,7 +56,13 @@ func TestLineCounter(t *testing.T) {
 
 func TestSplitJsonFile(t *testing.T) {
 	num := 2
-	fileNames := SplitJsonFile(path, num)
+	fileNames := SplitFile(path, num)
+	fmt.Println(fileNames)
+}
+
+func TestSplitJsonFile2(t *testing.T) {
+	num := 2
+	fileNames := SplitFile(cs_java_path, num)
 	fmt.Println(fileNames)
 }
 

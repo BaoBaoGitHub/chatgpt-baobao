@@ -14,7 +14,7 @@ func main() {
 	path := "text_to_code/dataset/test_shuffled_with_path_and_id_concode.json" //文件路径
 	accessToken := []string{}                                                  // chatGPT token
 	baseURI := []string{}                                                      // plus会员URI
-	testPath := "text_to_code/dataset/test_file.json"
+	testPath := "text_to_code/dataset/test_file.json"                          // 测试文件路径
 
 	// 测试标签
 	if testFlag == true {
@@ -22,7 +22,7 @@ func main() {
 	}
 
 	// 1. 分割源文件
-	splitFilePath := utils.SplitJsonFile(path, concurrentNum)
+	splitFilePath := utils.SplitFile(path, concurrentNum)
 	concurrentNum = len(splitFilePath) //split文件时，若无法恰好分割，可能会多一个文件出来
 
 	// 2. 必须要求accessToken与baseURI长度相等，且长度等于并发量（每个并发都需要有一个token）

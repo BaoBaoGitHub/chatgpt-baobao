@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -11,7 +12,7 @@ import (
 
 // Response 解析chatGPT响应为Response格式
 type Response struct {
-	Query   string `json:"query"`
+	Query   string `json:"query,omitempty"`
 	Flag    bool   `json:"flag"`
 	Code    string `json:"code"`
 	Message string `json:"message"`
@@ -49,67 +50,6 @@ func ReadFromJsonFile(fileName string) []map[string]any {
 		data = append(data, lineData)
 	}
 	return data
-}
-
-// SplitJsonFile 将json文件（有很多json对象，不是一个传统意义上的json文件）分割为指定的数量（如果不能整除，则多一个文件），序号从0开始。
-// 返回值为分割后文件的路径。
-func SplitJsonFile(fileName string, num int) []string {
-	// 如果文件行数不能被恰好分割为行数相等的num个，则多一个文件
-	lines, err := LineCounter(fileName)
-	FatalCheck(err)
-	linesInEveryFile := lines / num
-	if lines%linesInEveryFile != 0 {
-		num++
-	}
-	var res []string
-
-	// 分割文件
-	f, err := os.Open(fileName)
-	FatalCheck(err)
-	defer f.Close()
-	scanner := bufio.NewScanner(f)
-	scanner.Split(bufio.ScanLines)
-	newFileName := fileName
-	var file *os.File
-	for i := 0; scanner.Scan(); i++ {
-		if i%linesInEveryFile == 0 {
-			// 添加文件后缀
-			newFileName = AddSuffix(fileName, i/linesInEveryFile)
-			// 关闭上一个文件
-			if file != nil {
-				file.Close()
-			}
-			// 创建一个文件
-			tmpNewFile, err := os.Create(newFileName)
-			tmpNewFile.Close()
-			FatalCheck(err)
-			res = append(res, newFileName)
-			file, err = os.OpenFile(newFileName, os.O_APPEND|os.O_WRONLY, 0666)
-			FatalCheck(err)
-		}
-		//copy一行
-		file.WriteString(scanner.Text() + "\n")
-		file.Sync()
-	}
-	return res
-}
-
-// AddSuffix 为源文件添加后缀s。
-// 如源文件名为test.txt,返回test_s.txt
-func AddSuffix(fileName string, s any) string {
-	ext := filepath.Ext(fileName)
-	prefix := strings.TrimSuffix(fileName, ext)
-	var res string
-
-	switch s.(type) {
-	case int:
-		res = prefix + "_" + fmt.Sprintf("%d", s) + ext
-	case string:
-		res = prefix + "_" + fmt.Sprintf("%s", s) + ext
-	default:
-		res = ""
-	}
-	return res
 }
 
 // WriteToJSONFileFromString 从String解析得到struct，然后写到文件中去
@@ -169,9 +109,9 @@ func MergeJSONFile(path []string) {
 
 	// 获取jsonfile文件名
 	filePath := GetMergeFileName(path)
-	fmt.Println(filePath)
 	// 将数据写入jsonfile
 	WriteToJSONFileFromSlice(filePath, allData)
+	log.Println("合并响应文件到：" + filePath)
 }
 
 func GetMergeFileName(path []string) string {
