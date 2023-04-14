@@ -6,6 +6,7 @@
 2. 查询结果在`./dataset/test.java-cs.txt_response.json`中，在该json文件中
     - 其中`query`为查询输入
     - `flag`为是否成功返回java代码的标记，`code`为chatGPT响应中的代码（flag为true时code才有内容），`message`为chatGPT响应内容
+    - 注意，这并不是一个符合语法的json文件，该文件中的每一行为一个json对象
 
 # 使用
 
