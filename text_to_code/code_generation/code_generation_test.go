@@ -1,4 +1,4 @@
-package code_search
+package code_generation
 
 import "testing"
 

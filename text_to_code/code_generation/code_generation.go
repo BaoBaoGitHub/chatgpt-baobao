@@ -1,4 +1,4 @@
-package code_search
+package code_generation
 
 import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"

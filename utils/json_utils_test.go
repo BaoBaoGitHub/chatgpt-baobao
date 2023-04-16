@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"log"
 	"testing"
 )
 
@@ -14,8 +15,15 @@ var respPath = "../text_to_code/dataset/test_file_response.json"
 var testFilesPath = []string{
 	"../text_to_code/dataset/test_file_1_response.json", "../text_to_code/dataset/test_file_2_response.json",
 }
-var java_cs_path = "../code_to_code/dataset/test.java-cs.txt.cs"
-var cs_java_path = "../code_to_code/dataset/test.java-cs.txt.cs"
+var java_cs_path = "../code_to_code/dataset/references.txt"
+var cs_java_path = "../code_to_code/dataset/references.txt"
+var finalPath = "../text_to_code/dataset/test_shuffled_with_path_and_id_concode_response.json"
+var concodePath = "../text_to_code/dataset/test_shuffled_with_path_and_id_concode.json"
+var predictionsPath = "../text_to_code/dataset/evaluator/predictions.txt"
+var answersPath = "../text_to_code/dataset/evaluator/answers.json"
+var cSharpPath = "../code_to_code/dataset/evaluator/references.txt"
+var code2codePredictionPath = "../code_to_code/dataset/evaluator/predictions.txt"
+var code2codeResponsePath = "../code_to_code/dataset/test.java-cs.txt_response.json"
 
 func TestGetData(t *testing.T) {
 	data := ReadFromJsonFile(path)
@@ -82,9 +90,24 @@ func TestWriteToJSONFileFromString(t *testing.T) {
 
 func TestGetMergeFileName(t *testing.T) {
 	beforeMerge := []string{"test_shuffled_with_path_and_id_concode_0_response.json"}
-	fmt.Println(GetMergeFileName(beforeMerge))
+	log.Println(GetMergeFileName(beforeMerge))
 }
 
 func TestMergeJSONFile(t *testing.T) {
 	MergeJSONFile(testFilesPath)
+}
+
+func TestGetFinalFromJSONFIle(t *testing.T) {
+	//GetPredictionFromJSONFIle(finalPath, predictionsPath)
+	GetPredictionFromJSONFIle(code2codeResponsePath, code2codePredictionPath)
+}
+
+func TestDeleteImport(t *testing.T) {
+	s := "import java.util.HashMap;\\nimport java.util.Map;\\n\\npublic class Example {\\n    public static void main(String[] args) {\\n        Map<String, String> mappings = new HashMap<>();\\n        \\n        // function parameters\\n        mappings.put(\\\"length\\\", \\\"int\\\");\\n        mappings.put(\\\"width\\\", \\\"int\\\");\\n        \\n        // function variable\\n        mappings.put(\\\"area\\\", \\\"double\\\");\\n        \\n        // print mappings\\n        System.out.println(\\\"Mappings for calculateArea function:\\\");\\n        for (String key : mappings.keySet()) {\\n            String value = mappings.get(key);\\n            System.out.println(key + \\\" : \\\" + value);\\n        }\\n    }\\n    \\n    public static double calculateArea(int length, int width) {\\n        double area = length * width;\\n        return area;\\n    }\\n}"
+	lines := ModifyCodeFormat(s)
+	fmt.Println(lines)
+}
+
+func TestGenerateAnswersFromJSONFile(t *testing.T) {
+	GenerateAnswersFromJSONFile(concodePath, answersPath)
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/BaoBaoGitHub/chatgpt-baobao/text_to_code/code_search"
+	"github.com/BaoBaoGitHub/chatgpt-baobao/text_to_code/code_generation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
 	"sync"
@@ -15,6 +15,7 @@ func main() {
 	accessToken := []string{}                                                  // chatGPT token
 	baseURI := []string{}                                                      // plus会员URI
 	testPath := "text_to_code/dataset/test_file.json"                          // 测试文件路径
+	predictionPath := "text_to_code/dataset/evaluator/predictions.txt"         // 预测代码部分最终存储路径
 
 	// 测试标签
 	if testFlag == true {
@@ -38,14 +39,17 @@ func main() {
 
 	var finalRespFilePath []string
 	for i, everyPath := range splitFilePath {
-		go code_search.CodeSearchFromFile(everyPath, accessToken[i%len(accessToken)], baseURI[i%len(baseURI)], wg.Done)
+		go code_generation.CodeSearchFromFile(everyPath, accessToken[i%len(accessToken)], baseURI[i%len(baseURI)], wg.Done)
 		finalRespFilePath = append(finalRespFilePath, utils.AddSuffix(everyPath, "response"))
 	}
 	// 4. 合并响应文件
 	wg.Wait()
-	utils.MergeJSONFile(finalRespFilePath)
+	transitionJSONPath := utils.MergeJSONFile(finalRespFilePath)
 
 	// 5. 删除中间文件
 	defer utils.DeleteFiles(splitFilePath)
 	defer utils.DeleteFiles(finalRespFilePath)
+
+	// 6. 生成符合格式的响应文件
+	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
 }

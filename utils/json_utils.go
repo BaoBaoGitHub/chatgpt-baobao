@@ -99,7 +99,7 @@ func GetCodeFromString(content string) string {
 }
 
 // MergeJSONFile 合并文件
-func MergeJSONFile(path []string) {
+func MergeJSONFile(path []string) string {
 	var allData []map[string]any
 
 	for _, s := range path {
@@ -116,6 +116,7 @@ func MergeJSONFile(path []string) {
 	// 将数据写入jsonfile
 	WriteToJSONFileFromSlice(filePath, allData)
 	log.Println("合并响应文件到：" + filePath)
+	return filePath
 }
 
 // GetMergeFileName 从path中解析得到合并文件的名称。
@@ -162,7 +163,7 @@ func LastTwoIndex(str string, subStr string) []int {
 
 }
 
-// WriteToJSONFileFromSlice
+// WriteToJSONFileFromSlice slice中的每一个对象是一个json，该函数将data中的每一个json对象转化为一行写入到json文件中
 func WriteToJSONFileFromSlice(fileName string, data []map[string]any) {
 	// 检查文件是否存在
 	if !Exists(fileName) {
@@ -186,4 +187,71 @@ func WriteToJSONFileFromSlice(fileName string, data []map[string]any) {
 		encoder.Encode(line)
 	}
 	file.Sync()
+}
+
+// GetPredictionFromJSONFIle 修改json文件的格式，只保留代码部分，且为txt格式。删除掉了多余的import部分以及将\n改为空格
+func GetPredictionFromJSONFIle(sourcePath string, destPath string) {
+	contentSlice := ReadFromJsonFile(sourcePath)
+	if Exists(destPath) {
+		os.Remove(destPath)
+	}
+
+	// 打开文件
+	file, err := os.OpenFile(destPath, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0666)
+	FatalCheck(err)
+	defer file.Close()
+
+	var code string
+	for _, content := range contentSlice {
+		if content["flag"].(bool) == true {
+			code = fmt.Sprintf("%s", content["code"])
+		} else if content["flag"].(bool) == false {
+			code = "null"
+		} else {
+			panic("flag不存在！")
+		}
+		// 删除掉开始的import等内容，使用\n截断字符串，对于每一个内容判断是否以import开头，若是则删除该行。
+		code = ModifyCodeFormat(code)
+		file.WriteString(code)
+		file.Sync()
+	}
+}
+
+// ModifyCodeFormat 删除空行，import部分，将换行替换为四个空格
+func ModifyCodeFormat(s string) string {
+	sourcelines := strings.Split(s, "\n")
+	var lines []string
+	for _, line := range sourcelines {
+		if strings.HasPrefix(line, "import") || line == "" || line == "\n" {
+
+		} else {
+			lines = append(lines, line)
+		}
+	}
+	res := strings.Join(lines, "    ") + "\n"
+	return res
+}
+
+// GenerateAnswersFromJSONFile 从sourcePath的文件中读取nl和code部分，生成符合格式的目标文件
+func GenerateAnswersFromJSONFile(sourcePath string, destPath string) {
+	if Exists(destPath) {
+		os.Remove(destPath)
+	}
+	jsons := ReadFromJsonFile(sourcePath)
+	var nlAndCodeSlice []map[string]any
+	for _, jsonObject := range jsons {
+		nl := jsonObject["nl"].(string)
+		codeSlice := jsonObject["code"].([]interface{})
+		var codeSliceStr []string
+		for _, token := range codeSlice {
+			tokenStr := token.(string)
+			codeSliceStr = append(codeSliceStr, tokenStr)
+		}
+		code := strings.Join(codeSliceStr, " ")
+		nlAndCode := make(map[string]any)
+		nlAndCode["nl"] = nl
+		nlAndCode["code"] = code
+		nlAndCodeSlice = append(nlAndCodeSlice, nlAndCode)
+	}
+	WriteToJSONFileFromSlice(destPath, nlAndCodeSlice)
 }

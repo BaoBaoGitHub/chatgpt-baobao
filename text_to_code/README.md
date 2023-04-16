@@ -11,3 +11,13 @@
 1. 在项目根路径下，运行`go run ./text_to_code/main.go`，或在`text_to_code`目录下运行`go run main.go`
 
 2. 程序在运行大约需要一小时，若中途报错，请删除掉`text_to_code/dataset/test_shuffled_with_path_and_id_concode_`开头的所有文件，注意不包括`code_to_code/dataset/test_shuffled_with_path_and_id_concode.json`文件。
+
+# 评估
+
+以该`README.md`所在目录为工作目录
+
+执行 `python ./dataset/evaluator/evaluator.py -a=./dataset/evaluator/answers.json -p=./dataset/evaluator/predictions.txt`
+
+BLEU: 0.77, EM: 0.0（奇怪的结果，改进在语雀中描述了）
+
+
