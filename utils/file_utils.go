@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -127,4 +128,31 @@ func DeleteFiles(path []string) {
 			os.Remove(s)
 		}
 	}
+}
+
+func GenerateReferencesFromPath(sourcePath string, destPath string) {
+	// 打开源文件
+	srcFile, err := os.Open(sourcePath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer srcFile.Close()
+
+	if Exists(destPath) {
+		os.Remove(destPath)
+	}
+
+	// 创建目标文件
+	dstFile, err := os.Create(destPath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer dstFile.Close()
+
+	// 拷贝文件内容
+	_, err = io.Copy(dstFile, srcFile)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 }

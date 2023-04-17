@@ -10,20 +10,21 @@ import (
 func main() {
 	// 配置
 	testFlag := false
-	concurrentNum := 20                                                        //并发量
-	path := "text_to_code/dataset/test_shuffled_with_path_and_id_concode.json" //文件路径
-	accessToken := []string{}                                                  // chatGPT token
-	baseURI := []string{}                                                      // plus会员URI
-	testPath := "text_to_code/dataset/test_file.json"                          // 测试文件路径
-	predictionPath := "text_to_code/dataset/evaluator/predictions.txt"         // 预测代码部分最终存储路径
+	concurrentNum := 20                                                               //并发量
+	concodePath := "text_to_code/dataset/test_shuffled_with_path_and_id_concode.json" //文件路径
+	accessToken := []string{}                                                         // chatGPT token
+	baseURI := []string{}                                                             // plus会员URI
+	testPath := "text_to_code/dataset/test_file.json"                                 // 测试文件路径
+	predictionPath := "text_to_code/dataset/evaluator/predictions.txt"                // 预测代码部分最终存储路径
+	answersPath := "text_to_code/dataset/evaluator/answers.json"                      // answers.json的路径
 
 	// 测试标签
 	if testFlag == true {
-		path = testPath
+		concodePath = testPath
 	}
 
 	// 1. 分割源文件
-	splitFilePath := utils.SplitFile(path, concurrentNum)
+	splitFilePath := utils.SplitFile(concodePath, concurrentNum)
 	concurrentNum = len(splitFilePath) //split文件时，若无法恰好分割，可能会多一个文件出来
 
 	// 2. 必须要求accessToken与baseURI长度相等，且长度等于并发量（每个并发都需要有一个token）
@@ -50,6 +51,7 @@ func main() {
 	defer utils.DeleteFiles(splitFilePath)
 	defer utils.DeleteFiles(finalRespFilePath)
 
-	// 6. 生成符合格式的响应文件
+	// 6. 生成可以用于评估的answers.json文件与
+	utils.GenerateAnswersFromJSONFile(concodePath, answersPath)
 	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
 }

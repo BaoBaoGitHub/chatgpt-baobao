@@ -12,6 +12,8 @@ func main() {
 	testPath := "code_to_code/dataset/test.cs"
 	cs_path := "code_to_code/dataset/references.txt"
 	predictionPath := "code_to_code/dataset/evaluator/predictions.txt"
+	javaCodePath := "code_to_code/dataset/test.java-cs.txt.java"
+	referencesPath := "code_to_code/dataset/evaluator/references.txt"
 	if testFlag {
 		cs_path = testPath
 	}
@@ -46,6 +48,7 @@ func main() {
 	defer utils.DeleteFiles(splitFilePaths)
 	defer utils.DeleteFiles(respFilePaths)
 
-	// 5. 生成prediction文件（符合评估要求）
+	// 5. 生成符合评估的references.txt文件与predictions.txt文件
+	utils.GenerateReferencesFromPath(javaCodePath, referencesPath)
 	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
 }
