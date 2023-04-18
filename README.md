@@ -1,4 +1,4 @@
-# chatgpt-baobao
+# chatgpt-for-se-tasks
 
 本项目包括chatGPT调用、使用chatGPT生成代码、使用chatGPT执行代码翻译三个部分。
 
