@@ -22,8 +22,21 @@
 
 以该`README.md`所在目录为工作目录。
 
-执行 `python ./dataset/evaluator/evaluator.py -a=./dataset/evaluator/answers.json -p=./dataset/evaluator/predictions.txt`
+1. 计算ACC和BLEU：执行 `python ./dataset/evaluator/evaluator.py -a=./dataset/evaluator/answers.json -p=./dataset/evaluator/predictions.txt`  
+   > BLEU: 0.77, EM: 0.0
+2. 计算CodeBLEU：执行`cd ./dataset/evaluator/CodeBLEU`,然后 `python ./calc_code_bleu.py --refs ../answers.json --hyp ../predictions.txt --lang java`  
+   > WARNING: There is no reference data-flows extracted from the whole corpus, and the data-flow match score degenerates to 0. Please consider ignoring this score.
+   > ngram match: 0.031972361577153885, weighted ngram match: 0.035803209671719745, syntax_match: 0.10433854907539118, dataflow_match: 0
+   > CodeBLEU score:  0.043028530081066205
 
-BLEU: 0.77, EM: 0.0（奇怪的结果，改进在语雀中描述了）
+## 问题及解决
+
+1. 如果计算CodeBLEU库时出错，你需要`pip install tree-sitter`
+2. 如果tree-sitter库无法安装，
+   1. 如果你是Windows操作系统，请在当前工作目录打开Git Bash，确保可以执行脚本
+   2. `cd ./dataset/evaluator/CodeBLEU/my_parser`
+   3. `sh build.sh`, 如果执行脚本时报错：distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/ ，去官网下载构建工具即可
+   4. `cd ../../../../`
+3. 计算CodeBLEU时若报错OSError: \[WinError 193\] %1 不是有效的 Win32 应用程序，请参考<https://github.com/microsoft/CodeXGLUE/issues/116>
 
 
