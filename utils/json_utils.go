@@ -232,26 +232,29 @@ func ModifyCodeFormat(s string) string {
 	return res
 }
 
-// GenerateAnswersFromJSONFile 从sourcePath的文件中读取nl和code部分，生成符合格式的目标文件
-func GenerateAnswersFromJSONFile(sourcePath string, destPath string) {
+// GenerateAnswersFromJSONFile 生成符合evaluate要求的answers.json文件
+func GenerateAnswersFromJSONFile(concodePath, nlPath, destPath string) {
 	if Exists(destPath) {
 		os.Remove(destPath)
 	}
-	jsons := ReadFromJsonFile(sourcePath)
-	var nlAndCodeSlice []map[string]any
-	for _, jsonObject := range jsons {
-		nl := jsonObject["nl"].(string)
-		codeSlice := jsonObject["code"].([]interface{})
+	concodeLines, nlLines := ReadFromJsonFile(concodePath), ReadFromJsonFile(nlPath)
+	if len(concodeLines) != len(nlLines) {
+		log.Panic("concodeLines != nlLines")
+	}
+
+	var CodeAndNLSLice []map[string]any
+	for i, concodeMap := range concodeLines {
+		codeSlice := concodeMap["code"].([]interface{})
 		var codeSliceStr []string
-		for _, token := range codeSlice {
-			tokenStr := token.(string)
-			codeSliceStr = append(codeSliceStr, tokenStr)
+		for _, v := range codeSlice {
+			codeSliceStr = append(codeSliceStr, fmt.Sprintf("%v", v))
 		}
 		code := strings.Join(codeSliceStr, " ")
 		nlAndCode := make(map[string]any)
-		nlAndCode["nl"] = nl
 		nlAndCode["code"] = code
-		nlAndCodeSlice = append(nlAndCodeSlice, nlAndCode)
+		nlAndCode["nl"] = nlLines[i]["nl"]
+		CodeAndNLSLice = append(CodeAndNLSLice, nlAndCode)
 	}
-	WriteToJSONFileFromSlice(destPath, nlAndCodeSlice)
+
+	WriteToJSONFileFromSlice(destPath, CodeAndNLSLice)
 }

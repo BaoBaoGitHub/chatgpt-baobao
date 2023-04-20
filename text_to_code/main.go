@@ -4,28 +4,39 @@ import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/text_to_code/code_generation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
+	"path/filepath"
 	"sync"
 )
 
 func main() {
 	// 配置
-	testFlag := false
-	concurrentNum := 20                                                               //并发量
-	concodePath := "text_to_code/dataset/test_shuffled_with_path_and_id_concode.json" //文件路径
-	accessToken := []string{}                                                         // chatGPT token
-	baseURI := []string{}                                                             // plus会员URI
-	testPath := "text_to_code/dataset/test_file.json"                                 // 测试文件路径
-	predictionPath := "text_to_code/dataset/evaluator/predictions.txt"                // 预测代码部分最终存储路径
-	answersPath := "text_to_code/dataset/evaluator/answers.json"                      // answers.json的路径
+	concurrentNum := 2        //并发量
+	accessToken := []string{} // 访问Token
+	baseURI := []string{}     // 代理URI
 
-	// 测试标签
-	if testFlag == true {
-		concodePath = testPath
+	datasetDir := "text_to_code/dataset/"
+	fullPromptsDir := datasetDir + "full_prompts/"                        // 最好的prompts结果路径
+	refDir := datasetDir + "ref/"                                         // 原始数据与标准答案路径
+	concodePath := refDir + "test_shuffled_with_path_and_id_concode.json" // 数据源文件路径
+	testConcodePath := refDir + "test_concode.json"                       //数据源测试文件
+	testPath := refDir + "test.json"                                      //数据源文件路径
+	testTestPath := refDir + "test_test.json"
+	predictionPath := fullPromptsDir + "predictions.txt" // 预测代码部分最终存储路径
+	answersPath := refDir + "answers.json"               // answers.json的路径
+
+	// 测试标志
+	if testFlag := true; testFlag {
+		concodePath = testConcodePath
+		testPath = testTestPath
+
 	}
 
+	// 0. 从concode中拿出code部分，从test.json中拿出nl部分，组成answers.json文件
+	utils.GenerateAnswersFromJSONFile(concodePath, testPath, answersPath)
+
 	// 1. 分割源文件
-	splitFilePath := utils.SplitFile(concodePath, concurrentNum)
-	concurrentNum = len(splitFilePath) //split文件时，若无法恰好分割，可能会多一个文件出来
+	splitConcodePath := utils.SplitFile(concodePath, concurrentNum)
+	concurrentNum = len(splitConcodePath) //split文件时，若无法恰好分割，可能会多一个文件出来
 
 	// 2. 必须要求accessToken与baseURI长度相等，且长度等于并发量（每个并发都需要有一个token）
 	tokenLen := len(accessToken)
@@ -38,20 +49,20 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(concurrentNum)
 
-	var finalRespFilePath []string
-	for i, everyPath := range splitFilePath {
-		go code_generation.CodeSearchFromFile(everyPath, accessToken[i%len(accessToken)], baseURI[i%len(baseURI)], wg.Done)
-		finalRespFilePath = append(finalRespFilePath, utils.AddSuffix(everyPath, "response"))
+	splitResponsePath := make([]string, concurrentNum)
+	for i, srcPath := range splitConcodePath {
+		go code_generation.CodeGenerationFromFile(srcPath, fullPromptsDir, accessToken[i%len(accessToken)], baseURI[i%len(baseURI)], wg.Done)
+		splitResponsePath[i] = fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 	}
+
 	// 4. 合并响应文件
 	wg.Wait()
-	transitionJSONPath := utils.MergeJSONFile(finalRespFilePath)
+	responsePath := utils.MergeJSONFile(splitResponsePath)
 
 	// 5. 删除中间文件
-	defer utils.DeleteFiles(splitFilePath)
-	defer utils.DeleteFiles(finalRespFilePath)
+	defer utils.DeleteFiles(splitConcodePath)
+	defer utils.DeleteFiles(splitResponsePath)
 
-	// 6. 生成可以用于评估的answers.json文件与
-	utils.GenerateAnswersFromJSONFile(concodePath, answersPath)
-	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
+	// 6. 生成predictions文件
+	utils.GetPredictionFromJSONFIle(responsePath, predictionPath)
 }

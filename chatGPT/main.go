@@ -21,6 +21,7 @@ func main() {
 		chatgpt.WithTimeout(60*time.Second),
 		chatgpt.WithAccessToken(token),
 		chatgpt.WithBaseURI("https://freechat.lidong.xin"),
+		chatgpt.WithModel("gpt-3.5-turbo"),
 	)
 
 	conversationID := ""

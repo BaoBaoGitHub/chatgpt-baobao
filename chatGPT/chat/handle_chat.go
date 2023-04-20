@@ -41,12 +41,7 @@ func HandleError(
 	baseURI string,
 	cli *chatgpt.Client) *chatgpt.ChatText {
 	// 新建cli
-	cli = chatgpt.NewClient(
-		chatgpt.WithDebug(false),
-		chatgpt.WithTimeout(120*time.Second),
-		chatgpt.WithAccessToken(accessToken),
-		chatgpt.WithBaseURI(baseURI),
-	)
+	cli = NewDefaultClient(accessToken, baseURI)
 	// 修改conversationID和parentMessage
 	*conversationIDPtr = ""
 	*parentMessagePtr = ""
@@ -57,4 +52,14 @@ func HandleError(
 		return HandleError(query, conversationIDPtr, parentMessagePtr, accessToken, baseURI, cli)
 	}
 	return text
+}
+
+func NewDefaultClient(accessToken, baseURI string) *chatgpt.Client {
+	return chatgpt.NewClient(
+		chatgpt.WithDebug(false),
+		chatgpt.WithTimeout(180*time.Second),
+		chatgpt.WithAccessToken(accessToken),
+		chatgpt.WithBaseURI(baseURI),
+		chatgpt.WithModel("text-davinci-002-render-sha"),
+	)
 }

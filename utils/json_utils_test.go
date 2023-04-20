@@ -109,5 +109,6 @@ func TestDeleteImport(t *testing.T) {
 }
 
 func TestGenerateAnswersFromJSONFile(t *testing.T) {
-	GenerateAnswersFromJSONFile(concodePath, answersPath)
+	GenerateAnswersFromJSONFile("../text_to_code/dataset/ref/test_shuffled_with_path_and_id_concode.json",
+		"../text_to_code/dataset/ref/test.json", "../text_to_code/dataset/ref/answers.json")
 }
