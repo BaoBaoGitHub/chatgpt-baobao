@@ -228,33 +228,30 @@ func ModifyCodeFormat(s string) string {
 			lines = append(lines, line)
 		}
 	}
-	res := strings.Join(lines, "    ") + "\n"
+	res := strings.Join(lines, " ") + "\n"
 	return res
 }
 
-// GenerateAnswersFromJSONFile 生成符合evaluate要求的answers.json文件
-func GenerateAnswersFromJSONFile(concodePath, nlPath, destPath string) {
-	if Exists(destPath) {
-		os.Remove(destPath)
-	}
-	concodeLines, nlLines := ReadFromJsonFile(concodePath), ReadFromJsonFile(nlPath)
-	if len(concodeLines) != len(nlLines) {
-		log.Panic("concodeLines != nlLines")
-	}
+// GenRefFromConcode 生成符合evaluate要求的references.txt文件
+func GenRefFromConcode(concodePath, refPath string) {
+	//if Exists(refPath) {
+	//	os.Remove(refPath)
+	//}
+	concodeLines := ReadFromJsonFile(concodePath)
 
-	var CodeAndNLSLice []map[string]any
-	for i, concodeMap := range concodeLines {
-		codeSlice := concodeMap["code"].([]interface{})
+	// 读取json文件中的代码部分，写入到concodeLines中
+	var dstCodeSlice []string
+	for _, concodeMap := range concodeLines {
+		srcCodeSlice := concodeMap["code"].([]interface{})
 		var codeSliceStr []string
-		for _, v := range codeSlice {
+		for _, v := range srcCodeSlice {
 			codeSliceStr = append(codeSliceStr, fmt.Sprintf("%v", v))
 		}
 		code := strings.Join(codeSliceStr, " ")
-		nlAndCode := make(map[string]any)
-		nlAndCode["code"] = code
-		nlAndCode["nl"] = nlLines[i]["nl"]
-		CodeAndNLSLice = append(CodeAndNLSLice, nlAndCode)
+		dstCodeSlice = append(dstCodeSlice, code)
 	}
 
-	WriteToJSONFileFromSlice(destPath, CodeAndNLSLice)
+	res := strings.Join(dstCodeSlice, "\n") + "\n"
+	os.WriteFile(refPath, []byte(res), 0666)
+
 }

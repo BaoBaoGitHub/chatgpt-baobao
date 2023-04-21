@@ -23,7 +23,7 @@ func GenerateQueryBasedPromts(data map[string]any) string {
 		variable := vStr + " " + kStr
 		memberVariablesSlice = append(memberVariablesSlice, variable)
 	}
-	memberVariablesStr := strings.Join(memberVariablesSlice, ",")
+	memberVariablesStr := strings.Join(memberVariablesSlice, ", ")
 
 	var memberFunctionsSlice []string
 	var tokenslice []string
@@ -45,7 +45,7 @@ func GenerateQueryBasedPromts(data map[string]any) string {
 							tokenslice = append(tokenslice, "(")
 						}
 						if i != len(innerInnerMap)-1 && i != 0 {
-							tokenslice = append(tokenslice, ",")
+							tokenslice = append(tokenslice, ", ")
 						}
 						//fmt.Println(innerInnerValue)
 					}
@@ -60,8 +60,8 @@ func GenerateQueryBasedPromts(data map[string]any) string {
 
 	role := `As a senior Java developer, you'll be given information about a Java class including its name, member variables, and member function headers.`
 	addition := ` Additionally, a natural language description will be provided for a specific member function.`
-	task := ` Your task is to implement this member function within the given class.`
-	rspFormat := ` Please respond with the complete code inside a single code block, without any explanations.`
+	task := ` Your task is to implement this member function according to natural description within the given class.`
+	rspFormat := ` Please respond with the complete member function code inside a single code block, without any explanations.`
 
 	desc := fmt.Sprintf(` The Java class name is %s, member variables are %s, and member functions headers are %s. The natural language description is %s.`, className, memberVariablesStr, memberFunctionsStr, nl)
 	ends := ` Please provide the Java member function implementation based on this description.`

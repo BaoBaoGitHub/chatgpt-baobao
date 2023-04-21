@@ -20,14 +20,17 @@ func HandleChatRobustly(
 	defer func() {
 		if r := recover(); r != nil {
 			log.Println(r)
+			time.Sleep(1 * time.Second)
 			text = HandleError(query, conversationIDPtr, parentMessagePtr, accessToken, baseURI, cli)
 		}
 	}()
 	// 正常访问chatgpt
 	text, err := cli.GetChatText(query, *conversationIDPtr, *parentMessagePtr)
+	time.Sleep(1 * time.Second)
 	// 如果出错，就新建chatGPT对话
 	if err != nil {
 		log.Println(err)
+		time.Sleep(1 * time.Second)
 		text = HandleError(query, conversationIDPtr, parentMessagePtr, accessToken, baseURI, cli)
 	}
 	return text

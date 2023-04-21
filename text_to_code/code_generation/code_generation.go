@@ -4,12 +4,14 @@ import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"log"
+	"path"
 	"path/filepath"
+	"strings"
 )
 
 // CodeGenerationFromFile 是代码搜索函数，从fileAddr中读取json，获取query并将结果写入到fileAddr_response中。
 // 如test_shuffled_with_path_and_id_concode.json的结果会写入到如test_shuffled_with_path_and_id_concode_response.json文件中
-func CodeGenerationFromFile(srcPath, tgtDir string, accessToken, baseURI string, done func()) string {
+func CodeGenerationFromFile(srcPath, tgtDir, logDir string, accessToken, baseURI string, done func()) string {
 	defer done() //并发同步处理
 	// chatgpt初始化
 	//token := uuid.New().String()
@@ -19,18 +21,14 @@ func CodeGenerationFromFile(srcPath, tgtDir string, accessToken, baseURI string,
 
 	// 获取srcPath文件名，再加上response后缀，再其前面拼接tgt
 	targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
+	logFileName := logDir + utils.AddSuffix(filepath.Base(srcPath), "log")
+	logFileName = strings.TrimSuffix(logFileName, path.Ext(logFileName)) + ".txt"
+	logger := log.New(utils.GetFileWriter(logFileName), "", log.LstdFlags)
 	// 1 打开json，获取对象
 	data := utils.ReadFromJsonFile(srcPath)
 	for _, content := range data {
-
-		// 2 取出nl内容
-		//query := content["nl"].(string)
-		// 3 输入到chatgpt
-		//query = "java code for \"" + query + "\"" + " The java code should be in one code block."
-		//query = "java code for \"" + query + "\""
-
 		query := chat.GenerateQueryBasedPromts(content)
-		log.Println(query)
+		logger.Println(query)
 		//text, err := cli.GetChatText(query, conversationID, parentMessage)
 		// 封装了原来的GetChatText方法，保证可以访问
 		text := chat.HandleChatRobustly(query, &conversationID, &parentMessage, accessToken, baseURI, cli)

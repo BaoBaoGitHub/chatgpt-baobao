@@ -15,12 +15,18 @@ import (
 func main() {
 	// new chatgpt client
 	token := uuid.New().String()
+	baseURI := "https://freechat.lidong.xin"
+
+	if testFlag := true; testFlag {
+		token = "EBA1C3EB-C3AC-4D1F-B32A-005B07BD6D59"
+		baseURI = "https://pluschat.lidong.xin"
+	}
 
 	cli := chatgpt.NewClient(
 		chatgpt.WithDebug(false),
 		chatgpt.WithTimeout(60*time.Second),
 		chatgpt.WithAccessToken(token),
-		chatgpt.WithBaseURI("https://freechat.lidong.xin"),
+		chatgpt.WithBaseURI(baseURI),
 		chatgpt.WithModel("gpt-3.5-turbo"),
 	)
 
