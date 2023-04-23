@@ -4,9 +4,7 @@ import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/text_to_code/code_generation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
-	"path"
 	"path/filepath"
-	"strings"
 	"sync"
 )
 
@@ -72,13 +70,13 @@ func main() {
 	wg.Add(concurrentNum)
 
 	splitResponsePath := make([]string, concurrentNum)
-	splitLogPath := make([]string, concurrentNum)
+	//splitLogPath := make([]string, concurrentNum)
 	for i, srcPath := range splitConcodePath {
 		go code_generation.CodeGenerationFromFile(srcPath, fullPromptsDir, accessToken[i], baseURI[i], wg.Done)
 		splitResponsePath[i] = fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "response")
-		logPath := fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "log")
-		logPath = strings.TrimSuffix(logPath, path.Ext(logPath)) + ".txt"
-		splitLogPath = append(splitLogPath, logPath)
+		//logPath := fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "log")
+		//logPath = strings.TrimSuffix(logPath, path.Ext(logPath)) + ".txt"
+		//splitLogPath = append(splitLogPath, logPath)
 	}
 
 	// 4. 合并响应文件

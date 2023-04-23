@@ -3,9 +3,7 @@ package code_generation
 import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
-	"math/rand"
 	"path/filepath"
-	"time"
 )
 
 // CodeGenerationFromFile 是代码搜索函数，从fileAddr中读取json，获取query并将结果写入到fileAddr_response中。
@@ -31,8 +29,7 @@ func CodeGenerationFromFile(srcPath, tgtDir string, accessToken, baseURI string,
 		//text, err := cli.GetChatText(query, conversationID, parentMessage)
 		// 封装了原来的GetChatText方法，保证可以访问
 		text := chat.HandleChatRobustly(query, &conversationID, &parentMessage, accessToken, baseURI, cli)
-		rand.Seed(time.Now().UnixNano())
-		time.Sleep(time.Duration(rand.Intn(2)+1) * time.Second)
+
 		// 4 结果处理
 		utils.WriteToJSONFileFromString(targetFileName, text.Content, query)
 		//设置连续对话

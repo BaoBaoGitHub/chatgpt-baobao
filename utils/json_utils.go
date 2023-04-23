@@ -242,7 +242,7 @@ func GenRefFromConcode(concodePath, refPath string) {
 	// 读取json文件中的代码部分，写入到concodeLines中
 	var dstCodeSlice []string
 	for _, concodeMap := range concodeLines {
-		srcCodeSlice := concodeMap["code"].([]interface{})
+		srcCodeSlice := concodeMap["renamed"].([]interface{})
 		var codeSliceStr []string
 		for _, v := range srcCodeSlice {
 			codeSliceStr = append(codeSliceStr, fmt.Sprintf("%v", v))

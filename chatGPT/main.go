@@ -18,8 +18,8 @@ func main() {
 	baseURI := "https://freechat.lidong.xin"
 
 	if testFlag := true; testFlag {
-		token = "EBA1C3EB-C3AC-4D1F-B32A-005B07BD6D59"
-		baseURI = "https://pluschat.lidong.xin"
+		token = "db47ecb2-b016-42dd-a38e-f384269f0dd1"
+		baseURI = "https://personalchat.lidong.xin"
 	}
 
 	cli := chatgpt.NewClient(
@@ -32,6 +32,9 @@ func main() {
 
 	conversationID := ""
 	parentMessage := ""
+
+	//text := chat.HandleChatRobustly("hello", &conversationID, &parentMessage, token, baseURI, cli)
+	//fmt.Println(text.Content)
 
 	reader := bufio.NewReader(os.Stdin)
 	for {
