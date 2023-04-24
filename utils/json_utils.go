@@ -223,7 +223,7 @@ func ModifyCodeFormat(s string) string {
 	var lines []string
 	for _, line := range sourcelines {
 		line = strings.TrimSpace(line)
-		if strings.HasPrefix(line, "import") || strings.HasPrefix(line, "@") || line == "" || line == "\n" {
+		if strings.HasPrefix(line, "import") || strings.HasPrefix(line, "@") || line == "" || line == "\n" || strings.HasPrefix(line, "//") {
 
 		} else {
 			lines = append(lines, line)

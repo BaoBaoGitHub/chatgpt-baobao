@@ -24,13 +24,13 @@
 
 当前工作目录为此README.md文件所在目录！请先cd到`code_to_code`目录下！
 
-`python ./dataset/evaluator/evaluator.py -ref ./dataset/evaluator/references.txt -pre ./dataset/evaluator/predictions.txt`
+`python evaluator.py -ref ../ref/references.txt -pre ../full_prompts/predictions.txt`
 
-BLEU: 14.25 ; Acc: 0.0
+> BLEU: 11.72 ; Acc: 0.1
 
 cd 到CodeBLEU目录后，执行`python ./calc_code_bleu.py --refs ../../ref/references.txt --hyp ../../full_prompts/predictions.txt --lang java`
 
-> ngram match: 0.05989724148292398, weighted ngram match: 0.1569376478257052, syntax_match: 0.5502183406113537, dataflow_match: 0.8235294117647058
-> CodeBLEU score:  0.39764566042117216
+> ngram match: 0.11711846994470969, weighted ngram match: 0.2969847205056433, syntax_match: 0.7093523861866813, dataflow_match: 0.8051493563304587
+> CodeBLEU score:  0.48215123324187326
 
 计算CodeBLEU时若出错，请参考text_to_code中的README

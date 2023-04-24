@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	concurrentNum := 5 //并发量
+	concurrentNum := 20 //并发量
 	accessToken := []string{
 		"b721d8c0-df4c-496a-a6d1-1fe46084d3c4", "3de1b933-fc23-40ba-a40a-ec753f33ded2",
 		"f3325c34-cc73-433c-8eb2-3dc75c8b274a", "5a532386-b59c-49fc-80ba-51173ad36a55",
@@ -39,7 +39,7 @@ func main() {
 	predictionPath := fullPromptsDir + "predictions.txt" //生成predictions.txt文件的path
 	referencesPath := refDir + "references.txt"          // 根据javaPath生成的标准答案的path
 
-	if testFlag := true; testFlag {
+	if testFlag := false; testFlag {
 		csPath = testCSharpPath
 		javaPath = testJavaPath
 	}
