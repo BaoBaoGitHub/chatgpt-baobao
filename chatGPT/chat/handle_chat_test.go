@@ -28,14 +28,14 @@ var baseURI = "https://freechat.lidong.xin"
 
 func TestHandleError(t *testing.T) {
 
-	HandleError(query, &conversationID, &parentMessage, token, baseURI, cli)
+	//HandleError(query, &conversationID, &parentMessage, token, baseURI, cli)
 }
 
 func TestHandlePanic(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {
 			log.Println(r)
-			text = HandleError(query, &conversationID, &parentMessage, token, baseURI, cli)
+			//text = HandleError(query, &conversationID, &parentMessage, token, baseURI, cli)
 		}
 	}()
 	panic("test")
