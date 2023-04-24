@@ -28,9 +28,9 @@
 
 BLEU: 14.25 ; Acc: 0.0
 
-cd 到CodeBLEU目录后，执行`python ./calc_code_bleu.py --refs ../references.txt --hyp ../predictions.txt --lang java`
+cd 到CodeBLEU目录后，执行`python ./calc_code_bleu.py --refs ../../ref/references.txt --hyp ../../full_prompts/predictions.txt --lang java`
 
-> ngram match: 0.1424068795097156, weighted ngram match: 0.282297309303666, syntax_match: 0.6967573509205826, dataflow_match: 0.7939007624046994
-> CodeBLEU score:  0.4788405755346659
+> ngram match: 0.05989724148292398, weighted ngram match: 0.1569376478257052, syntax_match: 0.5502183406113537, dataflow_match: 0.8235294117647058
+> CodeBLEU score:  0.39764566042117216
 
 计算CodeBLEU时若出错，请参考text_to_code中的README

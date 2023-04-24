@@ -22,13 +22,12 @@
 
 以该`README.md`所在目录为工作目录。
 
-1. 计算ACC和BLEU：执行 `python ./dataset/evaluator/evaluator.py -a=./dataset/evaluator/answers.json -p=./dataset/evaluator/predictions.txt`  
-   > BLEU: 0.77, EM: 0.0
-2. 计算CodeBLEU：执行`cd ./dataset/evaluator/CodeBLEU`,然后 `python ./calc_code_bleu.py --refs ../../ref/answers.json --hyp ../../full_prompts/predictions.txt --lang java`  
-   > WARNING: There is no reference data-flows extracted from the whole corpus, and the data-flow match score degenerates to 0. Please consider ignoring this score.
-   > ngram match: 0.031972361577153885, weighted ngram match: 0.035803209671719745, syntax_match: 0.10433854907539118, dataflow_match: 0
-   > CodeBLEU score:  0.043028530081066205
-
+1. 计算ACC和BLEU：执行 `python ./dataset/evaluator/evaluator.py --ref ./dataset/full_prompts/references.txt --pre ./dataset/full_prompts/predictions.txt`  
+   > BLEU: 0.84 ; Acc: 0.0
+2. 计算CodeBLEU：执行`cd ./dataset/evaluator/CodeBLEU`,然后 `python .\calc_code_bleu.py --refs "D:\Code\Go\src\github.com\BaoBaoGitHub\chatgpt-for-se-tasks\text_to_code\dataset\ref\references.txt"  --hyp "D:\Code\Go\src\github.com\BaoBaoGitHub\chatgpt-for-se-tasks\text_to_code\dataset\full_prompts\predictions.txt" --lang java`  
+   > ngram match: 0.008294836421709995, weighted ngram match: 0.011497369927557835, syntax_match: 0.3856853000852766, dataflow_match: 0.4663077958281265
+   > CodeBLEU score:  0.21794632556566773
+   
 ## 问题及解决
 
 1. 如果计算CodeBLEU库时出错，你需要`pip install tree-sitter`

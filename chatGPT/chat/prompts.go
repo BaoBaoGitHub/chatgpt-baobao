@@ -58,12 +58,12 @@ func GenerateQueryBasedPromts(data map[string]any) string {
 	}
 	memberFunctionsStr := strings.Join(memberFunctionsSlice, ",")
 
-	role := `As a senior Java developer, you'll be given information about a Java class including its name, member variables, and member function headers.`
+	role := `As a senior Java developer, you'll be given information about a Java class including its name, member variables, and member function signatures.`
 	addition := ` Additionally, a natural language description will be provided for a specific member function.`
 	task := ` Your task is to implement this member function according to natural description within the given class.`
 	rspFormat := ` Please respond with the complete member function code inside a single code block, without any explanations.`
 
-	desc := fmt.Sprintf(` The Java class name is %s, member variables are %s, and member functions headers are %s. The natural language description is %s.`, className, memberVariablesStr, memberFunctionsStr, nl)
+	desc := fmt.Sprintf(` The Java class name is %s, member variables are %s, and member functions signatures are %s. The natural language description is %s.`, className, memberVariablesStr, memberFunctionsStr, nl)
 	ends := ` Please provide the Java member function implementation based on this description.`
 
 	return role + addition + task + rspFormat + desc + ends
