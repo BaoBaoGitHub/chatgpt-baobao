@@ -13,8 +13,8 @@ func CodeGenerationFromFile(srcPath, tgtDir, promptMode string, accessToken, bas
 	// chatgpt初始化
 	//token := uuid.New().String()
 	cli := chat.NewDefaultClient(accessToken, baseURI)
-	conversationID := ""
-	parentMessage := ""
+	conversationID := new(string)
+	parentMessage := new(string)
 
 	// 获取srcPath文件名，再加上response后缀，再其前面拼接tgt
 	targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
@@ -28,13 +28,21 @@ func CodeGenerationFromFile(srcPath, tgtDir, promptMode string, accessToken, bas
 		//log.Println(query)
 		//text, err := cli.GetChatText(query, conversationID, parentMessage)
 		// 封装了原来的GetChatText方法，保证可以访问
-		text := chat.HandleChatRobustly(query, &conversationID, &parentMessage, accessToken, baseURI, cli)
-
-		// 4 结果处理
-		utils.WriteToJSONFileFromString(targetFileName, text.Content, query)
+		text := chat.HandleChatRobustly(query, conversationID, parentMessage, accessToken, baseURI, cli)
 		//设置连续对话
-		conversationID = text.ConversationID
-		parentMessage = text.MessageID
+		*conversationID = text.ConversationID
+		*parentMessage = text.MessageID
+
+		resContent := text.Content
+		//if strings.Count(resContent, "```") == 1 {
+		//	text = chat.HandleChatRobustly("continue", conversationID, parentMessage, accessToken, baseURI, cli)
+		//	*conversationID = text.ConversationID
+		//	*parentMessage = text.MessageID
+		//}
+		//resContent = resContent + text.Content
+		// 4 结果处理
+		utils.WriteToJSONFileFromString(targetFileName, resContent, query)
+
 	}
 
 	return targetFileName
