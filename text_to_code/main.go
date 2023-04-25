@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/text_to_code/code_generation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
@@ -28,20 +29,23 @@ func main() {
 		baseURI = append(baseURI, "https://personalchat.lidong.xin")
 	}
 
+	promptsMode := chat.TestPrompts //TODO: 使用的是哪个prompt
+
 	datasetDir := "text_to_code/dataset/"
-	fullPromptsDir := datasetDir + "full_prompts/"                        // 最好的prompts结果路径
+	//tgtDir := datasetDir + "full_prompts/"                        // 最好的prompts结果路径
+	tgtDir := datasetDir + promptsMode + "/"
 	refDir := datasetDir + "ref/"                                         // 原始数据与标准答案路径
 	concodePath := refDir + "test_shuffled_with_path_and_id_concode.json" // 数据源文件路径
 	testConcodePath := refDir + "test_concode.json"                       //数据源测试文件
 	//testPath := refDir + "test.json"                                      //数据源文件路径
 	//testTestPath := refDir + "test_test.json"
-	predictionPath := fullPromptsDir + "predictions.txt" // 预测代码部分最终存储路径
+	predictionPath := tgtDir + "predictions.txt" // 预测代码部分最终存储路径
 	//answersPath := refDir + "answers.json"               // answers.json的路径
 	refPath := refDir + "references.txt"
-	//logDir := fullPromptsDir + "log/"
+	//logDir := tgtDir + "log/"
 
 	// 测试标志
-	if testFlag := false; testFlag {
+	if testFlag := true; testFlag { //TODO: 是否要使用测试数据源
 		concodePath = testConcodePath
 	}
 
@@ -72,9 +76,9 @@ func main() {
 	splitResponsePath := make([]string, concurrentNum)
 	//splitLogPath := make([]string, concurrentNum)
 	for i, srcPath := range splitConcodePath {
-		go code_generation.CodeGenerationFromFile(srcPath, fullPromptsDir, accessToken[i], baseURI[i], wg.Done)
-		splitResponsePath[i] = fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "response")
-		//logPath := fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "log")
+		go code_generation.CodeGenerationFromFile(srcPath, tgtDir, promptsMode, accessToken[i], baseURI[i], wg.Done)
+		splitResponsePath[i] = tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
+		//logPath := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "log")
 		//logPath = strings.TrimSuffix(logPath, path.Ext(logPath)) + ".txt"
 		//splitLogPath = append(splitLogPath, logPath)
 	}

@@ -6,11 +6,12 @@ import (
 )
 
 const (
-	FULL_PROMPTS int = 1
+	FullPrompts = "full_prompts"
+	TestPrompts = "test_prompts"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts
-func GenerateQueryBasedPromts(data map[string]any) string {
+func GenerateQueryBasedPromts(data map[string]any, promptMode string) string {
 	className := data["className"].(string)
 	memberVariablesMap := data["memberVariables"].(map[string]any)
 	memberFunctionsMap := data["memberFunctions"].(map[string]any)
@@ -58,13 +59,33 @@ func GenerateQueryBasedPromts(data map[string]any) string {
 	}
 	memberFunctionsStr := strings.Join(memberFunctionsSlice, ",")
 
-	role := `As a senior Java developer, you'll be given information about a Java class including its name, member variables, and member function signatures.`
-	addition := ` Additionally, a natural language description will be provided for a specific member function.`
-	task := ` Your task is to implement this member function according to natural description within the given class.`
-	rspFormat := ` Please respond with the complete member function code inside a single code block, without any explanations.`
+	var res string
+	switch promptMode {
+	case FullPrompts:
+		{
+			role := `As a senior Java developer, you'll be given information about a Java class including its name, member variables, and member function signatures.`
+			addition := ` Additionally, a natural language description will be provided for a specific member function.`
+			task := ` Your task is to implement this member function according to natural description within the given class.`
+			rspFormat := ` Please respond with the complete member function code inside a single code block, without any explanations.`
+			desc := fmt.Sprintf(` The Java class name is %s, member variables are %s, and member functions signatures are %s. The natural language description is %s.`, className, memberVariablesStr, memberFunctionsStr, nl)
+			ends := ` Please provide the Java member function implementation based on this description.`
 
-	desc := fmt.Sprintf(` The Java class name is %s, member variables are %s, and member functions signatures are %s. The natural language description is %s.`, className, memberVariablesStr, memberFunctionsStr, nl)
-	ends := ` Please provide the Java member function implementation based on this description.`
+			res = role + addition + task + rspFormat + desc + ends
+		}
+	case TestPrompts:
+		{
+			context := fmt.Sprintf(`Remember that you have a class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr)
+			requirement := fmt.Sprintf(` Write a method named function within the class: "%s". `, nl)
+			addition := ` Remove comments,remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1", etc; change local variable names to "loc0", "loc1", etc.`
 
-	return role + addition + task + rspFormat + desc + ends
+			res = context + requirement + addition
+		}
+	default:
+		{
+			res = ""
+		}
+	}
+
+	//return "Use temperature=0. " + res
+	return res
 }

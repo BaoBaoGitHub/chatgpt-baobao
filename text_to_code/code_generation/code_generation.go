@@ -8,7 +8,7 @@ import (
 
 // CodeGenerationFromFile 是代码搜索函数，从fileAddr中读取json，获取query并将结果写入到fileAddr_response中。
 // 如test_shuffled_with_path_and_id_concode.json的结果会写入到如test_shuffled_with_path_and_id_concode_response.json文件中
-func CodeGenerationFromFile(srcPath, tgtDir string, accessToken, baseURI string, done func()) string {
+func CodeGenerationFromFile(srcPath, tgtDir, promptMode string, accessToken, baseURI string, done func()) string {
 	defer done() //并发同步处理
 	// chatgpt初始化
 	//token := uuid.New().String()
@@ -24,7 +24,7 @@ func CodeGenerationFromFile(srcPath, tgtDir string, accessToken, baseURI string,
 	// 1 打开json，获取对象
 	data := utils.ReadFromJsonFile(srcPath)
 	for _, content := range data {
-		query := chat.GenerateQueryBasedPromts(content)
+		query := chat.GenerateQueryBasedPromts(content, promptMode)
 		//log.Println(query)
 		//text, err := cli.GetChatText(query, conversationID, parentMessage)
 		// 封装了原来的GetChatText方法，保证可以访问

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/code_to_code/translation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
@@ -29,17 +30,19 @@ func main() {
 		baseURI = append(baseURI, "https://personalchat.lidong.xin")
 	}
 
-	datasetDir := "code_to_code/dataset/"
-	fullPromptsDir := datasetDir + "full_prompts/" // 最好的prompts结果路径
-	refDir := datasetDir + "ref/"                  // 原始数据与标准答案路径
-	csPath := refDir + "test.java-cs.txt.cs"       // cs源文件的path
-	javaPath := refDir + "test.java-cs.txt.java"   // java源文件的path
-	testCSharpPath := refDir + "test.cs"           // test.cs源文件的path
-	testJavaPath := refDir + "test.java"
-	predictionPath := fullPromptsDir + "predictions.txt" //生成predictions.txt文件的path
-	referencesPath := refDir + "references.txt"          // 根据javaPath生成的标准答案的path
+	promptsMode := chat.FullPrompts //TODO: 使用的是哪个prompt
 
-	if testFlag := false; testFlag {
+	datasetDir := "code_to_code/dataset/"
+	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
+	refDir := datasetDir + "ref/"                // 原始数据与标准答案路径
+	csPath := refDir + "test.java-cs.txt.cs"     // cs源文件的path
+	javaPath := refDir + "test.java-cs.txt.java" // java源文件的path
+	testCSharpPath := refDir + "test.cs"         // test.cs源文件的path
+	testJavaPath := refDir + "test.java"
+	predictionPath := tgtDir + "predictions.txt" //生成predictions.txt文件的path
+	referencesPath := refDir + "references.txt"  // 根据javaPath生成的标准答案的path
+
+	if testFlag := false; testFlag { //TODO: 是否使用测试数据
 		csPath = testCSharpPath
 		javaPath = testJavaPath
 	}
@@ -67,9 +70,9 @@ func main() {
 	splitResponsePath := make([]string, concurrentNum)
 	// 2. 并发处理代码翻译
 	for i, srcPath := range splitFilePaths {
-		go translation.CodeTranslateFromFile(srcPath, fullPromptsDir, accessToken[i], baseURI[i], filePathSuffix, wg.Done)
+		go translation.CodeTranslateFromFile(srcPath, tgtDir, accessToken[i], baseURI[i], filePathSuffix, wg.Done)
 		// tgt文件路径
-		targetFileName := fullPromptsDir + utils.AddSuffix(filepath.Base(srcPath), "response")
+		targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 		splitResponsePath[i] = strings.TrimSuffix(targetFileName, path.Ext(targetFileName)) + ".json"
 	}
 	wg.Wait()

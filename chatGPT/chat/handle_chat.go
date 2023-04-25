@@ -83,4 +83,5 @@ func NewDefaultClient(accessToken, baseURI string) *chatgpt.Client {
 		chatgpt.WithBaseURI(baseURI),
 		chatgpt.WithModel("text-davinci-002-render-sha"),
 	)
+
 }

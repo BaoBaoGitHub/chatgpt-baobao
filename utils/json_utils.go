@@ -206,7 +206,14 @@ func GetPredictionFromJSONFIle(sourcePath string, destPath string) {
 		if content["flag"].(bool) == true {
 			code = fmt.Sprintf("%s", content["code"])
 		} else if content["flag"].(bool) == false {
-			code = "null"
+			message := content["message"].(string)
+			if strings.Contains(message, "\n\npublic") && strings.Contains(message, "\n}\n\n") {
+				begin := strings.Index(message, "\n\npublic")
+				end := strings.Index(message, "\n}\n\n") + 4
+				code = message[begin:end]
+			} else {
+				code = message
+			}
 		} else {
 			panic("flag不存在！")
 		}
