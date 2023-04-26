@@ -18,8 +18,8 @@ func main() {
 	baseURI := "https://freechat.lidong.xin"
 
 	if testFlag := true; testFlag {
-		token = "db47ecb2-b016-42dd-a38e-f384269f0dd1"
-		baseURI = "https://personalchat.lidong.xin"
+		token = "C360A8C9-90CD-4A46-BBF4-502B01ECABB8"
+		baseURI = "https://pluschat.lidong.xin"
 	}
 
 	cli := chatgpt.NewClient(
@@ -27,7 +27,7 @@ func main() {
 		chatgpt.WithTimeout(60*time.Second),
 		chatgpt.WithAccessToken(token),
 		chatgpt.WithBaseURI(baseURI),
-		chatgpt.WithModel("gpt-3.5-turbo"),
+		chatgpt.WithModel("text-davinci-002-render-sha"),
 	)
 
 	conversationID := ""

@@ -188,3 +188,27 @@ func DeleteAllFiles(dirPath string) error {
 	}
 	return nil
 }
+
+// CalcClassNumFromPath 计算文件中不符合要求的行数
+func CalcClassNumFromPath(path string) string {
+	f, err := os.Open(path)
+	if err != nil {
+		return "100%"
+	}
+	defer f.Close()
+
+	lineCnt := 0
+	// 创建Scanner
+	scanner := bufio.NewScanner(f)
+	cnt := 0
+	// 逐行读取文件
+	for scanner.Scan() {
+		line := scanner.Text()
+		lineCnt++
+		if strings.HasPrefix(line, "class") || strings.HasPrefix(line, "public class") ||
+			strings.HasPrefix(line, "import") || strings.HasPrefix(line, "``` import") {
+			cnt++
+		}
+	}
+	return fmt.Sprintf("%.2f", 100.0*float64(cnt)/float64(lineCnt)) + "%"
+}

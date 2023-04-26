@@ -1,8 +1,11 @@
 package utils
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
-var javaCodePath = "../code_to_code/dataset/test.java-cs.txt.java"
+var javaCodePath = "../code_to_code/dataset/test0.java-cs.txt.java"
 var referencesPath = "../code_to_code/dataset/evaluator/references.txt"
 
 func TestDeleteFiles(t *testing.T) {
@@ -20,4 +23,8 @@ func TestDeleteFiles(t *testing.T) {
 
 func TestGenerateReferencesFromPath(t *testing.T) {
 	GenerateReferencesFromPath(javaCodePath, referencesPath)
+}
+
+func TestCalcClassNumFromPath(t *testing.T) {
+	fmt.Println(CalcClassNumFromPath("D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\task_prompts\\predictions.txt"))
 }

@@ -28,14 +28,14 @@ func HandleChatRobustly(
 		}
 	}()
 	// 正常访问chatgpt
-	text, err := cli.GetChatText(query, *conversationIDPtr, *parentMessagePtr)
+	//text, err := cli.GetChatText(query, *conversationIDPtr, *parentMessagePtr)
+	text, err := cli.GetChatText(query)
 	rand.Seed(time.Now().UnixNano())
-	time.Sleep(time.Duration(rand.Intn(5)+5) * time.Second)
+	time.Sleep(time.Duration(rand.Intn(15)+15) * time.Second)
 	// 如果出错，就新建chatGPT对话
 	if err != nil {
 		rand.Seed(time.Now().UnixNano())
 		time.Sleep(time.Duration(rand.Intn(30)+30) * time.Second)
-		// 从免费池新建一个
 		text = HandleError(query, conversationIDPtr, parentMessagePtr, accessToken, baseURI, cli, err)
 	}
 	return text
@@ -54,6 +54,7 @@ func HandleError(
 		//log.Println(accessToken, err2)
 		if strings.Contains(err2.Error(), "429") {
 			cli = NewDefaultClient(uuid.New().String(), "https://freechat.lidong.xin")
+			//cli = NewDefaultClient(uuid.New().String(), "https://freechat.xyhelper.cn")	//境外服务器
 		} else {
 			//log.Println(accessToken,baseURI)
 			cli = NewDefaultClient(accessToken, baseURI)
@@ -67,7 +68,8 @@ func HandleError(
 	*conversationIDPtr = ""
 	*parentMessagePtr = ""
 	// 再次访问并返回结果
-	text, err := cli.GetChatText(query, *conversationIDPtr, *parentMessagePtr)
+	//text, err := cli.GetChatText(query, *conversationIDPtr, *parentMessagePtr)
+	text, err := cli.GetChatText(query)
 	// 如果仍然出错，递归解决错误
 	if err != nil {
 		return HandleError(query, conversationIDPtr, parentMessagePtr, accessToken, baseURI, cli, err)
@@ -83,5 +85,4 @@ func NewDefaultClient(accessToken, baseURI string) *chatgpt.Client {
 		chatgpt.WithBaseURI(baseURI),
 		chatgpt.WithModel("text-davinci-002-render-sha"),
 	)
-
 }

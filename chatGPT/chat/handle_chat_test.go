@@ -20,8 +20,8 @@ var cli = chatgpt.NewClient(
 	chatgpt.WithBaseURI("https://freechat.lidong.xin"),
 )
 
-var conversationID = "test"
-var parentMessage = "test"
+var conversationID = "test0"
+var parentMessage = "test0"
 
 var text *chatgpt.ChatText
 var baseURI = "https://freechat.lidong.xin"
@@ -38,5 +38,5 @@ func TestHandlePanic(t *testing.T) {
 			//text = HandleError(query, &conversationID, &parentMessage, token, baseURI, cli)
 		}
 	}()
-	panic("test")
+	panic("test0")
 }

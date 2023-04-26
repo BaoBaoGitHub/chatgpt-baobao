@@ -14,8 +14,8 @@ func CodeTranslateFromFile(srcPath, tgtDir, accessToken, baseURI, fileSuffix str
 	defer done()
 	// 0. chatGPT初始化
 	cli := chat.NewDefaultClient(accessToken, baseURI)
-	conversationID := ""
-	parentMessage := ""
+	conversationID := new(string)
+	parentMessage := new(string)
 
 	// tgt文件路径
 	targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
@@ -29,9 +29,9 @@ func CodeTranslateFromFile(srcPath, tgtDir, accessToken, baseURI, fileSuffix str
 	for scanner.Scan() {
 		line := scanner.Text()
 		// 2.查询每一行代码
-		query := "Please help me translate the following C# code into Java code:\n" + line
+		query := "Translate C# code into Java code:\n" + line
 		//log.Println(query)
-		chatText := chat.HandleChatRobustly(query, &conversationID, &parentMessage, accessToken, baseURI, cli)
+		chatText := chat.HandleChatRobustly(query, conversationID, parentMessage, accessToken, baseURI, cli)
 		//// 3. 获取响应文件名(json文件)
 		//respFilePath := utils.AddSuffix(srcPath, fileSuffix)
 		//respFilePath = ModifyFileExtToJSON(respFilePath)

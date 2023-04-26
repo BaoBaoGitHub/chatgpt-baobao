@@ -5,6 +5,7 @@ import (
 	"github.com/BaoBaoGitHub/chatgpt-baobao/code_to_code/translation"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/google/uuid"
+	"log"
 	"path"
 	"path/filepath"
 	"strings"
@@ -25,22 +26,36 @@ func main() {
 		"39ec3546-463f-458d-ba86-23763a2c5f45", "a4420768-539f-43b0-b0ef-ca97ef168d70",
 		"527660af-3fbb-4430-a3c9-7c116686c254", "70fbf744-46a5-4888-85c6-32515493a12a",
 	} //token
+
+	//accessToken := []string{
+	//	"c10fe326-e1ae-4573-90a5-33657047c25f", "d91cdae1-e2fd-4489-b47c-d7cca2fca705",
+	//	"370020c6-188c-43e2-9c81-60206299166b", "e1a24418-d887-4b7a-ac3d-f6524eb74206",
+	//	"2e58fc70-5695-4f1a-8556-5ae32d71bcc2", "553859b4-4491-4567-b981-ccae44f36c60",
+	//	"6aa2c665-c45e-4591-9225-b09ec471d07a", "6133f778-2074-41f0-99db-27b0eabc3486",
+	//	"4afa6f79-1dcf-40d5-97b1-0216ed125964", "b89f132f-7b42-4365-bb97-36c9b33edda2",
+	//	"c1afbec3-e980-4934-9727-8be5f03874de", "992af00d-9b7c-40e6-8c8d-dafc8cc30d9a",
+	//	"923f6ff6-9f2e-484c-a35a-b3b8421fb82d", "1c637b77-6591-4663-9d9a-5d7e73db8e96",
+	//	"c0f4316e-3e50-4718-912b-f95152db660e", "f5339bbc-7f24-455a-8d88-769dd76c4bc7",
+	//	"a5d5c29e-0eae-4902-8fb5-61aeeee9e0f4", "9196fbd7-d770-413d-9f40-727ac4b20e5a",
+	//	"c3dc930b-1e86-4bec-8339-229653952bf7", "4bde5ec9-41af-49f3-9dcd-b4cb6010e463",
+	//}
+
 	baseURI := []string{} // 代理URI
 	for i := 0; i < len(accessToken); i++ {
 		baseURI = append(baseURI, "https://personalchat.lidong.xin")
 	}
 
-	promptsMode := chat.FullPrompts //TODO: 使用的是哪个prompt
+	promptsMode := chat.TaskPrompts //TODO: 使用的是哪个prompt
 
 	datasetDir := "code_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
 	refDir := datasetDir + "ref/"                // 原始数据与标准答案路径
 	csPath := refDir + "test.java-cs.txt.cs"     // cs源文件的path
 	javaPath := refDir + "test.java-cs.txt.java" // java源文件的path
-	testCSharpPath := refDir + "test.cs"         // test.cs源文件的path
+	testCSharpPath := refDir + "test.cs"         // test0.cs源文件的path
 	testJavaPath := refDir + "test.java"
 	predictionPath := tgtDir + "predictions.txt" //生成predictions.txt文件的path
-	referencesPath := refDir + "references.txt"  // 根据javaPath生成的标准答案的path
+	referencesPath := tgtDir + "references.txt"  // 根据javaPath生成的标准答案的path
 
 	if testFlag := false; testFlag { //TODO: 是否使用测试数据
 		csPath = testCSharpPath
@@ -93,4 +108,7 @@ func main() {
 
 	// 5. 生成符合评估的predictions.txt文件
 	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
+
+	// 7. predictions中以类开头的百分比
+	log.Println(utils.CalcClassNumFromPath(predictionPath))
 }

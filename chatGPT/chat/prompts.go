@@ -6,8 +6,11 @@ import (
 )
 
 const (
-	FullPrompts = "full_prompts"
-	TestPrompts = "test_prompts"
+	FullPrompts     = "full_prompts"
+	TestPrompts     = "test_prompts"
+	TaskPrompts     = "task_prompts"
+	DetailedPrompts = "detailed_prompts"
+	GuidedPrompts   = "guided_prompts"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts
@@ -57,9 +60,26 @@ func GenerateQueryBasedPromts(data map[string]any, promptMode string) string {
 			memberFunctionsSlice = append(memberFunctionsSlice, functionHead)
 		}
 	}
-	memberFunctionsStr := strings.Join(memberFunctionsSlice, ",")
+	memberFunctionsStr := strings.Join(memberFunctionsSlice, ", ")
 
 	var res string
+	//	guidelines := `When writing the method, please follow these guidelines:
+	//- Remove all comments from the code.
+	//- Remove all 'throws' statements.
+	//- Remove all function modifiers (e.g. 'public', 'private', etc.).
+	//- Change the method name to 'function'.
+	//- Change the argument name to arg0, arg1, ...
+	//- Change any local variable names to loc0, loc1, ...`
+
+	guidelines1 := `When writing the method, please follow these guidelines:
+- Remove all comments from the code.
+- Remove all 'throws' statements.
+- Remove all function modifiers (e.g. 'public', 'private', etc.).
+- Change the method name to 'function'.
+- Change the argument name to arg0, arg1, ...
+- Change any local variable names to loc0, loc1, ...
+- Return a Java method instead of a class`
+
 	switch promptMode {
 	case FullPrompts:
 		{
@@ -74,11 +94,28 @@ func GenerateQueryBasedPromts(data map[string]any, promptMode string) string {
 		}
 	case TestPrompts:
 		{
-			context := fmt.Sprintf(`Remember that you have a class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr)
-			requirement := fmt.Sprintf(` Write a method named function within the class: "%s". `, nl)
-			addition := ` Remove comments,remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1", etc; change local variable names to "loc0", "loc1", etc.`
+			//context := fmt.Sprintf(`Remember that you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr)
+			//requirement := fmt.Sprintf(` Write a method named function  to "%s". `, nl)
+			//res = context + requirement + guidelines1
 
-			res = context + requirement + addition
+			task := fmt.Sprintf(`Write a method named function within the %s class that %s. The class %s has member variables %s and member functions %s`, className, nl, className, memberVariablesStr, memberFunctionsStr)
+			res = task + "\n" + guidelines1
+		}
+	case TaskPrompts:
+		{
+			task := fmt.Sprintf(`Write a Java method that %s`, nl)
+			res = task
+		}
+	case DetailedPrompts:
+		{
+			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
+			requirement := fmt.Sprintf(` Write a method named function  to "%s" `, nl)
+			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
+			res = context + requirement + guidelines
+		}
+	case GuidedPrompts:
+		{
+
 		}
 	default:
 		{

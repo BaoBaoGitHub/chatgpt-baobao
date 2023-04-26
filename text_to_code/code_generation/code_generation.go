@@ -30,8 +30,8 @@ func CodeGenerationFromFile(srcPath, tgtDir, promptMode string, accessToken, bas
 		// 封装了原来的GetChatText方法，保证可以访问
 		text := chat.HandleChatRobustly(query, conversationID, parentMessage, accessToken, baseURI, cli)
 		//设置连续对话
-		*conversationID = text.ConversationID
-		*parentMessage = text.MessageID
+		//*conversationID = text.ConversationID
+		//*parentMessage = text.MessageID
 
 		resContent := text.Content
 		//if strings.Count(resContent, "```") == 1 {

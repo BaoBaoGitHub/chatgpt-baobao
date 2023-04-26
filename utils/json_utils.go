@@ -230,8 +230,10 @@ func ModifyCodeFormat(s string) string {
 	var lines []string
 	for _, line := range sourcelines {
 		line = strings.TrimSpace(line)
-		if strings.HasPrefix(line, "import") || strings.HasPrefix(line, "@") || line == "" || line == "\n" || strings.HasPrefix(line, "//") {
-
+		//if strings.HasPrefix(line, "import") || strings.HasPrefix(line, "@") || line == "" || line == "\n" || strings.HasPrefix(line, "//") {
+		//
+		//}
+		if line == "" || line == "\n" {
 		} else {
 			lines = append(lines, line)
 		}

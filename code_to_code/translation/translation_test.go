@@ -5,7 +5,7 @@ import (
 )
 
 func TestGetJSONFilePathFromOtherFile(t *testing.T) {
-	if ModifyFileExtToJSON("test.txt") != "test.json" {
+	if ModifyFileExtToJSON("test0.txt") != "test0.json" {
 		t.Error()
 	}
 }

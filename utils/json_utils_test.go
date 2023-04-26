@@ -23,7 +23,7 @@ var predictionsPath = "../text_to_code/dataset/evaluator/predictions.txt"
 var answersPath = "../text_to_code/dataset/evaluator/answers.json"
 var cSharpPath = "../code_to_code/dataset/evaluator/references.txt"
 var code2codePredictionPath = "../code_to_code/dataset/evaluator/predictions.txt"
-var code2codeResponsePath = "../code_to_code/dataset/test.java-cs.txt_response.json"
+var code2codeResponsePath = "../code_to_code/dataset/test0.java-cs.txt_response.json"
 
 func TestGetData(t *testing.T) {
 	data := ReadFromJsonFile(path)
@@ -37,17 +37,17 @@ func TestGetData(t *testing.T) {
 }
 
 func TestAddISuffix(t *testing.T) {
-	fileName := AddSuffix("test.json", 1)
+	fileName := AddSuffix("test0.json", 1)
 	if fileName != "test_1.json" {
 		t.Error()
 	}
 
-	fileName = AddSuffix("./test.json", 2)
+	fileName = AddSuffix("./test0.json", 2)
 	if fileName != "./test_2.json" {
 		t.Error()
 	}
 
-	fileName = AddSuffix("test.json", "test")
+	fileName = AddSuffix("test0.json", "test0")
 
 	if fileName != "test_test.json" {
 		t.Error()
@@ -111,4 +111,8 @@ func TestDeleteImport(t *testing.T) {
 func TestGenerateAnswersFromJSONFile(t *testing.T) {
 	GenRefFromConcode("../text_to_code/dataset/ref/test_shuffled_with_path_and_id_concode.json",
 		"../text_to_code/dataset/ref/references.txt")
+}
+
+func TestString(t *testing.T) {
+
 }
