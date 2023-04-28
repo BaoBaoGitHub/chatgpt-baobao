@@ -18,8 +18,10 @@ func main() {
 	baseURI := "https://freechat.lidong.xin"
 
 	if testFlag := true; testFlag {
-		token = "C360A8C9-90CD-4A46-BBF4-502B01ECABB8"
-		baseURI = "https://pluschat.lidong.xin"
+		//token = "C360A8C9-90CD-4A46-BBF4-502B01ECABB8"
+		//baseURI = "https://pluschat.lidong.xin"
+		token = "87ffe270-4903-4b9f-a975-41223179673a"
+		baseURI = "https://personalchat.lidong.xin"
 	}
 
 	cli := chatgpt.NewClient(
