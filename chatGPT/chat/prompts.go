@@ -6,15 +6,15 @@ import (
 )
 
 const (
-	FullPrompts     = "full_prompts"
-	TestPrompts     = "test_prompts"
-	TaskPrompts     = "task_prompts"
-	DetailedPrompts = "detailed_prompts"
-	GuidedPrompts   = "guided_prompts"
+	FullPrompts                      = "full_prompts"
+	TestPrompts                      = "test_prompts"
+	TaskPrompts                      = "task_prompts"
+	DetailedPrompts                  = "detailed_prompts"
+	GuidedPromptsWithAPIAndException = "guided_prompts_api_exception"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts
-func GenerateQueryBasedPromts(data map[string]any, promptMode string) string {
+func GenerateQueryBasedPromts(data map[string]any, promptMode string, line ...string) string {
 	className := data["className"].(string)
 	memberVariablesMap := data["memberVariables"].(map[string]any)
 	memberFunctionsMap := data["memberFunctions"].(map[string]any)
@@ -113,9 +113,24 @@ func GenerateQueryBasedPromts(data map[string]any, promptMode string) string {
 			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
 			res = context + requirement + guidelines
 		}
-	case GuidedPrompts:
+	case GuidedPromptsWithAPIAndException:
 		{
+			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
+			if strings.TrimSpace(line[0]) == "" {
+				line[0] = ""
+			} else {
+				line[0] = fmt.Sprintf("that calls %s", line[0])
+			}
+			if strings.TrimSpace(line[1]) == "true" {
+				line[1] = ""
+			} else {
+				line[1] = "out"
+			}
+			//TODO 这里有bug，待会要检查一下程序运行的数据对不对
 
+			requirement := fmt.Sprintf(` Write a method named function %s with%s exception handling to "%s" `, line[0], line[1], nl)
+			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
+			res = context + requirement + guidelines
 		}
 	default:
 		{

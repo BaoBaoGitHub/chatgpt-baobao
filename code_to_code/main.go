@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	concurrentNum := 20 //并发量
+	concurrentNum := 25 //并发量
 
 	accessToken := []string{
 		"b721d8c0-df4c-496a-a6d1-1fe46084d3c4", "3de1b933-fc23-40ba-a40a-ec753f33ded2",
@@ -39,16 +39,13 @@ func main() {
 	}
 	baseURI := []string{} // 代理URI
 	for i := 0; i < len(accessToken); i++ {
-		//baseURI = append(baseURI, "https://personalchat.lidong.xin")
 		baseURI = append(baseURI, "https://p2.xyhelper.cn")
-		//baseURI = append(baseURI, "https://personalchat.xyhelper.cn")	//境外服务器
 	}
-	//accessToken = append(accessToken, "EBA1C3EB-C3AC-4D1F-B32A-005B07BD6D59", "C360A8C9-90CD-4A46-BBF4-502B01ECABB8")
-	//baseURI = append(baseURI, "https://pluschat.lidong.xin", "https://pluschat.lidong.xin")
 
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
-	promptsMode := chat.TaskPrompts //TODO: 使用的是哪个prompt
+	//TODO 使用的是哪个prompt
+	promptsMode := chat.GuidedPromptsWithAPIAndException
 
 	datasetDir := "code_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
@@ -59,10 +56,17 @@ func main() {
 	testJavaPath := refDir + "test.java"
 	predictionPath := tgtDir + "predictions.txt" //生成predictions.txt文件的path
 	referencesPath := tgtDir + "references.txt"  // 根据javaPath生成的标准答案的path
+	apiPath := refDir + "references_api.txt"
+	testAPIPath := refDir + "test_references_api.txt"
+	exceptionPath := refDir + "references_exception.txt"
+	testExceptionPath := refDir + "test_references_exception.txt"
 
-	if testFlag := false; testFlag { //TODO: 是否使用测试数据
+	//TODO 是否使用测试数据
+	if testFlag := true; testFlag {
 		csPath = testCSharpPath
 		javaPath = testJavaPath
+		apiPath = testAPIPath
+		exceptionPath = testExceptionPath
 	}
 
 	filePathSuffix := "response"
@@ -73,6 +77,9 @@ func main() {
 
 	// 1. 拆分数据集文件
 	splitFilePaths := utils.SplitFile(csPath, concurrentNum)
+	splitAPIPath := utils.SplitFile(apiPath, concurrentNum)
+	splitExceptionPath := utils.SplitFile(exceptionPath, concurrentNum)
+
 	concurrentNum = len(splitFilePaths)
 
 	// 2. 必须要求accessToken与baseURI长度相等，且长度等于并发量（每个并发都需要有一个token）
@@ -89,30 +96,25 @@ func main() {
 	// 2. 并发处理代码翻译
 	for i, srcPath := range splitFilePaths {
 		//go translation.CodeTranslateFromFile(srcPath, tgtDir, accessToken[i], baseURI[i], filePathSuffix, wg.Done)
-		go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, tokenInfo, filePathSuffix, wg.Done)
+		go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
 		// tgt文件路径
 		targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 		splitResponsePath[i] = strings.TrimSuffix(targetFileName, path.Ext(targetFileName)) + ".json"
 	}
 	wg.Wait()
 
-	// 3. 合并响应文件
-	// 获取响应文件名（这里写的是真烂啊。。）
-	//for _, path := range splitFilePaths {
-	//	respFilePath := utils.AddSuffix(path, filePathSuffix)
-	//	respFilePath = translation.ModifyFileExtToJSON(respFilePath)
-	//	respFilePaths = append(respFilePaths, respFilePath)
-	//}
-
-	transitionJSONPath := utils.MergeJSONFile(splitResponsePath)
-
 	// 4. 删除中间文件
 	defer utils.DeleteFiles(splitFilePaths)
 	defer utils.DeleteFiles(splitResponsePath)
+	defer utils.DeleteFiles(splitAPIPath)
+	defer utils.DeleteFiles(splitExceptionPath)
+	transitionJSONPath := utils.MergeJSONFile(splitResponsePath)
 
 	// 5. 生成符合评估的predictions.txt文件
 	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
 
 	// 7. predictions中以类开头的百分比
 	log.Println(utils.CalcClassNumFromPath(predictionPath))
+
+	//log.Println(tokenInfo)
 }

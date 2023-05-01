@@ -2,9 +2,11 @@ package translation
 
 import (
 	"bufio"
+	"fmt"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/chatGPT/chat"
 	"github.com/BaoBaoGitHub/chatgpt-baobao/utils"
 	"github.com/xyhelper/chatgpt-go"
+	"log"
 	"os"
 	"path"
 	"path/filepath"
@@ -42,7 +44,7 @@ func CodeTranslateFromFile(srcPath, tgtDir, accessToken, baseURI, fileSuffix str
 }
 
 // CodeTranslateFromFileToekenInfoVersion 代码翻译的池化版本
-func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir string, tokenInfo *chat.TokenInfo, fileSuffix string, done func()) {
+func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode string, tokenInfo *chat.TokenInfo, fileSuffix string, done func(), paths ...string) {
 	defer done()
 	// 0. chatGPT初始化
 	token, uri := tokenInfo.Use()
@@ -50,6 +52,26 @@ func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir string, tokenInfo *c
 	conversationID := new(string)
 	parentMessage := new(string)
 	var text *chatgpt.ChatText
+
+	var apiScanner *bufio.Scanner
+	var exceptionScanner *bufio.Scanner
+	for _, path := range paths {
+		if strings.Contains(path, "api") {
+			f, err := os.Open(path)
+			if err != nil {
+				log.Panic(err)
+			}
+			defer f.Close()
+			apiScanner = bufio.NewScanner(f)
+		} else if strings.Contains(path, "exception") {
+			f, err := os.Open(path)
+			if err != nil {
+				log.Panic(err)
+			}
+			defer f.Close()
+			exceptionScanner = bufio.NewScanner(f)
+		}
+	}
 
 	// tgt文件路径
 	targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
@@ -61,9 +83,11 @@ func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir string, tokenInfo *c
 	utils.FatalCheck(err)
 	scanner := bufio.NewScanner(filePtr)
 	for scanner.Scan() {
+		apiScanner.Scan()
+		exceptionScanner.Scan()
 		line := scanner.Text()
 		// 2.查询每一行代码
-		query := "Translate C# code into Java code:\n" + line
+		query := GenQueryBasedPrompts(line, apiScanner.Text(), exceptionScanner.Text(), promptsMode)
 		//log.Println(query)
 		text, token, uri = chat.HandleChatRobustlyTokeninfoVersion(query, conversationID, parentMessage, token, uri, tokenInfo, cli)
 		//// 3. 获取响应文件名(json文件)
@@ -79,4 +103,35 @@ func ModifyFileExtToJSON(path string) string {
 	path = strings.TrimSuffix(path, filepath.Ext(path))
 	path = path + ".json"
 	return path
+}
+
+// GenQueryBasedPrompts 生成query
+func GenQueryBasedPrompts(code, api, exception string, promptsMode string) string {
+	var res string
+	switch promptsMode {
+	case chat.TaskPrompts:
+		{
+			res = "Translate C# code into Java code:\n" + code
+		}
+	case chat.GuidedPromptsWithAPIAndException:
+		{
+			if strings.TrimSpace(api) == "" {
+				api = ""
+			} else {
+				api = fmt.Sprintf("that calls %s", api)
+			}
+			if strings.TrimSpace(exception) == "true" {
+				exception = ""
+			} else {
+				exception = "out"
+			}
+			res = fmt.Sprintf("Translate C# code into Java code %s with%s exception handling:\n%s", api, exception)
+		}
+	default:
+		{
+			res = ""
+			log.Panic(promptsMode, "生成的query为空")
+		}
+	}
+	return res
 }

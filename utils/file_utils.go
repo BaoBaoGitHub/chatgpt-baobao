@@ -15,10 +15,13 @@ import (
 func Exists(path string) bool {
 	_, err := os.Stat(path) //os.Stat获取文件信息
 	if err != nil {
-		if os.IsExist(err) {
-			return true
+		if os.IsNotExist(err) {
+			//log.Println(path, "不存在！")
+			return false
+		} else {
+			//log.Panic(err)
+			return false
 		}
-		return false
 	}
 	return true
 }
@@ -125,7 +128,13 @@ func AddSuffix(fileName string, s any) string {
 func DeleteFiles(path []string) {
 	for _, s := range path {
 		if Exists(s) {
-			os.Remove(s)
+			//log.Println(s, "存在，调用删除函数")
+			err := os.Remove(s)
+			if err != nil {
+				log.Println(err)
+			}
+		} else {
+			log.Println(s, "不存在，没有调用remove函数")
 		}
 	}
 }

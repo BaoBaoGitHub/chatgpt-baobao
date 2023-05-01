@@ -26,5 +26,5 @@ func TestGenerateReferencesFromPath(t *testing.T) {
 }
 
 func TestCalcClassNumFromPath(t *testing.T) {
-	fmt.Println(CalcClassNumFromPath("D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\task_prompts\\predictions.txt"))
+	fmt.Println(CalcClassNumFromPath("D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception\\test0\\predictions.txt"))
 }
