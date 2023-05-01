@@ -37,5 +37,9 @@ code_to_code目录（code_translation包）使用parse包生成的结果以及c#
 
 ## GitHub下载或Goland网络问题
 
+解决方法一：
 在goland中双击shift，搜索`http`设置，找到`外观与行为`->`系统设置`->`HTTP代理`，选择`手动代理配置`，选择`HTTP`,编辑主机名为`127.0.0.1`，编辑端口号为`7890`。  
 打开`Clash for Windows`代理。
+
+解决方法二：无法访问美国的服务器，可修改环境变量未国内服务器
+在命令行中输入：go env -w GOPROXY=https://goproxy.cn
