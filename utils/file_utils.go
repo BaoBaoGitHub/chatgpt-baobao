@@ -175,10 +175,6 @@ func GetFileWriter(filename string) *os.File {
 	return f
 }
 
-// deleteFilesWithSuffix
-//func deleteFilesWithSuffix(dirPath, suffix string) {
-//
-
 func DeleteAllFiles(dirPath string) error {
 	err := filepath.Walk(dirPath, func(path string, info os.FileInfo, err error) error {
 		if err != nil {

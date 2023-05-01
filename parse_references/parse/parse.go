@@ -17,6 +17,7 @@ const (
 	ExceptionMode = "exception"
 )
 
+// ParseAPI 询问srcPath中的每行代码调用了哪些方法，结果写入到tgtPath中
 func ParseAPI(srcPath, tgtPath string, tokenInfo *chat.TokenInfo, done func()) {
 	defer done()
 
@@ -71,6 +72,7 @@ func ParseAPI(srcPath, tgtPath string, tokenInfo *chat.TokenInfo, done func()) {
 	utils.WriteToJSONFileFromSlice(tgtPath, jsonSlice)
 }
 
+// ParseException 询问ChatGPT中的每行代码是否包括异常调用
 func ParseException(srcPath, tgtPath string, tokenInfo *chat.TokenInfo, done func()) {
 	defer done()
 

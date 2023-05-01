@@ -125,7 +125,7 @@ func GenQueryBasedPrompts(code, api, exception string, promptsMode string) strin
 			} else {
 				exception = "out"
 			}
-			res = fmt.Sprintf("Translate C# code into Java code %s with%s exception handling:\n%s", api, exception)
+			res = fmt.Sprintf("Translate C# code into Java code %s with%s exception handling:\n%s", api, exception, code)
 		}
 	default:
 		{

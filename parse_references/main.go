@@ -12,7 +12,8 @@ import (
 func main() {
 
 	concurrentNum := 25
-	refPath := "parse_references/dataset/code_translation/references.txt" //TODO 数据源地址
+	//TODO 数据源地址
+	refPath := "parse_references/dataset/code_translation/references.txt"
 	accessToken := []string{
 		"b721d8c0-df4c-496a-a6d1-1fe46084d3c4", "3de1b933-fc23-40ba-a40a-ec753f33ded2",
 		"f3325c34-cc73-433c-8eb2-3dc75c8b274a", "5a532386-b59c-49fc-80ba-51173ad36a55",
@@ -41,7 +42,8 @@ func main() {
 	}
 
 	// 0. 模式
-	parseMode := parse.ExceptionMode //TODO 解析模式
+	//TODO 解析模式，包括APIMode和ExceptionMode
+	parseMode := parse.ExceptionMode
 
 	// 1. 将ground_truth文件分解为n个文件
 	srcFilesPath := utils.SplitFile(refPath, concurrentNum)

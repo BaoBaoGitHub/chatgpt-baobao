@@ -43,7 +43,7 @@ func main() {
 
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
-	//TODO 使用的是哪个prompt
+	//TODO 使用的是哪个prompt，包括TaskPrompts、DetailedPrompts与GuidedPromptsWithAPIAndException
 	promptsMode := chat.GuidedPromptsWithAPIAndException
 
 	datasetDir := "text_to_code/dataset/"
