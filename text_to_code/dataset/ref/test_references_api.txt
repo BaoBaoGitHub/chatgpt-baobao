@@ -1,0 +1,100 @@
+void function(ScriptOrFnNode arg0),collectFuncNodes(arg0, loc0, null)
+Sha256Hash.create(byte[] input)`: Creates an instance of the SHA-256 hash function and computes the hash value of the given byte array input.,FileInputStream(File file)`: Creates an input stream for reading the contents of the specified file.,ByteStreams.toByteArray(InputStream input)`: Reads all bytes from the specified input stream and returns them as a byte array.,InputStream.close()`: Closes the input stream, releasing any resources associated with it.
+readObjectID,createObjectID
+ComparatorMatcherBuilder.<T>usingNaturalOrdering(),greaterThan(arg0)
+int function(),return denom;
+GenericJSONBuilder,function,String,arg0,image,return,this
+deregisterConnectionFactory(),remove()
+seek,assertEquals,read
+CountDownLatch.await(),CountDownLatch.countDown(),WeakReference.finalize(),System.runFinalization()
+mock()`: A method from the `Mockito` class used to create a mock object of a specified class.,when()`: A method from the `Mockito` class used to define the behavior of a mocked method call.,upload()`: A method from the `TransferManager` class used to initiate an upload operation.,any()`: A method from the `Mockito` class used to define a matcher that accepts any argument of a specified type.,thenReturn()`: A method from the `Mockito` class used to specify the return value of a mocked method.
+getDocs(Object, String, String, String, String)
+Level function() { return Level.WARNING; }
+search,root.toCharArray()
+close()
+HashMap(): Initializes a new HashMap object.,for loop: Iterates over each element in the arg0 array.,getValue(): Retrieves the value of the current PropertyDTO object.,getName(): Retrieves the name of the current PropertyDTO object.,put(): Inserts a key-value pair into the loc0 map.,return: Returns the loc0 map.
+getNodes(),String.class
+boolean function(Collection<Source> arg0),runToGoal(arg0, new GoalFactory() {...}),@Override,public Goal getGoal(Job arg1),return sourceExtension().getValidationGoal(arg1)
+getContentResolver(),setLocationProviderEnabled()
+boolean function(View arg0),if(Build.VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN_MR1),return arg0.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;,else,return false;
+getClass(),lookupChecklist(),getSuperclass()
+setDay(int),fail(String)
+None
+transpose(),cofactor(),multiplyByConstant(),determinant()
+function(),thisExitStatus.getExitCode()
+isHover(Element)
+function(): This is a method with no parameters that returns a List of objects of type AttributeStatementProvider.,return: This keyword is used to specify the value that will be returned by the method.,attributeStatementProviders: This is a variable or field that holds the List of AttributeStatementProvider objects being returned by the method.
+getAssets(),unload()
+
+String function(String arg0),Integer.parseInt(String, int),getClosestNamedColor(int, int, int)
+String.format(),getSchema(),getType(),getName(),getSuffixFromType()
+int function(),return port;
+jedis.keys(String)`: Returns a set of keys matching the specified pattern.
+clear()` - It is called on the `mBlocksToMoveIn` object.,clear()` - It is called on the `mBlocksToMoveOut` object.
+UserSubject function(),return subject;
+function,getIntFromFormat
+function()`: A method that returns a `String` value named `errorMsg`.
+containsKey,name
+StringBuilder(): Constructs a new empty StringBuilder object.,getChildNodes(): Retrieves the child nodes of a given Node object.,instanceof: Checks if an object is an instance of a particular class or its subclasses.,Text: Represents a text node in an XML document.,CDATASection: Represents a CDATA section in an XML document.,getNodeValue(): Retrieves the value of a Node object.,append(): Appends a string representation of an object to the StringBuilder.,toString(): Returns a string representation of the StringBuilder object.
+getProperty,setProperty,MarshalRegistry` (constructor)
+ArrayList<>()` - Constructs a new ArrayList object.,add()` - Adds an element to the ArrayList.,return` - Returns a value from the method.
+function(ParametersMetaData arg0)
+ArrayList()`: Constructor of the `ArrayList` class to create a new ArrayList object.,add()`: Method of the `ArrayList` class to add an element to the list.,getInstance()`: A static method of the `TestPanel` class to retrieve an instance of `TestPanel`.
+writeStartElement,writeCharacters,writeEndElement,String` (constructor)
+String function(),this.isActive
+CommonUtils.createNewClassInstance,Configuration.getClass,Throwables.propagate
+getPrivKey(),ECKey.MissingPrivateKeyException
+void function(),null
+void function(long arg0),this.maximumKeySize = arg0
+hasField(arg0)` - It checks if the object `ts` has a field specified by the argument `arg0`.,getVal(arg0)` - It retrieves the value associated with the field specified by the argument `arg0` from either the object `ts` or `s`.
+
+function
+setActionView(int),MenuItem.setActionView(Object, int)
+deletePersistentNotification()` - A method belonging to the `notificationController` object that is used to delete a persistent notification. It takes two parameters: `null` (possibly representing a notification ID or key) and `mockServerMessage` (possibly a message related to the notification).
+throw new IllegalArgumentException("srini_string")`: This line throws an exception of type `IllegalArgumentException` with the message "srini_string".
+function,ServiceID,arg0,serviceID
+RECORD_SIZE,numHeaders,FILE_PROLOGUE_BYTES
+
+String function(),DateTime.formatUTCtoSqlUTC(this.addedDate)
+function: This is the name of the method.,List: This is the return type of the method, indicating that it returns a List object.,DirectedAcyclicGraphNode: This is a generic type parameter used to specify the type of elements contained in the List.,T: This is another generic type parameter used to specify the type of elements contained in the DirectedAcyclicGraphNode.,mChildren: This is a variable or field that holds the reference to the List object being returned by the method.
+getChildCount(),getChildAt(),itemIsObscuredByHeader(),getOrientation()
+
+function
+void function(),new Date(),time.setTime(loc0),time.toDate(loc0),assertEquals(loc0, loc1),loc0.getTime(),loc1.getTime()
+void function(BigDecimal arg0),this.feedConfigId = arg0
+function(String arg0)
+encloses(Range<C> loc0)
+putAll()` - This method is used to copy all the key-value mappings from the specified map (`arg0`) to the `vars` map.
+function(),setOutputMode(),hasRemaining()
+
+function,Node,dataFlowHandler,createDataFlowNode,dataFlow,arg0
+SecurityUtils.isAuthenticationEnabled(),IOException(ExceptionMessage.AUTHENTICATION_IS_NOT_ENABLED.getMessage()),sUserThreadLocal.get()
+contains(String arg0)`: This method is used to check whether the `selectedRecipients` collection contains the specified `arg0` string.,add(String arg0)`: This method is used to add the `arg0` string to the `selectedRecipients` collection.
+File constructor - `new File(),Accessor method - `getRoot(),Exception handling method - `expect(),FileUtils method - `delete(),Assertion method - `fail()
+boolean function(String arg0, OperationSigMask arg1),arg1.covers(OperationSignature loc0),operations.keySet(),operations.get(OperationSignature loc0),operations.containsKey(OperationSignature loc0),return true;,return false;
+boolean function(Collection<UserModel> arg0): This method has the name "function" and takes in a parameter of type Collection<UserModel>. It returns a boolean value.,userService.updateUserModels(arg0): This method is called within the "function" method and updates user models based on the provided Collection<UserModel> argument.
+this.config.getServletContext().log(...),this.config.getFilterName(),Arguments for the `log()` method:,this.config.getFilterName() + "srini_string" + arg0,arg1
+writeResponse(HttpServletRequest, HttpServletResponse, String)
+function,arg0` (parameter name),progressMonitor,arg0` (field assignment)
+function(),m_escapedJson
+createNodeIterator,loc1,testNode,noMoreNodes
+get(),null,new,put()
+FSImageWriter,setWriteCompressionMode,setWriteCompressionType,setWriteCompressionQuality
+conditionallyPrependHttp,getHost,getPath,getQuery
+putAll() : This method is used to copy all the key-value pairs from the specified Map to this Map.
+if statement,put method,fireEvent method,debug method
+void,String,Object,setVariable
+
+if statement,subtraction operation,System.nanoTime() method,less than or equal to comparison operator,logical AND operator,size() method,less than comparison operator,add() method,instantiation of a new Bullet object with 4 arguments.
+GetOfferDetailsResponse,Return,DetailOfferData,OfferDisplay,function()
+conditional operator (?:),null check (== null),method invocation (.longValue())
+stopAsync(),awaitTerminated()
+StringBuffer constructor,String.length(),StringBuffer.append(),getQueue(),ErrorInfo.DEBUG,StringBuffer.toString(),Queue.enqueue()
+
+void function(String arg0)
+List,String,CommonUtils.getUnixGroups,ArrayList,LinkedHashSet
+getSocket(),flush()
+putString(),MetadataEditorCompat()
+getInstance(),appendToConsole(),landing(),doFor()
+
+assertTrue,assertEquals,getVariation,getDirectionOfVariation

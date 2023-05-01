@@ -1,0 +1,2000 @@
+void function(ScriptOrFnNode arg0),collectFuncNodes(arg0, loc0, null)
+Sha256Hash.create(byte[] input)`: Creates an instance of the SHA-256 hash function and computes the hash value of the given byte array input.,FileInputStream(File file)`: Creates an input stream for reading the contents of the specified file.,ByteStreams.toByteArray(InputStream input)`: Reads all bytes from the specified input stream and returns them as a byte array.,InputStream.close()`: Closes the input stream, releasing any resources associated with it.
+readObjectID,createObjectID
+ComparatorMatcherBuilder.<T>usingNaturalOrdering(),greaterThan(arg0)
+int function(),return denom;
+GenericJSONBuilder,function,String,arg0,image,return,this
+deregisterConnectionFactory(),remove()
+seek,assertEquals,read
+CountDownLatch.await(),CountDownLatch.countDown(),WeakReference.finalize(),System.runFinalization()
+mock()`: A method from the `Mockito` class used to create a mock object of a specified class.,when()`: A method from the `Mockito` class used to define the behavior of a mocked method call.,upload()`: A method from the `TransferManager` class used to initiate an upload operation.,any()`: A method from the `Mockito` class used to define a matcher that accepts any argument of a specified type.,thenReturn()`: A method from the `Mockito` class used to specify the return value of a mocked method.
+getDocs(Object, String, String, String, String)
+Level function() { return Level.WARNING; }
+search,root.toCharArray()
+close()
+HashMap(): Initializes a new HashMap object.,for loop: Iterates over each element in the arg0 array.,getValue(): Retrieves the value of the current PropertyDTO object.,getName(): Retrieves the name of the current PropertyDTO object.,put(): Inserts a key-value pair into the loc0 map.,return: Returns the loc0 map.
+getNodes(),String.class
+boolean function(Collection<Source> arg0),runToGoal(arg0, new GoalFactory() {...}),@Override,public Goal getGoal(Job arg1),return sourceExtension().getValidationGoal(arg1)
+getContentResolver(),setLocationProviderEnabled()
+boolean function(View arg0),if(Build.VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN_MR1),return arg0.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;,else,return false;
+getClass(),lookupChecklist(),getSuperclass()
+setDay(int),fail(String)
+None
+transpose(),cofactor(),multiplyByConstant(),determinant()
+function(),thisExitStatus.getExitCode()
+isHover(Element)
+function(): This is a method with no parameters that returns a List of objects of type AttributeStatementProvider.,return: This keyword is used to specify the value that will be returned by the method.,attributeStatementProviders: This is a variable or field that holds the List of AttributeStatementProvider objects being returned by the method.
+getAssets(),unload()
+
+String function(String arg0),Integer.parseInt(String, int),getClosestNamedColor(int, int, int)
+String.format(),getSchema(),getType(),getName(),getSuffixFromType()
+int function(),return port;
+jedis.keys(String)`: Returns a set of keys matching the specified pattern.
+clear()` - It is called on the `mBlocksToMoveIn` object.,clear()` - It is called on the `mBlocksToMoveOut` object.
+UserSubject function(),return subject;
+function,getIntFromFormat
+function()`: A method that returns a `String` value named `errorMsg`.
+containsKey,name
+StringBuilder(): Constructs a new empty StringBuilder object.,getChildNodes(): Retrieves the child nodes of a given Node object.,instanceof: Checks if an object is an instance of a particular class or its subclasses.,Text: Represents a text node in an XML document.,CDATASection: Represents a CDATA section in an XML document.,getNodeValue(): Retrieves the value of a Node object.,append(): Appends a string representation of an object to the StringBuilder.,toString(): Returns a string representation of the StringBuilder object.
+getProperty,setProperty,MarshalRegistry` (constructor)
+ArrayList<>()` - Constructs a new ArrayList object.,add()` - Adds an element to the ArrayList.,return` - Returns a value from the method.
+function(ParametersMetaData arg0)
+ArrayList()`: Constructor of the `ArrayList` class to create a new ArrayList object.,add()`: Method of the `ArrayList` class to add an element to the list.,getInstance()`: A static method of the `TestPanel` class to retrieve an instance of `TestPanel`.
+writeStartElement,writeCharacters,writeEndElement,String` (constructor)
+String function(),this.isActive
+CommonUtils.createNewClassInstance,Configuration.getClass,Throwables.propagate
+getPrivKey(),ECKey.MissingPrivateKeyException
+void function(),null
+void function(long arg0),this.maximumKeySize = arg0
+hasField(arg0)` - It checks if the object `ts` has a field specified by the argument `arg0`.,getVal(arg0)` - It retrieves the value associated with the field specified by the argument `arg0` from either the object `ts` or `s`.
+
+function
+setActionView(int),MenuItem.setActionView(Object, int)
+deletePersistentNotification()` - A method belonging to the `notificationController` object that is used to delete a persistent notification. It takes two parameters: `null` (possibly representing a notification ID or key) and `mockServerMessage` (possibly a message related to the notification).
+throw new IllegalArgumentException("srini_string")`: This line throws an exception of type `IllegalArgumentException` with the message "srini_string".
+function,ServiceID,arg0,serviceID
+RECORD_SIZE,numHeaders,FILE_PROLOGUE_BYTES
+
+String function(),DateTime.formatUTCtoSqlUTC(this.addedDate)
+function: This is the name of the method.,List: This is the return type of the method, indicating that it returns a List object.,DirectedAcyclicGraphNode: This is a generic type parameter used to specify the type of elements contained in the List.,T: This is another generic type parameter used to specify the type of elements contained in the DirectedAcyclicGraphNode.,mChildren: This is a variable or field that holds the reference to the List object being returned by the method.
+getChildCount(),getChildAt(),itemIsObscuredByHeader(),getOrientation()
+
+function
+void function(),new Date(),time.setTime(loc0),time.toDate(loc0),assertEquals(loc0, loc1),loc0.getTime(),loc1.getTime()
+void function(BigDecimal arg0),this.feedConfigId = arg0
+function(String arg0)
+encloses(Range<C> loc0)
+putAll()` - This method is used to copy all the key-value mappings from the specified map (`arg0`) to the `vars` map.
+function(),setOutputMode(),hasRemaining()
+
+function,Node,dataFlowHandler,createDataFlowNode,dataFlow,arg0
+SecurityUtils.isAuthenticationEnabled(),IOException(ExceptionMessage.AUTHENTICATION_IS_NOT_ENABLED.getMessage()),sUserThreadLocal.get()
+contains(String arg0)`: This method is used to check whether the `selectedRecipients` collection contains the specified `arg0` string.,add(String arg0)`: This method is used to add the `arg0` string to the `selectedRecipients` collection.
+File constructor - `new File(),Accessor method - `getRoot(),Exception handling method - `expect(),FileUtils method - `delete(),Assertion method - `fail()
+boolean function(String arg0, OperationSigMask arg1),arg1.covers(OperationSignature loc0),operations.keySet(),operations.get(OperationSignature loc0),operations.containsKey(OperationSignature loc0),return true;,return false;
+boolean function(Collection<UserModel> arg0): This method has the name "function" and takes in a parameter of type Collection<UserModel>. It returns a boolean value.,userService.updateUserModels(arg0): This method is called within the "function" method and updates user models based on the provided Collection<UserModel> argument.
+this.config.getServletContext().log(...),this.config.getFilterName(),Arguments for the `log()` method:,this.config.getFilterName() + "srini_string" + arg0,arg1
+writeResponse(HttpServletRequest, HttpServletResponse, String)
+function,arg0` (parameter name),progressMonitor,arg0` (field assignment)
+function(),m_escapedJson
+createNodeIterator,loc1,testNode,noMoreNodes
+get(),null,new,put()
+FSImageWriter,setWriteCompressionMode,setWriteCompressionType,setWriteCompressionQuality
+conditionallyPrependHttp,getHost,getPath,getQuery
+putAll() : This method is used to copy all the key-value pairs from the specified Map to this Map.
+if statement,put method,fireEvent method,debug method
+void,String,Object,setVariable
+
+if statement,subtraction operation,System.nanoTime() method,less than or equal to comparison operator,logical AND operator,size() method,less than comparison operator,add() method,instantiation of a new Bullet object with 4 arguments.
+GetOfferDetailsResponse,Return,DetailOfferData,OfferDisplay,function()
+conditional operator (?:),null check (== null),method invocation (.longValue())
+stopAsync(),awaitTerminated()
+StringBuffer constructor,String.length(),StringBuffer.append(),getQueue(),ErrorInfo.DEBUG,StringBuffer.toString(),Queue.enqueue()
+
+void function(String arg0)
+List,String,CommonUtils.getUnixGroups,ArrayList,LinkedHashSet
+getSocket(),flush()
+putString(),MetadataEditorCompat()
+getInstance(),appendToConsole(),landing(),doFor()
+
+assertTrue,assertEquals,getVariation,getDirectionOfVariation
+StringEscapeUtils.escapeJavaScript(),String.replaceAll()
+
+
+function()
+boolean function,getString
+ResourceTypeHandler.valueOf(arg0),Exception loc0
+void function,Notation arg0,unhandled
+getTotal(),getTotalElapsed()
+void function()
+try,setBearing,fail,catch,IllegalArgumentException,assertTrue,getMessage,contains
+AlluxioURI,mFileSystemMaster,getPath
+Bitwise AND operator: "&",Bitwise left shift operator: "<<",Bitwise OR operator: "|"
+
+
+
+
+
+elementAt(),push(),size(),parse_state()
+Assert.assertTrue(),countDownLatch.await(),TimeUnit.SECONDS,Assert.assertEquals(),future.get(),ExecutionException.getCause()
+Void return type,Method name: function,Single parameter of type int named arg0,Assignment operator =,Accessing instance variable gisticID using this keyword
+accumulateAndGet,Long::sum
+void,String[],new,SshExample()
+removePluginObserver,remove
+Lists.newArrayList()
+bind,void function
+void function(),System.out.println(),String loc0 = "srini_string";,String loc1 = instance.getResponseStringCsv();,assertEquals()
+setX(),setY(),setWidth(),setHeight(),getLabel(),setStyle(),getFont(),Color.BLACK
+Sha256Hash,function,(),return,dataHash
+checkType,packLong
+assertFalse,isTrue
+void function,Signature.Visibility,arg0,visMask.removeAll,Arrays.asList
+String function,System.out.print,scanner.nextLine
+Options(),return new Options()
+setHeading,assertEquals,getHeading
+getScope(),size(),get()
+
+
+setDocument()
+getHeadline,encode
+append(),getName(),getNumberOfAccounts(),format(),toString()
+function,checkState
+println,getDeviceBlock,assertEquals,fail
+SpaceXGUI.getInstance(),appendToConsole(TAG, "srini_string"),cmd.down(speed).doFor(1000),cmd.hover().doFor(hoverTime)
+function()
+
+String function(Uri arg0),getMatcherEntry(Uri arg0),loc0.getBaseType(),getType(),loc0.getSubType()
+write,>> (right shift operator),(byte) cast,final keyword
+getNumElements(),get(),set()
+tar(): This method is used with parameters to create a compressed archive file in TAR format.,CompressorStreamFactory.XZ: This is a constant value that represents the XZ compression format provided by the Apache Commons Compress library.,Repository: This is a class or interface that represents a repository of some sort, possibly for software packages or source code.,String arg1: This is a parameter that is a string representing some value, possibly a filename or path.,String arg2: This is a parameter that is a string representing some value, possibly a filename or path.,OutputStream arg3: This is a parameter that represents an output stream where data can be written to, such as a file or network socket.
+Collections.emptyMap(),instance()
+void,equals,getClass,add,jjtGetNumChildren,jjtGetChild
+boolean,function,MotionEvent,view,onlyPenInput,Hardware,isPenEvent
+getSecurityContext(),isSecure(),warning(),throw(),toBadRequestException()
+if,&&,!=,.,(),shutdown()
+get,toString
+function,ByteData.getData(),ByteData.getLen(),line.write()
+sizeOf,value
+function()
+
+SpaceXGUI.getInstance(),appendToConsole(TAG, "srini_string"),cmd.setLedsAnimation(LEDAnimation.BLINK_RED, 3, (spinTime/1000)),cmd.spinRight(spin90Speed).doFor(spin90Time),cmd.hover().doFor(hoverTime)
+HashMap()` constructor,clientService.getAllClients(),Map.put(),ClientDetailsEntity.getId()
+XPathContext,super.clone(),LinkedList,Level.clone(),LinkedList.addLast()
+hashBytes(),asInt()
+assertTrue,assertFalse,hasParser
+void,String,this.
+String function(),getXPath(),path.descendingIterator()
+BigDecimal`: A Java class used for representing arbitrary-precision decimal numbers.
+assert,rhs_length()
+defaults(),assertEquals(),getUfsLength()
+Permission,get(),Integer()
+function()` - a void method that sets the value of a boolean variable `cancelled` to `true`.
+function,getAsArray
+assertEquals
+
+boolean,String,hasField
+getSession(),setAttribute()
+
+void,String,RevisionManagement,getRevisionInformation
+
+get() method,return statement
+
+try,new,catch,getMessage
+void function(List<OAuthPermission> arg0): The main method that takes in a list of OAuthPermission objects as an argument.,this.scopes = arg0: Sets the instance variable "scopes" of the class to the value of the argument passed to the method.
+Pageable,log.debug,ingredientRepository.findAll
+trim()` method of String class,catch` block with `ArrayIndexOutOfBoundsException` type,RuntimeException` constructor with String and Throwable arguments
+void function(int arg0),this.timeoutMillis = arg0;,resetTimeout();
+void function(BoxFolder arg0, int arg1),String loc0 = "srini_string",for(BoxItem.Info loc1 : arg0),for(int loc2 = 0; loc2 < arg1; loc2++),loc0 += INDENT_APPEND;,if(loc1 instanceof BoxFolder.Info),BoxFolder loc2 = (BoxFolder) loc1.getResource();,listFolder(loc2, arg1 + 1);
+try,catch,IOException,RuntimeException,close()
+addTrack(),i(),throw new IllegalStateException()
+
+void function(Map arg0),notEmpty(arg0, "srini_string")
+void function(),notificationController.registerUserSession(null, mockServerMessage)
+
+compareTo() (called on this.key and arg0.key),compareTo() (called on this.value and arg0.value)
+if,newSpacingResultArray,! (negation),FloatUtil.floatsEqual
+List,URL,findResources
+getLast()` method of the `path` object,getName()` method with `arg0` as its argument,put()` method of the `attributes` object
+for,getContentType
+GetOfferDetailsResponse,Return,DetailOfferData,FulfillmentPartner,function()
+void function,ItemList,T,this,items,arg0
+contains(),get()
+getFileStatus(String arg0),loc1.getLen()
+listParsers()` which returns a list of strings,SentenceId.values()` which returns an array of all the values of an enum type `SentenceId,assertEquals()` which checks that two values are equal,List.size()` which returns the number of elements in a list,assertTrue()` which checks that a condition is true,List.contains()` which checks if a list contains a specific element,Enum.name()` which returns the name of an enum constant as a string.
+
+
+int function(),p1.recordsOutput(),ii.recordsOutput()
+List interface,String class,getStrings() method,function() method,return statement
+void function(),events.clear()
+ClientRWLock(),readLock(),writeLock()
+if statement,throw statement,IllegalArgumentException constructor
+CommonUtils.createNewClassInstance,Configuration.getClass,Evictor (constructor),BlockMetadataManagerView,Allocator,Object
+function()
+ArrayList(): Constructor of ArrayList class that creates a new ArrayList object.,add(): A method of ArrayList class that appends the specified element to the end of the list.,return: A keyword that returns the resulting ArrayList object.
+isDebugEnabled(),debug(),getUserAuthorities(),size()
+EigenDecomposition,DenseMatrix64F,SwitchingEigenDecomposition
+
+
+Matrix constructor: creates a new matrix object,arg0.getNrows(): gets the number of rows in a matrix,arg0.getNcols(): gets the number of columns in a matrix,for loop: a loop that iterates over the rows and columns of a matrix,loc0.setValueAt(): sets the value at a specific position in a matrix,changeSign(): changes the sign of a number,determinant(): calculates the determinant of a matrix,createSubMatrix(): creates a submatrix by removing a specific row and column from a matrix
+void function(boolean),cacheTokens
+compile(),reset(),find()
+function()` : This is a method that returns the value of `this.config`.
+Schema function()
+void function(),System.out.println(),long,instance.setDuration()
+while,if,return,! (logical negation),.next(),.moveToRid(),.getDataRid(),resetIndex()
+checkState(),count()
+void function(),assertEquals(),zda.getLocalZoneMinutes()
+void function(String)
+boolean,function,String,fields(),contains()
+boolean function(Object),instanceof,return,if statement,== operator,! (logical not) operator,instanceof operator,type casting (TtlBucket),accessing object variables (mTtlIntervalStartTimeMs)
+getNumberOfEigenvalues()
+CheckServiceAccessRequest() - This method returns an instance of the CheckServiceAccessRequest class.
+Void method,String parameter,Assignment operator,"this" keyword,Object property access.
+
+function()
+getBoundsInParent()
+void function(MapType arg0)
+int function(int, String): Defines a method with two parameters, an integer and a string, which returns an integer.,throw: Throws an exception.,IllegalArgumentException: Indicates that a method has been passed an illegal or inappropriate argument.,XLog.format: Formats a message string with arguments.
+expect(),expectMessage(),CustomAuthenticationProvider()
+SpringBolt(),setScatterOutput(),run(),verify(),ack(),verifyNoMoreInteractions()
+URL_PATH_SEGMENT_ESCAPER
+function() - This is a method that returns a Long value which is stored in the variable 'seqNo'.
+ensureCapacity,putShort,put
+closeAll,getName
+
+Assert.assertEquals(),TieredBlockStoreTestUtils.TIER_PATH[],mTestTierView.getDirViews().size()
+boolean,function,int,size()
+toLowerCase(),startsWith()
+ECKey.getPubKey(),ScriptBuilder.data(),ScriptBuilder.op(),ScriptBuilder.build()
+for loop,if statement,array indexing,method invocation
+
+StringBuilder(),length(),append(),toString()
+
+
+if,null,getPayloadDataBuffer,release
+getEntityId(),setAttackTarget(),getDistanceToEntity()
+void function(),rand.nextDouble(),performImplicitSingleStep()
+boolean: a primitive data type that represents a value of true or false.,function: a keyword used to define a method.,lalr_item: the name of a class or data type that is being used as the type of the arg0 parameter.,arg0: the name of the parameter being passed into the method.,_all: the name of a variable or object being referenced in the method.,containsKey: a method of the object referenced by the _all variable that checks if the object contains a key.,return: a keyword used to return a value from a method.
+try,CommonUtils.createNewClassInstance,Configuration.getClass,PropertyKey.USER_BLOCK_REMOTE_WRITER_CLASS,Exception,Throwables.propagate
+boolean,Math.abs()
+
+toString(),hashCode()
+boolean function(byte arg0): This method takes in a byte argument named arg0 and returns a boolean value.,SPACE: This is a constant value used in the method, presumably defined elsewhere in the code.,HT: This is another constant value used in the method, presumably defined elsewhere in the code.
+Singleton design pattern,Lazy initialization
+void` - A keyword that indicates that the function does not return any value.,function` - The name of the method.,Hessian2Output` - The type of the parameter passed to the function.,arg0` - The name of the parameter passed to the function.,if` - A keyword that starts a conditional statement.,null` - A keyword that represents a null reference.,return` - A keyword that causes the function to exit and return to the caller.,arg0.free()` - A method call that frees the resources associated with the `Hessian2Output` object.,_freeHessian2Output.free(arg0)` - A method call that frees the `Hessian2Output` object using another resource management object.
+
+final RPCMessage loc0 = new RPCBlockReadRequest(0, 0, 0, 0, 0);,mThrown.expect(IllegalArgumentException.class);,mThrown.expectMessage(ExceptionMessage.NO_RPC_HANDLER.getMessage(loc0.getType()));,mHandler.channelRead0(mContext, loc0);
+getFileOrFolder(Keys.federation.proposalsFolder, "srini_string")`: This method is called on an instance of `runtimeManager` and takes two arguments, a `Keys.federation.proposalsFolder` and a string `"srini_string"`. It returns a file object that represents either a file or folder, depending on the value of `Keys.federation.proposalsFolder`.
+Bus function(),bus
+Services.get()`: This method is used to retrieve an instance of the `Services` class.,Services.get(ELService.class)`: This method is used to retrieve an instance of the `ELService` class from the `Services` class.,ELService.createEvaluator(arg1)`: This method is used to create an instance of the `ELEvaluator` class using the `arg1` parameter.,setConfigToEval(loc0, arg0)`: This method is used to set the configuration for the `ELEvaluator` instance.,return loc0;`: This method is used to return the `ELEvaluator` instance.
+get(),getCalculator(),computeFor(),put()
+function()
+RepositoryCommit,RevCommit,RepositoryCommit constructor,addCommit
+contains(Object o, boolean flag)` : This method is used to check if a specified object is present in the collection or not. It returns `true` if the object is present and `false` otherwise. The `flag` parameter is used to specify whether the method should perform an exact match (`true`) or not (`false`) while searching for the object in the collection. In this code snippet, the `contains` method is called on an object `steps` of some collection type with an argument `new Step(arg0, arg1)` and the flag `false`.
+format.checkType(),packLong()
+
+Integer,TType,partialDeserializeField
+
+Date function(),String getHeader(String name),long getDateHeader(String name),Date(long date)
+function,addAll
+function(String arg0)
+
+close(),assertTrue(),isClosed(),assertFalse(),isCanceled()
+MetadataEditorCompat,Object,RemoteControlClient,editMetadata
+void: a keyword used to indicate that this method doesn't return any value,function: name of the method,PersonBlogs: a class type for the first argument,HashMap: a class type for the second argument,String: a class type for multiple variables used in the method,arg0: a variable name for the first argument,getBloggerAgeClass(): a method of the PersonBlogs class,for: a loop statement,int: a keyword used to declare a variable as an integer,loc1: a variable name for the loop counter,getPosts(): a method of the PersonBlogs class,size(): a method of the List class to get the size of the list,loc2: a variable name for the String element in the loop,String[]: an array of Strings,loc3: a variable name for the String array,NaiveBayesTrain: a class type for a static method,cleanPost(): a static method of the NaiveBayesTrain class,updateNaiveBayesMapForSinglePost(): a method used to update the HashMap with the cleaned post data.
+System.nanoTime() - a method that returns the current value of the system timer, in nanoseconds.,String concatenation using the "+" operator - a method of combining two or more strings into a single string.
+HttpServletRequest getRequestHeaders(final HttpServletRequest arg0),String toString() (from Object class),void debug(Object message) (from LOG object)
+info(),getName(),getCheckpointFilePath(),getCheckpointInputStream(),processJournalCheckpoint(),getLatestSequenceNumber(),close()
+
+void function(byte[] arg0),clientSession.getSocket(),doWrite(arg0)
+String[] loc0 = { ... }  // declaring and initializing an array of strings,instance.setSatelliteIds(loc0)  // calling a method "setSatelliteIds" on an object "instance" with an argument "loc0",String[] loc1 = instance.getSatelliteIds()  // calling a method "getSatelliteIds" on an object "instance" and storing the returned value in a variable "loc1",assertEquals(loc0.length, loc1.length)  // calling an assertion method "assertEquals" with two arguments "loc0.length" and "loc1.length",for (String loc3 : loc0) { ... }  // iterating over an array "loc0" using for-each loop and storing each element in a variable "loc3",assertEquals(loc3, loc1[loc2++])  // calling an assertion method "assertEquals" with two arguments "loc3" and "loc1[loc2++]", and incrementing a variable "loc2" after accessing an element of "loc1"
+void function,connect,InetAddress.getByName
+
+
+
+Map,Parcel.readInt,HashMap,for loop,Map.put,Parcel.readString
+set(DenseMatrix64F),getNumElements(),set(int, int, double)
+void,ComplexNode,this,singleNestedComplexNode,arg0
+BoxFolder,getFolder
+void function(String arg0),this.units = arg0;
+function()
+void function(String arg0),webEngine.load(arg0)
+addPropertyChangeListener
+
+boolean function(ActivityRequest),if(),return
+boolean function(),return,&&,==
+getTime(),assertNotNull(),assertEquals(),getHour(),getMinutes(),getSeconds()
+
+handleCharacterData(),listener.processGroupEnd()
+getBackupDir,backup
+beforeFirst(),leaf.insert(),leaf.close(),new BTreeDir(),insert(),makeNewRoot(),close()
+HashMap<>,putAll(),asInverseWithShortName()
+function() method with a boolean parameter named arg0.
+getMethod()
+pre-increment operator: "++"
+
+String constructor(String),ArrayList constructor(),selectile(String, ArrayList, String)
+String function(final HttpParams arg0),throw new IllegalArgumentException("srini_string");,String loc0 = (String) arg0.getParameter(CoreProtocolPNames.HTTP_CONTENT_CHARSET);,loc0 = HTTP.DEFAULT_CONTENT_CHARSET;,return loc0;
+if statement,type casting,method call
+
+throw,writeAttribute
+
+function
+
+BrowseOffersResponse,Return,function(),new
+Builder,final,String,objectType,return
+checkArgument,ScriptBuilder,op,data,build
+String function(),getOAuthServerConfiguration(),getOpenIDConnectUserInfoEndpointAccessTokenValidator()
+getResourceType(String arg0),FILE
+add,runIfIdle
+JPanel,function,return,uiStack,getLastElement()
+QRColPivDecompositionHouseholderColumn_D64(),SolvePseudoInverseQrp(),LinearSolverQrpHouseCol()
+
+BigDecimal function(),return,this,successorId
+Method name: function,Return type: String,Returned value: feedId
+Collections.unmodifiableList()
+checkType(),getByteArrayInternal(),getByteArrayLength()
+boolean,function,String,getName,equals
+function()
+for loop,blockFxThreadWithSemaphore,sleep
+
+boolean,function,String,has
+setForegroundColor,fillCircle
+void,function,initializeModelImplementation,String
+hi16,lo16,result
+function(),get()
+
+isBuilding()
+checkState(),isOpCode(),Script.decodeFromOpN()
+Book function(Book arg0),log.debug(String, Object),bookRepository.save(Book)
+void function(),URL composeURL(String),new URL(String),URLConnection openConnection(),void connect(),new DataInputStream(InputStream),new BufferedInputStream(InputStream),InputStream getInputStream()
+void function(TreeModel arg0),contains(Object o),add(E e)
+function(String arg0)` - This method takes a single String argument named `arg0` and sets the value of the `resultMessage` variable of the current object to the value of `arg0`. The method has a return type of `void`, meaning it does not return any value.
+function(),checkReady()
+assertEquals
+getNumElements(),data[],+= operator
+createParser(),assertNull(),sentenceRead(),assertNotNull(),assertEquals(),assertFalse()
+void function(String arg0)
+Response.serverError(),entity(),build()
+Iterable,map,Mapper,apply
+function()
+MessageDigest.getInstance(String),MessageDigest.digest(byte[]),Sha256Hash(byte[])
+T function,Class<T> arg0,services.get(arg0)
+
+String function(),address.getPostalZone().getValue(),NullPointerException()
+void function(String arg0, String arg1, Exception arg2),popupError(),Inter.get(),toString()
+createLangCondition,addCondition
+get,!=,?,:
+void,function,String,this,experimentTypes,arg0
+
+
+CheckMatrixMultShape constructor,MatrixMatrixMult.class instantiation,loc0.checkAll() method call.
+for,int,<,size,++,get,revertToDefault
+void function(ArgoDiagramAppearanceEvent arg0, ArgoDiagramAppearanceEventListener arg1),arg0.getEventType(),case ArgoEventTypes.DIAGRAM_FONT_CHANGED:,arg1.diagramFontChanged(arg0),LOG.error()
+Math.abs(),UtilEjml.EPS
+InputStream constructor,BufferedReader constructor,InputStreamReader constructor,BufferedReader.readLine() method,System.out.println() method
+Boolean.TRUE.equals(),arg0.get()
+getOutputStreamId(),Fields(),logger.info(),arg0.declareStream()
+for loop,assertEquals method from Assert class
+Document(),DOMResult(),transformTo(),getNode()
+
+acquire(),TimeUnit.DAYS,TimeoutException,Throwables.propagate()
+if,close()
+function()
+void function,IllegalArgumentException,length,for loop,^= operator
+getQualifiedName(),getClassStats(),compute()
+void function(),runTest(),YahooImageFactory()
+matcher(),matches(),substring(),length(),deleteFile()
+void function(AuthType arg0),arg0 != AuthType.SIMPLE,arg0 != AuthType.CUSTOM,throw new UnsupportedOperationException(String),arg0.getAuthName()
+void function,MediaRouter.addRemoteControlClient
+void function(),initializeModelImplementation(String)
+boolean function(),mob.getPositionVector(),distanceTo(),buildingSpot
+
+
+function,Build.VERSION.SDK_INT,Build.VERSION_CODES.LOLLIPOP,Build.CPU_ABI,Build.CPU_ABI2,LollipopSysdeps.getSupportedAbis()
+stop() - A method of the "server" object to stop its execution.
+
+iterator,hasNext,next,equals,remove
+SearchFactory,getInstance,new SearchFactory()
+System.out.println(),ComPortController.listComPorts(),fail()
+getName(),expect(),expectMessage(),CustomAuthenticationProvider()
+function(String arg0)
+boolean,function,String,hasField
+findSinkByMethodSignature(String),isEmpty()
+void function(),ClassLoader.getSystemResource(String name),File(File file),PSTFile(File file),PSTFile.getMessageStore(),MessageStore.isPasswordProtected(),Assert.assertEquals(Object expected, Object actual, boolean condition)
+Math.sin(),Math.cos(),Math.PI,Point2D(),links.addVertex(),locationPositions.put()
+function()
+get() - a method of the Map class,return - a Java keyword for returning a value from a method.
+void function(BundleContext arg0),for(AutoSIMDeviceConfig loc0 : config.devices),environments.deregisterConnectionFactory(loc0.name),factories.remove(loc0.name)
+containsKey
+fetcherExecutionContextImpl.captureSourceMetadata(),StepContribution.setExitStatus(),JobExitStatus.getExitStatus(),RepeatStatus.FINISHED
+findOneVisibleChild,getChildCount,getChildAdapterPosition
+getString()
+function,Buffer.block,isTempBlock,SetStringRecord,SetStringRecord.writeToLog
+GenericJSONBuilder,function,String,arg0,place_name,return,this
+DiffBuilder` - method name,ignoreComments` - variable name,true` - boolean value
+ResponseEntity,PathVariable,log.debug,dishCollectionService.delete,ResponseEntity.ok,HeaderUtil.createEntityDeletionAlert,build
+CategoricalDistribution,ProbUtil.expectedSizeOfCategoricalDistribution(),weightedSample(),ProbUtil.indexOf(),ProbabilityTable.normalize()
+hashCode,while loop,== operator,% operator,return statement
+getByteArrayLength(),new byte[],getByteArrayInternal()
+SAMLSSOReqValidationResponseDTO(String),SPInitLogoutRequestProcessor(),SPInitLogoutRequestProcessor.process(null, String, null)
+addElementListener
+function()
+RegistrationRequest()
+boolean function,instanceof,getName,!=,null,for loop,length,endsWith,getSuffix
+return
+
+function` with a void return type and one parameter of type `File`.
+removeValue
+String constructor: `String(),String constructor: `String(byte[] bytes, Charset charset)
+void function,Path,int[],model.moveCharacter
+
+StringBuilder(),length(),append(),toString()
+keySet() - A method of the Map interface in Java that returns a Set of all the keys present in the map.,get() - A method of the Map interface in Java that returns the value to which the specified key is mapped.,put() - A method of the Map interface in Java that associates the specified value with the specified key in the map.,addAll() - A method of the SortedSet interface in Java that adds all of the elements in the specified collection to this set.,TreeSet() - A constructor in Java that creates a new, empty tree set, sorted according to the natural ordering of its elements.
+function(),values(),hashCode()
+function(int arg0, int arg1) - takes two integer arguments and returns an integer value.
+
+
+
+String.formatUTC(),DateTimeFormat.SQL
+function()
+Preferences.userRoot(),putDouble(),getVersion(),Preferences.put()
+
+add,equals,hashCode
+assertEquals(),cal.get(),Calendar.MONTH,instance.getMonth()
+TableInfo constructor,schema() method,recordLength() method,HashIndex.searchCost() method,si.recordsOutput() method
+getRuleChainVisitor,visitAll
+Builder,fromAddressPair
+createElement,getDocumentElement,appendChild,setAttribute,valueOf,isNotEmpty
+void,final,String,this
+boolean function(Combination arg0),arg0.toString(),configurations.containsKey(),configurations.get()
+void function(boolean arg0)
+HTTPTransportUtils.getRawQueryStringParameter(String, String),StringBuilder.length(),StringBuilder.append(String)
+equals(),new Integer()
+Vector(),new Vector(),newFeatures
+put,containsKey,get
+void function(String arg0),this.gene = arg0;
+void function(String arg0),boolean containsLocation(String arg0),void add(String arg0)
+if statement,throw statement,IOException constructor,getMessage() method,toBuilder() method,setSequenceNumber() method,build() method,getJournalFormatter() method,serialize() method.
+boolean function(byte arg0)
+IllegalArgumentException,put,toLowerCase,Locale.ENGLISH
+Math.max,Math.min
+ExtensionMechanismsHelper function(): Returns the reference to the 'impl' object.
+GeneralRange,Comparator,BoundType
+processSourceCode(InputStreamReader arg0, RuleSets arg1, RuleContext arg2): This method reads source code from the input stream and processes it using a set of rules and a rule context.,InputStreamReader(InputStream arg0, String arg1): This constructor creates an InputStreamReader that uses the specified encoding to read from the given input stream.,configuration.getSourceEncoding(): This method returns the encoding used by the configuration.,PMDException(String arg0): This constructor creates a new PMDException with the specified error message.,getMessage(): This method returns the error message associated with an exception.
+setClientId,clearApprovedSitesForClient,getByClientId,thenReturn,verify,never,remove,any
+put(),setPrefix(),XMLStreamException(),SAXException()
+ClassLoader function,canSeeAllInterfaces,ProxyClassLoader,addLoader,getClassLoader
+void,TestBufferedBlockOutStream,BLOCK_LENGTH,BlockStoreContext.get()
+type(),getInt(),getString(),IntConstant(),StringConstant()
+NodeVisitor,enter
+checkNotNull,ThreadFactoryBuilder
+Vector(),new,ClassdiagramNode(),downlinks
+function() - This method returns a Long value which is stored in the variable 'testId'.
+instanceof,getOwner(),==,instanceof,getUUID(),return,.getFacade(),.getUUID()
+getString,StringUtils.isEmpty,FileUtils.convertSizeToLong
+StringBuffer() constructor,length() method of String class,charAt() method of String class,append() method of StringBuffer class,toString() method of StringBuffer class
+
+createInstancesELEvaluator
+function() - This method returns the value of the variable 'qname' of type QName.
+void function(TransformerFactory arg0) { ... },Parameter: arg0,Local Variable: factory
+getAndIncrement()` method of the `AtomicInteger` class, which is invoked on an instance of the `gen` object.,mix()` method, whose implementation and class definition are not provided in the given code snippet.
+
+Executor(),new Executor(),@Override,public void execute(Runnable arg0),MoreExecutors.newThread(),serviceName(),.start()
+setOriginId,assertTrue,toString,contains,assertEquals,getOriginId
+Object,String.equals(),Model.getFacade(),Object.getName(),for loop,return statement.
+void function(AbstractDosPlugin arg0),String getVersion()
+for loop,if statement,Object.equals() method,Model.getFacade() method,isAAttribute() method,getName() method
+function()` - This method returns the value of `endDate` which is a variable or property of the current object. The return type of this method is `Timestamp`.
+format(),s%,return
+
+void function(),instance.getVerticalDOP(),assertEquals()
+
+setMinutes,getMinutes,assertEquals
+SignatureProperties: This is a class or data type.,function: This refers to a method or function in Java.,(): This denotes the parameter list of the method, which is empty in this case.,return: This keyword is used to specify the value returned by the method.,signatureProperties: This is a variable or object of type SignatureProperties returned by the method.
+checkNotNull,getAndUpdate,applyAsLong
+
+getMethod()
+getContent(),getCurrentStackTraceElement(),Log.e(),Exception.getMessage(),Exception.getStackTrace(),Exception.printStackTrace()
+element(),openTag(),closeTag(),isUnclosed(),assertFalse(),assertTrue()
+void function(String arg0),this.srcFileName = arg0;
+IConfigurationFactory,function(),return,SINGLETON
+boolean: a primitive data type that can be either true or false.,function: a method that returns a value.,if: a conditional statement that executes a block of code if a specified condition is true.,else: a conditional statement that executes a block of code if the same specified condition is false.,s2.next(): a method that returns the next element in a sequence (such as a ResultSet).,return: a keyword used to return a value from a method.,s2.beforeFirst(): a method that sets the cursor to before the first element in a sequence (such as a ResultSet).,&&: a logical operator that performs a logical AND operation between two boolean expressions, returning true if both expressions are true.,s1.next(): a method that returns the next element in a sequence (such as a ResultSet).
+function(),This method does not take any parameters.,It returns the value stored in a variable called `value`.
+
+length() method: It is used to get the length of the byte array "arg0".
+CollectionUtils.exists(),PredicateUtils.nullPredicate(),throw new NullPointerException()
+void function(),RPCFileReadRequest(),assertInvalid()
+boolean function(char arg0)
+void,boolean,String,if,!,throw,IllegalArgumentException
+Whitebox.setInternalState(LoginUser.class, "srini_string", (String)null)
+List,T,Collections.emptyList()
+URI,HttpHost,rewriteURI
+clear() method of the List interface.
+IJavascriptRuntime,if statement,new,JavascriptRuntime() constructor,return statement
+Date function(),serverStatus.bootDate
+function` - Takes a string argument `arg0` and assigns its value to the instance variable `name` of the current object.
+assertEquals(),getVariation()
+StoredPaymentChannelClientStates,Wallet.getExtensions,Wallet.getExtensions.get
+void function(),getOpenIDCache(),Cache<K, V>,removeAll()
+function(String)`.
+assertEquals(),Datum.WGS84,instance.getDatum()
+void function,Source arg0,arg0 != null,arg0.getSystemId(),arg0.getSystemId().length(),arg0.setSystemId(),getDefaultSystemId()
+
+void function(OpenIDRememberMeDO arg0),cache.updateTokenData(arg0),Thread loc0 = new Thread(),@Override,public void run(),try,dao.updateTokenData(arg0),catch(Exception e),log.error("srini_string", e),loc0.start()
+close() - a method of the ServerSocket class in Java.
+
+put(),getId()
+
+getChar,println
+boolean function,File,config.load()
+List: a parameterized interface representing an ordered collection of elements.,Interceptor: a generic interface representing an object that intercepts and processes messages.,Message: a generic interface representing a message.,void: a keyword indicating that the method returns nothing.,function: the name of the method.,arg0: the name of the parameter representing a List of Interceptor objects that process messages.,inInterceptors: a variable name representing the List of Interceptor objects that process incoming messages.
+setBoolean
+
+function()
+try,catch
+Void,String
+assertEquals,getCapacityBytes
+String function(),PersistenceManager.getInstance(),PersistenceManager.getProjectBaseName(),String.length(),String.endsWith()
+Setter method,Single parameter method,Instance method,Void method
+lockBlock,assertNotEquals
+function,length,new,for,>>> (right shift zero fill),& (bitwise AND)
+assertTrue(),mwv.isTrue(),mwv.setTrue(),assertFalse(),mwv.isTrue()
+maxUpdateRetries()
+containsKey,get,put
+function(long arg0)
+lock.lock(),mapChannels.get(),Set<StoredClientChannel>.get(),for (StoredClientChannel loc1 : loc0),loc1.contract.getHash(),equals(),return null;,lock.unlock();
+destroyItem(View, int, Object)
+function(ExceptionListener arg0)`: This method takes an argument of type `ExceptionListener` and assigns it to the instance variable `exceptionListener` of the class where this method is defined. The method has a return type of `void`, which means it does not return any value.
+triggerEvent() - called on the "model" object within the "function" method.
+
+isWindows(),UnsupportedOperationException(),getFilestat()
+
+
+void,String
+HashSet(),equals(),getClass(),add()
+setSentenceCount,assertEquals,getSentenceCount
+void,function,Crypto,this,encryptionCrypto,arg0
+matrixItemUtility,function,arg0,arg1
+
+Context function()
+
+put,convertArrayToMap
+void function(JavaMailSender arg0)
+getParentScope(),associateValue()
+void function(Bus arg0),if(bus != null),bus = arg0;
+DenseMatrix64F(),getNumCols(),getNumRows(),assertEquals()
+assertEquals,getDate,getYear
+void function(String arg0)
+
+void function,String arg0,this,referencedRevisionA,= operator,; symbol
+void function(IParserEvent arg0),UprHandler(IParserEventHandler handler),loc0.handleEvent(arg0),handlerStack.push(handler)
+function() - Returns a BigDecimal object named "downloadSize".
+DenseMatrix64F(),process(),assertEquals()
+void function(AbstractSettings arg0),PROPS.add(arg0)
+removeLast(),new StringEvent(),getString()
+boolean function(),getTimeoutDate(),Date loc0 = new Date(),loc0.after(getTimeoutDate())
+BasicNameValuePair,final,String
+String constructor,try-catch block,UnsupportedEncodingException class,new keyword,RuntimeException class,throw keyword
+checkType,packLong
+EmailTemplateDTO function(int arg0),if statement,loc0 = templates[arg0],return statement
+JSONArray(),List.add(),JsonWorkflowAction.toJSONObject()
+typeFor(String arg0)` from `COLLECTION_CLASSES_BY_NAMES,typeFor(String arg0)` from `COLLECTION_INTERFACES_BY_NAMES
+EndpointReferenceType,QName,EndpointResolver,mint
+checkBoundary(),bitwise AND (&),bitwise right shift (>>)
+getInstance(),appendToConsole(),setLedsAnimation(),spinLeft(),doFor(),hover()
+if statement,null comparison,instantiation of Measurements class,return statement
+
+void function(List<String> arg0)
+try,IdentityTenantUtil.getRealm(null, arg0),getUserStoreManager(),authenticate(),catch,log.error()
+synchronized,contains
+AdjustableLinearSolver,AdjLinearSolverQr
+function()`: This is a method with no arguments that returns an object of type `EndpointImplFactory`. The method returns the object `singleton`.
+expect(),IndexOutOfBoundsException.class,TieredBlockStoreTestUtils.TIER_PATH[],assertEquals()
+Map.size(),== operator,|| operator
+List<T> function(Class<T> arg0),List<T> loc0 = new ArrayList<>();,Node loc1 = jjtGetParent();,while (loc1 != null),if (loc1.getClass() == arg0),loc0.add((T) loc1);,loc1 = loc1.jjtGetParent();,return loc0;
+checkArgument()
+for loop,array indexing,arithmetic operators,assignment operator,if statement.
+trim(),equals(),startsWith()
+get()
+Objects.requireNonNull(),accept()
+Function,IdentityFunction.INSTANCE
+void function(byte[] arg0),this.challenge= ((byte[]) arg0);
+void function,String.equals,Report.should_report,Report.report,HashMap.put,InternalCompilerError
+await(String): This method is called with a string argument and is used to suspend the current execution until the argument is resolved.,schedule(String): This method is called with a string argument and is used to schedule the execution of the argument for later.
+usingNaturalOrdering(),lessThan()
+void,function,XCommand,arg0,queue
+try-with-resources statement,LockResource constructor,LockResource.close() method,sLock field,while loop,HashMap.containsKey() method,sTimers field,await() method,sCondition field
+void,final,String,setInvalidationMessage
+getBytes(),length(),<< (left shift),+ (addition)
+
+void function(int arg0),waitFor(int arg0)
+try,stub.getIssuersOfSAMLServiceProviders(),catch (RemoteException loc0),log.error("srini_string", loc0),throw new AxisFault(loc0.getMessage(), loc0)
+Object,function,String,remove
+doAction,makePanel,changed
+Date(),assertTrue(),equals()
+function(int arg0),new Node(int arg0),head == null,head = loc0,loc1 = head,loc1.next != null,loc1 = loc1.next,loc1.next = loc0
+function()` - method declaration and definition.,Array()` - constructor for the `Array` class.,Asset()` - constructor for the `Asset` class.,null` - a keyword in Java that represents a null reference.
+
+function()
+function()
+toString()` method,return` statement
+void,function,SentenceListener,String,registerListener
+incrementPayment`: a method of the `channelClient` object that takes a `Coin` object as its first argument and `null` as the second argument, and returns a `ListenableFuture<PaymentIncrementAck>` object.
+lastIndexOf,substring
+Mockito.when(),userInfoRepository.getByUsername(),thenReturn(),service.getByUsername(),assertEquals()
+boolean function,Scan(arg0),for loop,Term loc0,isSatisfied(arg0),return statement
+void function(int arg0),throw new IllegalStateException("srini_string")
+
+for loop,createKey method call,put method call
+
+try,catch,writeStartElement
+innerProd(),innerProdA()
+boolean function(ActivityRequest),null check: arg0 == null,null check: arg0.getDelayerFileAttributesExtractorStrategy() == null,null check: arg0.getFeedId() == null,return: arg0.getConfigProperties() != null
+function,getModuleProperties,buildSubscriptionList,ModuleConfiguration,List,Subscription
+
+getNextBlock(int): Returns a BlockPos object.,Math.sqrt(double): Returns the square root of a double value.,mob.getDistanceSqToCenter(BlockPos): Returns the square distance between the mob and the center of a given BlockPos object.
+HashMap<>,getDb(),getPlaylists()
+SimpleDB.bufferMgr(),flushAll(txnum),recoveryMgr.recover()
+void function(String arg0): method declaration,this.password = arg0: assignment operation using the "this" keyword to refer to the instance variable "password" and assigning the value of the method parameter "arg0" to it.
+function()` - This method returns the value of the variable `signatureUsername` which is of type `String`.
+log.debug(String, Object),ingredientRepository.delete(String)
+try,catch,createTextureAtlas,IOException,Gdx.app.error,LOG,loadTextureAtlas,loadTextures,loadSounds,loadMaps
+Math.max(),children[0].depth(),children[1].depth()
+UnsupportedOperationException()
+function
+
+
+addHolder,String.valueOf
+createTicket(),assertNotNull()
+void function(),snake.isAlive,this.gui.setTitle(),border.isAlive,gameElements.size()
+
+assertEquals,getFqdnHost,InetSocketAddress,setHost
+checkState(),count()
+ArrayList.entrySet(),Collections.sort(),ArrayList.add(),Map.Entry.getKey(),Map.Entry.getValue()
+ThreadFactoryBuilder,checkArgument
+String.endsWith(),String.substring(),String.length(),getContextURL()
+void,AttributesImpl,Attributes
+equals,getDefaultValue
+
+String function,String constructor,_uriResolver.resolve() method call
+
+Document(),DOMResult(),performTransform(),getCopyTransformation(),getNode()
+FileOutputStream,write,close
+void function(),assertEquals(),vtg.getTrueCourse()
+function (int arg0)
+Scriptable.function(),Kit.codeBug()
+void function(File arg0),setFolders(File arg0),setFiles(File arg0)
+HashMap,String,GeneticProfile,getDefaultGeneticProfileMap
+String.endsWith(),String.startsWith()
+Pageable,log.debug(),dishCollectionRepository.findAll()
+
+function()
+long,function(),this,dataUnitId
+applyQ` - method that takes a `BlockMatrix64F` argument and a boolean value as parameters.,false` - boolean value passed as the second argument to the `applyQ` method.
+not_null(),remove()
+TreeNode: a class or data type used to represent a node in a binary tree.,if: a conditional statement that executes code if a specified condition is true.,==: a comparison operator that tests if two values are equal.,null: a special value in Java that represents the absence of a value or a reference to an object.,return: a keyword used to exit a method and return a value to the caller.,<: a comparison operator that tests if one value is less than another.,left: a reference to the left child node of a binary tree node.,right: a reference to the right child node of a binary tree node.
+Math.min(),arg0.numRows,arg0.numCols,arg0.unsafe_get()
+StringBuffer(),readLine(),append(),close(),toString()
+String function,Nullable
+
+put64(long val)
+
+parseLazy` - This method returns a boolean value.
+void,function,boolean,validateUseKey,arg0
+
+function()
+instanceof,isSubtype
+"ServiceID" object with name "arg0","int" type variable with name "arg1","int" type variable with name "arg2","InetAddress" object with name "arg3"
+getWorkflow(),getUser()
+if,new,return
+assert,get,put
+isDisposed(),getImageResource(),getImage()
+void function(),double getCourse(),double getVariation(),double getCorrectedCourse(),assertEquals()
+getActionView()` method of the `HoneycombMenuItem` class.,View()` constructor method to create a new `View` object.,null` keyword to represent a null value.
+final keyword for variable declaration,double data type,method call: setHorizontalDOP(),assertEquals() method call,instance variable access: getHorizontalDOP()
+Character,ShadowStruggles,RpgMap,SettingsDAO,getSettings,defaultTileLayer
+String.charAt(),String.format()
+add()
+sleepMs()
+
+String constructor method.,ConfigurationKeyImpl constructor method.,function method.
+values(),iterator(),hasNext(),next(),getImage(),dispose(),clear()
+Mockito.when(),Matchers.any(),mClient.listObjects(),thenThrow(),mOSSUnderFileSystem.delete(),Assert.assertFalse()
+parse,toArray
+ByteBuffer.allocate(),ByteBuffer.put(),ByteBuffer.flip(),ByteBuffer.get(),BufferUtils.newByteArrayFromByteBuffer()
+function()` - a method that returns the value of the variable `relativeFullPath` which is of type `String`.
+boolean function(Language arg0),for(RuleSet loc0 : ruleSets),if(loc0.usesTypeResolution(arg0)),return true;,return false;
+function(String arg0)
+createScaledBitmap(),getDims()
+JWSAlgorithm.parse(),getAsString()
+Joiner.on(char delimiter).join(List<String> elements)`: joins the elements of a list into a single string using the specified delimiter.,PBKDF2SHA512.derive(String password, String salt, int rounds, int length)`: performs PBKDF2 key derivation with the SHA-512 hash function to derive a byte array of the specified length from the password and salt using the specified number of rounds.
+void function(String arg0),this.testData = arg0;
+connect()
+void function(Activity, int, String),Intent makeIntent(String, null),startForResult(Activity, int, Intent)
+final,setVelocity,assertTrue,toString,contains,assertEquals,getVelocity
+BiAdAdapterSwitcher,setDefaultOnRefreshListener,SwipeRefreshLayout,OnRefreshListener,@Override,onRefresh,Handler,postDelayed,refresh_default
+ImmutableMap.of(),Assert.assertEquals(),Map.getCapacityBytesOnTiers()
+Integer,function,cn.getExitStatus()
+ProxyBuilder.build(),Pattern.matcher(),Proxy.NO_PROXY,createProxy()
+reset,read,clear
+getCurrentStackTraceElement,getContent,Log.e,Exception.getMessage,Exception.getStackTrace,Exception.printStackTrace
+function()
+put,handleEvent,new
+String function(KeyStroke arg0),arg0 != null,getModifiersText(arg0.getModifiers()),KeyEventUtils.getKeyText(arg0.getKeyCode()),"srini_string"
+void function(String arg0)
+ClientDetailsEntity,parser.parse,parse
+
+setRouteType,isWorkingRoute,isActiveRoute,assertTrue,assertFalse
+for loop,enhanced for loop,method call (update())
+
+getDigestBytes(),createFromDigestBytes()
+determineTestGroups() - It takes three non-null arguments: Identifiers, a Map<String, Object>, and a Map<String, Integer>, and returns a ProctorResult object.,arg0 - A non-null Identifiers object.,arg1 - A non-null Map<String, Object> object.,arg2 - A non-null Map<String, Integer> object.,Collections.<String>emptyList() - An empty list of strings.
+SimpleDateFormat(String pattern, Locale locale)` - Creates a new date format with the given pattern and locale.,setTimeZone(TimeZone timezone)` - Sets the time zone for this date format.,parse(String source)` - Parses the given string to produce a Date.,ParseException()` - Creates a new `ParseException` instance.
+
+setTimeToCPA,toString,contains,assertTrue
+allocateDirect,read,flip,write,compact,hasRemaining
+String,Object,String,Element
+Void return type,Parameter of type String with name arg0,Accessing and assigning value to the instance variable album using the this keyword.
+FiltersType,function(),return,cipherSuiteFilters
+MemoryLogger,function(),instance
+setMagneticCourse` method of object `vtg,fail` method with parameter `"srini_string",assertTrue` method with parameter `loc0.getMessage().contains("srini_string"),getMessage` method of object `loc0
+boolean function(Map<String, Object> arg0, String arg1),isFalse(Object obj),Map.get(Object key)
+XMLUnit.setIgnoreWhitespace(true),XMLUnit.setNormalize(true),Config.readConfig("srini_string")
+
+put(),loadValue()
+String function(Fig arg0),Fig arg0.getEnclosingFig(),getId(Fig loc0)
+Sha256Hash function(File arg0)` - defines a method that takes a `File` object as input and returns a `Sha256Hash` object.,FileInputStream(File arg0)` - creates a new `FileInputStream` object that reads from the specified `File`.,ByteStreams.toByteArray(InputStream in)` - reads all bytes from an `InputStream` and returns them as a byte array.,Sha256Hash.create(byte[] input)` - computes the SHA-256 hash of the input byte array and returns a `Sha256Hash` object.,InputStream.close()` - closes the input stream.
+getMetaData(),getDriverName(),toLowerCase(),contains(),name()
+Class: returns the class of an object.,<? extends Service>: a wildcard type that represents an unknown type that extends the Service class.,function(): a method that returns a value.,UUIDService.class: returns the class object that represents the UUIDService class.
+println()` from `System.out` class,HTTPDirectConnection()` constructor,getURLConnection()` from `HTTPDirectConnection` class.
+parseUTC,DateTimeFormat.SQL
+function
+function(),new byte[],mStream.write(),mStream.close(),Mockito.verify()
+createParser,assertNotNull,assertTrue,instanceof,assertEquals,toSentence
+add() : A method of the List interface in Java which adds the specified element to the end of the list.
+void function(Project arg0),if,currentProject ==,null,arg0.remove()
+boolean function(),StringUtils.contains(String, CharSequence)
+HashMap(),CacheKey()
+function(String arg0)
+ArrayList(),values(),add(),getFederationToken(),getStrings()
+void,function,EaseUser,SuperWeChatDBManager,getInstance,saveContact
+
+
+List,String,function,return
+LogManager.shutdown(),XLog.Info.reset(),XLogStreamer.Filter.reset()
+DirectionsApi.newRequest(),mapsClient.getContext(),LatLng(),origin(),destination(),mode(),await()
+function()` method that returns a `String` variable named `propName`.
+Message function(Message arg0)
+Filters
+String function(String, Document),engine.evaluate(String, DOMSource),new DOMSource(Document),XMLUnitException.getCause(),XpathException(Throwable)
+clear() method of the List interface.
+forName,getMessage
+put()
+beforeValue(),mWriter.write(),JSON.LSQUARE,mStack.push(),new State(ARRAY),return this
+void function(),instance.getHorizontalDOP(),assertEquals()
+void function(ResourceBundle arg0)` - A method that takes a ResourceBundle object as an argument and performs some operations on it.,arg0.getKeys()` - A method of the ResourceBundle class that returns an enumeration of the keys in this resource bundle.,loc1.hasMoreElements()` - A method of the Enumeration class that returns true if there are more elements in the enumeration.,loc1.nextElement()` - A method of the Enumeration class that returns the next element of the enumeration.,Assert.assertTrue()` - A method of the Assert class that throws an error if the specified condition is not true.,loc0.contains(loc2)` - A method of the HashSet class that returns true if this set contains the specified element.,loc0.add(loc2)` - A method of the HashSet class that adds the specified element to this set.
+
+encoder.decode(String arg0, OutputStream arg1),int function(String arg0, OutputStream arg1)
+equals,equalsIgnoreCase,toString
+size() from the object _all.
+try,catch,flushEvents(),clientFlushedEvents(),printStackTrace()
+Thread,function,return,this,waiter
+void function,InputStream.close()
+void function(),RPCFileWriteRequest(),assertInvalid()
+
+BufferedImage.TYPE_INT_RGB,ImageUtil.createCompatibleBufferedImage(),ImageUtil.clearImage()
+createTempFile(),delete(),mkdir()
+void,function,Date,this,fetcherStartTimeStamp,arg0
+Type casting,Division
+
+void,String,this
+containsKey()
+InetAddress.getByName(),SipHeaderValue.getBaseValue(),StringUtils.substringAfterLast()
+
+Time constructor with parameters: `Time(int hour, int minute, double second),setTime` method of the instance object,assertTrue` method of an assertion library
+position(),getUInt(),UIntImpl(),putUInt(),getChecksum(),equals()
+obterVerticesOrdenados() : This method is used to obtain the ordered vertices from the given list of vertices in the argument. It returns a List of vertices in a sorted order.,List: A Java interface that represents an ordered collection of elements. It is used to return the List of vertices.,Vertice: A Java class that represents a vertex in a graph. It is used as the generic type of the List returned by the function.,Grafo: A Java class that represents a graph. It is used as the argument for the function.
+void function(Item arg0),this.mob.setCurrentItemOrArmor(int, ItemStack),new ItemStack(Item)
+ListStatusOptions,function,LoadMetadataType,arg0,mLoadMetadataType,return,this
+AbstractPlugin,getName(),equals()
+currentTimeMillis
+expect,expectMessage,getBlockMeta
+applyUMask,getUMask
+encode(String, Charset) - static method in class java.net.URLEncoder,replace(CharSequence, CharSequence) - method in class java.lang.String,catch - keyword in Java for handling exceptions,UnsupportedEncodingException - class in package java.io.
+File constructor - File(String),Files method - createParentDirs(File),File method - createNewFile()
+void function(),assertEquals(),rmc.getDate(),getMonth()
+void function,Document,eval
+
+getOutputStream(),thenThrow(),expect(),expectMessage(),close()
+function()
+
+setHeader,getContentType,setStatus
+instanceof,getName,equals
+retrieveMAPs()` from `org.apache.cxf.ws.addressing.ContextUtils` class.,arg0`: an object of type `Message,arg1`: a boolean value,arg2`: a boolean value
+GetOfferDetailsResponse,Return,DetailOfferData,Products,Product()
+deregisterUserSession()` from `activityController` object.
+void function(),wireParser.closeConnection()
+
+setDefault(),OsmViewerPlusApp(),getFrame(),readMap(),getULMFileResource(),showFrame()
+assertEquals
+System.out.println(),ArrayList.getCapabilities(),assertEquals(),fail()
+isComparable,arg0.endLine,arg1.endLine,arg0.endColumn,arg1.endColumn
+void,function,String,this,transformedTokenIdentifier,arg0
+List<>,function(),return
+assertTrue(),isActiveRoute()
+getDistKM
+final,try,catch,setDeviation,getMessage,IllegalArgumentException,Exception,fail
+
+getCalendar(),getTimeZone()
+DataNettyBuffer constructor,Assert.assertEquals() method call,DataNettyBuffer.getLength() method call
+void function(String arg0): method declaration,this.testId = arg0: assignment statement
+assertEquals
+System.out.println(),LogEntryInterval(),loc0.getNumberRequests(),assertEquals()
+while loop,array indexing,variable assignment.
+void function(): This is the method signature, indicating that the method returns nothing.,Assert.assertEquals(): This is a method call to the static method assertEquals() of the Assert class, which is used to compare two values and assert that they are equal.,Mode.Bits.WRITE_EXECUTE, Mode.Bits.WRITE, Mode.Bits.EXECUTE, Mode.Bits.READ_EXECUTE, Mode.Bits.READ, Mode.Bits.READ_WRITE: These are references to static members of the Mode.Bits class, which are used as arguments to the assertEquals() method.
+void,function,Intent,int,activity,startActivityForResult.
+compute(),diffNormF()
+DAVResource,isAbsolute(),resolve(),normalize(),getResource(),File(),getAbsoluteFile()
+isRunningOnServer(),progressMonitor.arg0 = arg0,progressMonitor.log.append(),System.out.println()
+boolean function(Pattern arg0, String arg1),Matcher arg2 = arg0.matcher(arg1),loc0.find()
+boolean function(UserModel arg0),userService.updateUserModel(arg0)
+void function(String arg0),UnderFileSystemUtils.deleteDir(arg0)
+String function,File constructor,BufferedReader constructor,FileReader constructor,readFile function
+put(),handleEvent(),new Event()
+get(),getName()
+AccessibilityRecordCompat,AccessibilityEvent,IMPL.getRecord()
+QRDecompositionHouseholderColumn_D64()
+
+setOnMenuItemClickListener,function
+assertTrue,getTalkerId,getSentenceId,valueOf
+trace(),handleMessages(),clear()
+checkState(),isNaN(),ensureNonNegative()
+for loop,if statement,equals method,getName method,isAMethod method
+throw,setBooleanParameter
+boolean function(HttpServletRequest): This is the main method that takes an HTTPServletRequest object as input and returns a boolean value.,check(String): This is a method that takes a string as input and returns a boolean value.,arg0.getHeader(String): This is a method of the HttpServletRequest class that takes a string as input and returns a string value.,(arg0 == null) ? false: This is a ternary operator that checks if the HttpServletRequest object is null or not. If it's null, it returns false, otherwise, it goes on to call the check() method.
+add(int index, E element): Adds the specified element at the specified position in this list, shifting the existing elements to the right.,setParentNode(AbstractReportNode parentNode): Sets the parent node of the current node to the specified node.
+
+Function,Object,Supplier,T,new,SupplierFunction,arg0,return
+final,assertEquals
+getTierViewOrdinal(),size(),get()
+delete(),FileOutputStream(),StringReader(),IOUtils.copy(),flush(),close()
+addAll()
+hasField(),distinctValues()
+getCanonicalFile(),getAbsoluteFile()
+
+function,getNumElements,get,sqrt
+function,getNumElements
+booleanValue(),get()
+function()
+ArrayList(),File(),add(),saveFiles()
+boolean,ActivityRequest,getFeedId(),getConfigProperties()
+decompress(byte[], int, int)
+replaceAll,toLowerCase,split
+AdaptableHeuristicFunction` constructor: `AdaptableHeuristicFunction(),Object` parameter: `Object arg0,Map` parameter: `Map arg1,Setter method for `goal` field: `this.goal = arg0,Setter method for `map` field: `this.map = arg1,Method return statement: `return this;
+function()
+setWrittenBytes,assertEquals,remaining
+List.subList(),StorageTierView.getTierViewOrdinal(),StorageTierView.getTierView()
+hasPrivate(),getParent(),getPubOnly(),getChildNumberPath(),getChainCode(),getPubPoint(),DeterministicKey() constructor.
+loc0(): RecomputePlan,isEmpty(): boolean,submit(Callable<T> task): Future<T>,immediateFuture(T value): ListenableFuture<T>
+removePropertyChangeListener
+String function(),withExceptionHandling(),new Trans<String>(),public String transform(),transformation.transformToString()
+function()` - This is a method that returns an object of type `ArrayList` named `parameters`.
+
+switch statement,case statement,if statement,addBackgroundColor method,addWidth method,put method
+StatSource,int,arg0,if,return,this,statSources,get,else,null
+
+void function(Node arg0),List<Node> nodeNameToNodes.get(arg0.toString()),loc0.add(arg0)
+function() - returns a long data type which is the value of the instance variable "testId" of the current object.
+checkType,packLong
+
+void function(String arg0),this.callbackHandlerClass = arg0;,LOG.fine("srini_string" + arg0);
+function()
+parseTree,HashMap,decorate,IntegerHolder
+void function(THashSet<String> arg0): This is a method declaration that takes in a single argument of type `THashSet<String>` and does not return anything.,mBlacklist.addAll(arg0): This is a method call on the `mBlacklist` object, which is expected to be of a type that has a method called `addAll` that takes in a single argument of type `THashSet<String>`.
+BigDecimal function()
+function
+putBitmap() - belonging to RemoteControlClient.MetadataEditor.
+String function(String arg0),getWorkflow(),getWorkflowInstance(),getVar(String),WorkflowInstance.NODE_VAR_SEPARATOR,ACTION_EXTERNAL_ID
+getString,ConfigurationKey
+available(),unpackInt()
+function
+setHeading,assertEquals,getHeading
+void function(T arg0),if(position >= max),position = 0;,haveOverflow = true;,circularArray.size(),circularArray.remove(position),circularArray.add(position, arg0),position++
+start()
+void,String,this,identifier
+ArrayIndexOutOfBoundsException,throw
+lock(),tryLock(),assertFalse()
+
+
+assertEquals()
+System.currentTimeMillis(),minutesAgo()
+getLibsDirectory,isDirectory,mkdirs,RuntimeException
+Set,get
+RPCFileReadResponse constructor,loc0.getEncodedLength(),loc0.encode(),Assert.assertEquals()
+String.format(),Locale.ROOT
+List: Type of the returned object.,< T >: Generic type, meaning the type can be specified by the user.,function: Method name.,( T arg0, T arg1, T arg2 ): Method parameters.,List< T > loc0: Declaration of a new List object with the name "loc0".,= new ArrayList<>(3): Initialization of the List object "loc0" as an ArrayList with an initial capacity of 3.,loc0.add(arg0): Add the first parameter to the List "loc0".,loc0.add(arg1): Add the second parameter to the List "loc0".,loc0.add(arg2): Add the third parameter to the List "loc0".,return loc0: Return the List object "loc0".
+void function(Class<?, ?> arg0, Object arg1),isInstanceOf(arg0, arg1, "srini_string")
+getEndpoint(),getService(),getServiceInfos(),setUseSchemaImports(),build()
+String function(String arg0),getList(String arg0),List.get(int index)
+currentTimeMillis(),getTimeStamp(),isValid()
+NoFileAssertListener(),setCpdListener(),add(),File(),verify()
+ReflectionUtils.findMethod(Class, String, Class[])
+writeInt()` method of the `Parcel` class,size()` method of the `Map` interface,entrySet()` method of the `Map` interface,writeParcelable()` method of the `Parcel` class,getKey()` method of the `Entry` interface,getValue()` method of the `Entry` interface
+
+void function(Timestamp arg0)
+
+booleanValue(),get(),instanceof
+
+function()
+"return": used to return a value from a method,"this": used to refer to the current instance of the class,"modifiedDate": a field of the current instance of the class
+final keyword,type casting,array indexing,bit shifting
+void,String,Bundle,RequestListener,final
+ServiceBuilder,createApi,Class<? extends Api>
+getPrimitiveType(),isAbsoluteUnit()
+System.getProperty(String),!= operator
+assertEquals
+RPCFileReadRequest,assertValid
+compareTo,greater than operator (>)
+void,function,fetcherRegDataUnitVerifier,buildFieldAndColumnMapping,new,PCLDataSetEntity
+isOpen(),close(),catch(),finally()
+
+element(String),tagList.openTag(ASTElement),tagList.closeTag(ASTElement),loc0.isUnclosed(),loc1.isUnclosed(),loc2.isUnclosed(),assertFalse(boolean),assertTrue(boolean)
+writeCharacters() method,try-catch block,SAXException() constructor
+HashCodeBuilder,append
+void,String
+flushFonts,getReplacedElementFactory,clean,getUac,disposeCache
+String function(),String uniqueName,String getZipFileExtension(),String endsWith(String suffix),+= operator
+function()
+equals(),return
+getTime(),assertNotNull(),assertEquals(),getHour(),getMinutes(),getSeconds()
+
+"void" : a return type indicating that the method does not return a value,"function" : the name of the method,"(String arg0)" : the method's parameter signature, indicating that it takes a single parameter of type "String" and the parameter name is "arg0","this.userName = arg0;" : an assignment statement that assigns the value of the "arg0" parameter to the "userName" field of the object that the method is called on.
+function()
+isLink(),uac.isVisited(),nsh.getLinkUri()
+executeScript()
+Result function(ResultLevel arg0),new Result(),for(ResultEntry loc1 : this.log),loc1.getLevel(),loc1.getLevel().compareTo(arg0),loc0.add(loc1),return loc0;
+compute() (assumed to be a method of TOP_LEVEL_PACKAGE)
+void function(PropertyChangeListener, Object, PropertyChangeEvent),Model.getUmlFactory(),isRemoved(Object),LOG.warn(String),cleanListener(PropertyChangeListener, Object),initialiseListener(PropertyChangeListener, Object)
+linear(),leastSquares()
+
+void (return type),function (method name),Timestamp (argument data type),this (keyword),modifiedDate (variable name),= (assignment operator),arg0 (parameter variable name)
+void function(),initInternal(String)
+Math.min(),for loop,Bitwise OR (|) operator,Bitwise AND (&) operator,Left shift (<<) operator
+getInteger
+function()` - a void method that increments the `curValue` field of a `progressMonitor` object by 1.
+Collection< Edge > getIncidentEdges(Node)
+localServer.getServiceAddress(),loc0.getHostName(),loc0.getPort(),new HttpHost()
+
+@PathVariable,repository.delete()
+distinctValues
+while loop,! operator (logical negation),session.isShutdown(),haveAcknowledgementFor(),CountDownLatch(),set(),get(),await(),TimeUnit.MILLISECONDS
+RPCFileWriteRequest,getEncodedLength,encode,Assert.assertEquals,readableBytes
+SpringChain,new
+boolean,String,File,exists()
+function()
+void function,AbstractDosPlugin.getName(),String.length(),assertTrue()
+Conditional Operator,Null Coalescing Operator,Method Chaining
+get(),createEvaluator(),setConfigToEval(),setNominalTime(),configureEvaluator()
+SentenceId.parseStr(String),createParserImpl(String, String)
+TimestampService,function(),return,new,TimestampServiceImpl(),();
+void function(String arg0)
+function: This method takes an argument of type InputStream and returns void.
+void,function,boolean,this,verifyProofOfPossession,arg0
+
+function()`: This method returns the value of a variable called `options`.
+void,function,ARDrone,this,drone,arg0,cmd,getCommandManager
+
+void,function,ErrorQueue,Report.
+void,function,Stylesheet,arg0,this
+
+put,warn
+boolean function,View arg0,AccessibilityEvent arg1,IMPL.dispatchPopulateAccessibilityEvent,DEFAULT_DELEGATE
+parseInt(),bitwise AND operator (&),right shift operator (>>),getNamedColor()
+
+function() - A method that returns a Long data type named "batchId".
+set(String arg0, String arg1, Double arg2) method from the links object.
+addField(),VARCHAR
+CollectionUtils.isEmpty(),IllegalArgumentException()
+Mockito.mock(AmazonS3Client.class),Mockito.mock(TransferManager.class),new S3AUnderFileSystem(new AlluxioURI("srini_string"), mClient, BUCKET_NAME, BUCKET_PREFIX, BUCKET_MODE, ACCOUNT_OWNER, mManager)
+function()
+boolean,get
+function() - returns a boolean value and checks if a variable called "errorCode" is not equal to 0. If the condition is true, the method returns true, otherwise, it returns false.
+return: keyword used to return a value from a method,this: keyword used to refer to the current object,response: a variable or object that is a part of the current object,getOutputStream(): a method called on the response object that returns an OutputStream object
+StringBuilder(),append(),toString(),trim()
+
+void function(Scan arg0),Constant arg0.getVal(fldname),loc0.compareTo(val)
+boolean function(),StringUtils.contains(String, CharSequence)
+synchronized(),U2FService(),null check for u2FService,new keyword for object instantiation
+function(),@PathVariable,log.debug(),dishCollectionService.findOne(),Optional.ofNullable(),map(),ResponseEntity<>,HttpStatus.OK,orElse(),HttpStatus.NOT_FOUND
+TransactionSignature.encodeToBitcoin(),ScriptBuilder.data(),ScriptBuilder.build()
+Mockito.when(),mockServerConfig.getIssuer(),thenReturn(),service.getClientConfiguration(),assertThat(),is(),nullValue()
+
+void function(Boolean),accountNonExpired
+String,Object,Element,getLang
+
+values() : This is a method of the HashMap class in Java, which returns a Collection view of the values contained in the HashMap. It returns a Collection of type Device in this case, since the HashMap is declared as HashMap<String, Device>.
+Boolean,this,accountNonLocked
+stationDao.find(),asList()
+for each loop,get method,clear method
+void,String,if
+getBoolean(),getInteger()
+addByteArray
+HashMap,String,GeneticProfile,getDefaultGeneticProfileMap
+
+assertEquals(),getNumber()
+Mode,applyUMask,getUMask
+
+void function(long, TimeUnit): method signature with two parameters of type long and TimeUnit respectively.,if(arg1 == null): conditional statement to check if the argument 'arg1' is null.,throw new IllegalArgumentException("srini_string"): throwing an exception of type IllegalArgumentException with a message "srini_string".,poolLock.lock(): acquiring a lock on the 'poolLock' object.,try { ... } finally { ... }: try-finally block used to ensure that the lock on 'poolLock' is released even if an exception occurs.,idleConnHandler.closeIdleConnections(arg1.toMillis(arg0)): invoking the 'closeIdleConnections' method on the 'idleConnHandler' object with a single argument of type long, which is obtained by converting the value of 'arg0' to milliseconds using the 'toMillis' method of the 'arg1' TimeUnit object.
+processBinaryBytes
+assertEquals(),getBearing()
+boolean function(int arg0),AbstractPlugin getByIndex(int index),boolean remove(AbstractPlugin plugin)
+findClasses`: This is a method that takes three arguments, a collection of strings, a list of classes that extend the `Annotation` class, and a `null` value. It returns a `Map` object that maps each class in the `arg1` list to a collection of classes that are annotated with that class. The key of each entry in the map is a class that extends `Annotation`, and the value is a collection of classes that extend `Object`.
+defaultWriteObject(),writeInt(),writeDouble(),get()
+void function(Date arg0) - This is a method that takes a Date object as an argument and sets the value of the fetcherEndTimeStamp variable in the current object to the value of the Date object passed as the argument. The method has a void return type, which means it does not return any value.
+function()
+get,create,close
+if-else statement,notifyDataSetChanged() method
+BufferedImage function(),getLargeThumbnail(),ImageIO.read(),IOException,Popup.error()
+CertificateInfo()
+function(),panel.getSharedContext()
+ApplicationManagementService function(),ApplicationManagementServiceImpl.getInstance()
+function()
+ensureCapacity,putShort,put
+if,else if,else
+Constructor method: CoordinatorEngine,Parameterized constructor: CoordinatorEngine(String arg0, String arg1),Object instantiation: new CoordinatorEngine(arg0, arg1)
+checkArgument(),COIN.multiply(),CENT.multiply(),compareTo()
+void function(URL arg0),openUrl(String url)
+position(),compilerGenerated()
+
+function(int arg0)
+DiffBuilder,function,Object,getSource
+function()
+getTargetReference(EndpointInfo, QName, Bus)
+RoleList,function(),return,new,RoleList()
+instanceof,getFieldImpl,getClass,setAccessible,set
+
+boolean function(Object arg0),ui.isActive(Element arg0)
+write(),flush(),printStackTrace()
+void function(ContextFactory arg0),dim.attachTo(arg0)
+remove(),toString()
+startsWith()
+boolean function(String arg0),mIPv6Pattern.matcher(String arg0),mIPv6Matcher.matches(),Log.loc0(String arg0, String arg1, Exception arg2)
+MapMaker,setKeyStrength,Strength.WEAK
+RandomMatrices.createRandom(int numRows, int numCols, Random rand),checkItAll(DenseMatrix64F matrix)
+
+function,get
+ConfigurationKeyImpl,new
+String function()
+currentTimeMillis() method of System class,final keyword,long data type,subtraction operator,this keyword,instance variable m_startTime,return statement
+void function(),assertEquals(),time.getMinutes()
+Set: a Java interface used to represent a collection of unique elements.,String: a Java class used to represent a sequence of characters.,function: a method name that is user-defined and could represent any functionality.,jedis: a Java library used to interact with Redis, an in-memory data structure store.,keys: a method provided by the jedis library used to retrieve all keys matching a pattern from Redis.
+debug(),findOne()
+function()
+String function,Date,timeAgo.
+void function(String arg0),throw new Exception(arg0),catch(Exception loc0),loc0.printStackTrace(),System.exit(0)
+void,function,new,ObjArray,functionVarMappings,ArrayList
+void function,HttpServletRequest.getSession,HttpSession.removeAttribute
+equals()`: compares two string objects and returns a boolean value indicating whether they are equal or not.,parseInt()`: parses the string argument as a signed decimal integer and returns the integer value.,IllegalArgumentException()`: creates an instance of the `IllegalArgumentException` class with a specified detail message.,getMessage()`: returns the detail message string of the `Throwable` object.,throw`: throws an exception to indicate an error condition that should be handled in a calling method.,try`: encloses a block of code in which exceptions may occur and that is followed by one or more catch blocks.,catch()`: specifies a block of code to be executed if an exception occurs in the try block.
+String - data type,function - method name,return - keyword,mainMethodClassName - variable name
+assert,byte,final,int,<< (left shift operator)
+findNotation,getNotationProvider
+try,new,FileOutputStream,write,close,catch,System.err.println,toString,System.out.println
+Preconditions.checkState(),DirectedAcyclicGraphNode.contains(),mChildren.remove()
+getClass(),invokeMethod()
+void function,String arg0,OperationSignature arg1,containsKey,put,new HashMap,get,new OperationStats.
+checkArgument,size,ScriptBuilder,smallNum,data,build
+try,setHour,fail,catch
+putItemByTag
+RPCBlockReadRequest(),getEncodedLength(),encode(),Assert.assertEquals()
+
+ArrayList,Map,evaluate,sortByValue
+String function(MessageReader arg0),String readAttributeValue(MessageReader arg0, String SOAP_ENCODING_REF_1_2),String readAttributeValue(MessageReader arg0, String SOAP_ENCODING_REF_1_1)
+String function(),Util.selectRandomlyFromList(),getLocations()
+ShareOpenGraphObject,String.valueOf(),Object instanceof,Type Casting
+if statement,null comparison operator,method call (close())
+Date - creates a new Date object,ParsePosition - creates a new ParsePosition object,SimpleDateFormat - creates a new SimpleDateFormat object,parse - parses a String to produce a Date object
+
+add() method of ArrayList class.
+boolean function(String arg0, String arg1),userService.renameRepositoryRole(String arg0, String arg1)
+void function(BundleContext arg0),for(AutoSIMConnectionConfig loc0 : config.connections),environments.deregisterConnectionFactory(loc0.name),factories.remove(loc0.name)
+unifiedBreak(int, int, String, int)
+CollisionDJBX33X constructor,CollisionDJBX33X.hashForth(String),assertEquals(int, int),System.out.println(String)
+clearHash(),clear(),fireMapDataEvent()
+isEmpty()
+if,getFramingRect,Log.d
+function()
+
+getTime(),int casting,subtraction operator (-),assignment operator (=),return statement
+reshape,convert,setA
+isHealthy,LOG.info,remove,closeResource,acquire.
+assertEquals
+ResourceSet constructor: ResourceSet(),setId method: setId(),saveNew method: saveNew()
+println,getFunctionBlock,getVariables,toString
+void function,String arg0,addField,INTEGER
+hashCode()
+Set,String,Collections.unmodifiableSet,instances.keySet()
+flush()` method from `mStream` object,close()` method from `mStream` object,verify()` method from `Mockito` library, with `mLocalOutputStream` object as parameter, followed by `flush()` method.
+void: The return type of the method is void, which means the method does not return a value.,function: The name of the method is "function".,throw: The keyword used to throw an exception.,new: Keyword used to create a new object.,UnsupportedOperationException: The name of the exception that is thrown.
+getClassImpl(),getClass()
+LocalAlluxioMaster - constructor method,final - keyword to indicate the variable arg0 cannot be reassigned,String - data type for the variable arg0,UnderFileSystemUtils - class name,mkdirIfNotExists - method name of the UnderFileSystemUtils class,return - keyword to indicate the value to be returned by the method,new - keyword to create a new instance of the LocalAlluxioMaster class.
+ByteBuffer.setUseDirectBuffers(boolean),ByteBuffer.setAllocator(ByteBufferAllocator),SimpleByteBufferAllocator()
+function(),return,conditionsProvider;
+if statement,null check,method call (unpin) with parameter (blk)
+void,function,String,this,=,arg0
+String function(),address.getCountrySubentityCode().getValue()
+unlock(),releaseBlockLockIfUnused()
+System.getProperty(),Double.parseDouble()
+expect(),expectMessage(),getMessage(),unlockBlock()
+function() - returns the value of the "checksumType" variable belonging to the current instance of the class.
+String.valueOf(),String.concat(),try-catch statement,IOException.printStackTrace(),method invocation (runUrl()) with parameter (loc0)
+void function(),System.out.println(String),Device.getAddress(),assertEquals(int, int),fail(String)
+"maxLifetime" - returns the maximum lifetime as a long value.
+RouteCalculator constructor,Return statement,Object instantiation
+void function(String arg0, String arg1),Paths.get(String),Files.setPosixFilePermissions(Path, Set<PosixFilePermission>),PosixFilePermissions.fromString(String)
+void,InputStream,isRunning,stop,DefaultDataReader
+void function(),connection.close(),Jamuz.getLogger(),Level.SEVERE,Logger.log()
+ArrayList constructor: `new ArrayList<Date>(),Null check: `if (dates == null),Getter method: `return this.dates;
+
+initInternal,Localizer.addResource
+cleanPath,FilenameUtils.getName,substring,isEmpty
+void function,TrustManager[]
+void,function,EndpointReferenceType
+SimpleDateFormat constructor,SimpleDateFormat.setTimeZone(),TimeZone.getTimeZone(),SimpleDateFormat.format()
+get(),put()
+void function(List<String> arg0),this.acceptedSignatureAlgorithms = arg0;
+void,println,String,setResponseString
+Map,String,function,return,this,namespaceMap
+assertEquals
+assertEquals,getSteerTo
+
+
+
+getPrefix,add,getURI
+"Actual" method with a parameter named "arg0". The method returns the value of the parameter "arg0".
+BrowseOffersResponse,Return,OfferData,OfferMedia,OfferImage,Entry,Value,function()
+try,catch,assertTrue,getMessage,fail,contains
+void function(),undoAction(int step),item.changed()
+getX()
+getCommittedBytes() method of mDir object
+nextLong(),defaults(),setUfsLength(),toThrift(),assertEquals()
+getClassLoader(),ClassHelper.class
+getSuperclass(),isDynamicClass(),get() from HashMap,put() to HashMap.
+open(),fields()
+function
+createResponse,call,createErrorResponse
+try,instance.setYear(),fail(),catch (IllegalArgumentException loc1)
+getFirstParentOfType,getQualifiedName,getImage,getFirstDescendantOfType,makeOperationOf
+void function(ApplicationManagementService arg0),log.isDebugEnabled(),log.debug(),OAuth2ServiceComponentHolder.setApplicationMgtService(null)
+List.getSubjectDNConstraints(),DNConstraintsType.getRegularExpression(),CertificateConstraintsType.isSetSubjectDNConstraints(),java.util.Collections.emptyList()
+void function(),notificationController.deregisterUserSession(null, mockServerMessage)
+TiledMap,null,rpgMaps,FileMap,resourcesToDirectory,game,getAssets,class
+isEmpty(),contains()
+assertEquals
+PasswordCredentials() - This method creates a new instance of the PasswordCredentials class and returns it.
+createViolationNode,assertFalse
+expDataUnitId`: This method call returns a `BigDecimal` object, and it is accessed through the keyword `this`.
+void function(),assertTrue()
+void function,List,RegPCLTestResultDetailsEntity,this,regPclTestResultDetails,arg0
+try,setMinutes,fail,catch
+get(),key()
+equalsIgnoreCase(),toUpperCase(),equals()
+TopKSelector,greatest,Ordering.natural()
+cache.put(),new Element()
+clone()` method: This method is used to create and return a new object that is a copy of the original object.
+
+
+void`: The return type of the method, indicating that it does not return a value.,function`: The name of the method.,int`: The data type of the parameter `arg0`.,if`: A conditional statement that checks if the value of `arg0` is less than -13 or greater than 13.,<`: A less than operator used in the if statement.,-`: A subtraction operator used to compare `arg0` with -13.,||`: A logical OR operator used in the if statement.,>`: A greater than operator used in the if statement.,throw`: A keyword used to throw an exception.,IllegalArgumentException`: The name of the exception that is being thrown.,new`: A keyword used to create a new object of the `IllegalArgumentException` class.,"srini_string"`: A string literal used as the argument for the `IllegalArgumentException` constructor.,this`: A keyword that refers to the current object.,.offsetHours`: A reference to an instance variable of the current object.,=`: An assignment operator used to assign the value of `arg0` to the `offsetHours` variable.
+allPeers(),InetSocketAddress(),PeerDiscoveryException()
+add,setSchemaSources,toArray
+void function (TMXTiledMap, int),getTextureRegionFromGlobalTileID(int)
+void function(Piloto arg0): method signature with one parameter of type "Piloto",Comando loc0 = null;: variable declaration and initialization of type "Comando",loc0 = arg0.proximoComando();: method call "proximoComando()" on object "arg0" of type "Piloto" and assignment of returned value to variable "loc0",loc0.ejecutar(this.getPartida());: method call "ejecutar()" on object "loc0" of type "Comando" with parameter "this.getPartida()",catch (Exception loc1): catch block for handling "Exception" type of exceptions and declaration of variable "loc1" of type "Exception",this.notificarObservadoresException(arg0, loc0, loc1);: method call "notificarObservadoresException()" on object "this" with three parameters of types "Piloto", "Comando", and "Exception" respectively.
+void,function,boolean,this,resetTimeout
+Coin function()
+Function: returns a value of type "Items",Return: keyword used to return the value,Items: name of the class or data type being returned.
+createParameterMap,sign
+function(),return
+expect(),expectMessage(),getMessage(),validateLock()
+ServiceBuilder(),function(),Preconditions.checkNotNull()
+type(),get(),EfgClassInfo(),position(),put(),addAuto()
+
+Iterable,Range,for loop,remove
+function()
+boolean function(final MoverDState<DsT> arg0): Java method signature with a boolean return type and a single parameter of type MoverDState<DsT>.,final MoverDState.VisitorAdapter<Boolean, DsT> loc0 = new MoverDState.VisitorAdapter<Boolean, DsT>(Boolean.FALSE): Variable declaration and initialization of a new instance of the VisitorAdapter class with two generic type parameters Boolean and DsT, and a Boolean value of FALSE as a constructor argument.,@Override public Boolean visitDownloading(final Downloading<DsT> downloadingState): An overridden method signature with a Boolean return type and a single parameter of type Downloading<DsT>.,return Boolean.TRUE;: Return statement that returns a Boolean value of TRUE.,return arg0.accept(loc0).booleanValue();: Return statement that invokes the accept() method of the arg0 object with a loc0 parameter and returns the Boolean value of the resulting object.
+SessionFactory function(),LOG.debug(),SchemaExport(),create(),buildSessionFactory()
+"this" keyword
+Texture,getAssets,containsKey
+getExpiration(),currentTimeMillis(),getTime()
+String function(String arg0),s1.hasField(arg0),s1.getString(arg0),s2.getString(arg0)
+void,String
+function()` is a method that returns a `String` object named `_stack_type`.
+String function(),mUri.getPath()
+boolean,int,Sha256Hash,checkpoints.get(),equals()
+void,function,byte[],handleEvent,new,BinaryBytesEvent
+parseInt,trim,isEmpty
+
+void function(String arg0),this.response.setContentType(arg0)
+
+void function(Source arg0)
+File,Environment.getExternalStoragePublicDirectory,Log.d,File.mkdirs,File.canWrite,File.getDateTimeString
+BufferedReader,InputStreamReader,StringBuffer,append(),readLine(),toString()
+void,remove()
+addChannelInterestLater()` - used on `this.m_selectorManager` object to add interest for write operation on the `this.m_socketChannel` object.
+WebUtils.convertMsToClockTime(),TimeUnit.MINUTES.toMillis(),Assert.assertEquals()
+repository.save()
+
+Mockito.mock,new,OSSUnderFileSystem,AlluxioURI
+if statement,null comparison,method call (tx.unpin())
+function(): This method returns an object of type EndpointReferenceType, and its name is "function".
+String function(),on_symbol().name(),_to_state.index()
+getElementsByTagName(),item(),getAttribute()
+function()
+function` - takes a `String` argument `arg0` and assigns it to the instance variable `url` of the current object.
+length()`: A method of the `String` class, which returns the number of characters in the string.
+void function(),m_sipProxy.start(),m_turnServer.start(),synchronized(this),wait(),InterruptedException.printStackTrace()
+void function(SshDataReceivedEvent arg0): This is a method declaration with a void return type that takes an argument of type SshDataReceivedEvent.,System.out.println("srini_string"): This method call outputs the string "srini_string" to the console and adds a new line at the end.,System.out.print(arg0.getData()): This method call outputs the data returned by the getData() method of the SshDataReceivedEvent object passed as an argument to the console, without adding a new line at the end.
+get(),Integer()
+GenericJSONBuilder,function,double,arg0,double,arg1,lng,lat,return,this
+north()
+function() - This is a method that takes no parameters and returns a Collection of type GrantedAuthority.,return - This is a keyword that returns a value or an expression from a method.,this - This is a keyword that refers to the current instance of the class.,grantedAuthorities - This is a variable that holds a collection of GrantedAuthority objects.
+DenseMatrix64F constructor,DenseMatrix64F getter method,Setter method for "seed" attribute.
+GetOfferDetailsResponse,Return,DetailOfferData,OfferMedia,OfferImage,Entry,Value,Item,function()
+try,catch
+put,get,clear,getSet
+putId.
+DomainRestoreInfo,FIFOQueue,getVariables,reduceDomains,compactify
+
+get(),instanceof,throw
+assertNotNull,function
+writeInt()
+void function(EndpointResolver arg0),resolvers.remove(arg0)
+PrintStream,function(),return,debugGui.getConsole(),getErr()
+getInterval()
+function()` - This method returns a new instance of the `ComplexNode` class.
+void function(ArrayList<CanonicalGene> arg0),this.genes_in_ROI = arg0;
+void function(final Callable<?> arg0, int arg1),Future<?> loc0 = WaitForAsyncUtils.asyncFx(arg0),WaitForAsyncUtils.waitFor(arg1, TimeUnit.SECONDS, loc0),WaitForAsyncUtils.waitForFxEvents()
+void,String,add
+function` - returns an integer value of `0xCafe123` in hexadecimal format.
+function() - returns a byte array.
+function()
+getNumSteps(),*` (multiplication),step,/` (division),100,return
+BrowseOffersResponse,Return,OfferData,Geo,Region,function()
+function()
+keySet(),println(),getUnlocalizedName(),get()
+void,function,long,FileSizeComparable,arg0,this,length,new
+getDefaultLanguageVersionForFile(),getName()
+System.out.println(),assertEquals(),fail(),getImage()
+
+Builder,fromNetworkSegment
+System.out.println(),int loc0 = 0;,LogEntryInterval loc1 = new LogEntryInterval();,loc1.setNumberRequests(loc0);
+Reader,String,int,InputStreamReader,getResourceAsStream
+DataNettyBuffer(),getReadOnlyByteBuffer(),assertTrue(),assertEquals(),nioBuffer()
+function (String arg0): boolean
+getClass(),getFields(),contains(),getName(),println(),writeValue(),get()
+List,MeanValue,Collections.unmodifiableList
+AttackModel(),ChartObject(),createOverlaidChart(),assertNotNull()
+charAt(),isDigit()
+
+void function(Long arg0)` - This is a void method that takes a Long type argument named `arg0` and assigns it to the instance variable `testId`.
+onInitializeAccessibilityEvent()` of the `IMPL` object.
+isDigit,digit
+function()
+EaseUserProfileProvider,function(),return,userProvider
+
+put,handleEvent,new (used for creating an object),Event
+String function()
+containsKey(),checkNotNull()
+normF(),getNumElements(),div()
+ArrayList constructor: `new ArrayList<String>(),Method call: `traverse(root, "srini_string")
+ExceptionListener()
+void,function,NetworkAddressUtils.getLocalHostName
+
+Map,String,function,return,this,attributes
+BigDecimal()
+getEigenvalue(int)` from the `eig` object.
+CoordinatorStore,new,CoordinatorStore,Exception,StoreException,ErrorCode.E0600,getMessage,throw
+
+checkArgument(),new ScriptBuilder(),op(),arg0(),build()
+function() - returns an object of type "Class<? extends Service>" with a value of "SchedulerService.class".
+try,catch,error,throw
+isVisible()
+Document,String,stringToDom
+long`: a data type representing 64-bit signed integer values,<=`: less than or equal to comparison operator,0`: literal value representing the integer zero,if`: conditional statement for executing code blocks based on a condition,>=`: greater than or equal to comparison operator,1L`: literal value representing the long integer one,<<`: bitwise left shift operator,32`: literal value representing the integer thirty-two,-1`: literal value representing the integer negative one,(int)`: type casting operator to convert a value to integer data type.
+function()
+void function(),ServerConfiguration getServerConfiguration(String),assertThat(Object, Matcher),is(Matcher),nullValue()
+try,catch,updateIdP,error,getMessage
+boolean function(final HttpParams arg0),IllegalArgumentException,arg0 == null,arg0.getBooleanParameter(INTEREST_OPS_QUEUEING, false)
+try,catch,setGlobalPolicyAlgorithm,getMessage,handleException
+
+Map < String , String > function ( ),LinkedHashMap < String , String > ( ),getStrings(),String.split(),Map.put()
+HttpServletRequest,IssuerServiceResponse,getIssuer()
+getClass(),newInstance(),throwAsScriptRuntimeEx()
+function()
+function() - This method returns a value of type long, which is stored in a variable called geneA.
+StringUtils.escapeForHtml(),processTextRegex(),StringUtils.breakLinesForHtml()
+get()
+JsonNull.INSTANCE,gson.toJsonTree(),TypeToken.getType()
+void function(Context, View),getSystemService(Context.INPUT_METHOD_SERVICE),showSoftInput(View, int)
+Timestamp function()`: Returns the value of the `receiptDate` field as a `Timestamp` object.
+
+
+GenericJSONBuilder,function,int,arg0,loc_radius,return,this
+unify(FOLNode arg0, FOLNode arg1, Map<Variable, Term> bindings)` : A method that takes two First Order Logic (FOL) nodes and a map of variable-term bindings and returns a map of variable-term bindings if the two nodes are unifiable, otherwise it returns null.
+String,Nonnull,PublicKey,getKeyHash
+getInstance,getTiledMap,getLayers,get
+tryExtractDocFromDOMSource,toDocument,newInstance (from DocumentBuilderFactory)
+
+void function(BundleContext arg0),for(AutoSIMConnectionConfig loc0 : config.connections),environments.deregisterConnectionFactory(loc0.name),factories.remove(loc0.name)
+boolean function(String arg0),AbstractPlugin getByName(String arg0),boolean remove(AbstractPlugin loc0)
+
+System.out.println(),Device.toString(),assertEquals(),fail()
+getChangedRefs,Constants.R_TAGS
+Object,String,get()
+assignment operator (=),array indexing ([]),integer variable declaration and initialization (int arg0),function or method declaration (void function)
+Preconditions.checkState(),mNettyBuf.refCnt(),mNettyBuf.release()
+skipInternal()
+BookPreview,getPreview,getUUID
+getHour(),getMinutes(),getSeconds(),getOffsetHours(),getOffsetMinutes(),Math.floor(),String.format()
+void,String,this
+Object constructor,assertFalse method call,instance.equals method call
+
+createViolationNode,assertFalse
+DataTypesHelper function()
+function(int arg0)
+function
+
+new Locale[]{},Locale.ENGLISH,Locale.FRENCH,new Locale("srini_string", "srini_string"),Locale.GERMAN,Locale.ITALIAN,Locale.CHINESE,Locale.UK
+Instrumentation,function
+currentTimeMillis
+
+
+function()
+reverse
+OpenFileOptions.defaults(),ReadType.CACHE,ReadType.NO_CACHE
+function()
+org.apache.cxf.ws.addressing.ContextUtils.storeMAPs()
+getPackageName
+RequestInput.getString(),System.out.println()
+String function(),getWorkflow(),getGroup()
+function(String)
+checkDuplicate(T arg0),throw new IllegalStateException(String message),free(T arg0)
+void,function,String,this,correlationId,arg0
+void function(),String getUserInfo(String, String),mPlainSaslServer.evaluateResponse(String),mPlainSaslServer.getAuthorizationID(),Assert.assertEquals(String, String)
+handleEvent(),pop()
+open(),splitIntoRuns(),close(),size(),doAMergeIteration()
+isReadOnly(),throw,getPrincipals(),remove()
+
+boolean function(int arg0),int[] getAcceptableAddressCodes()
+boolean function(boolean arg0),boolean appendSemicolon
+setMode(),assertEquals(),getMode()
+function(int arg0)
+equals(),isFieldName(),asFieldName()
+function() with a parameter named arg0 of type String.
+DiffBuilder - method name,normalizeWhitespace - method parameter,true - method argument,return - keyword for returning a value,this - keyword for referring to the current object instance.
+RegistryBasedTrustedServiceStore(),getTrustedServiceClaims(String)
+getBoolean()
+get(),toUpperCase(),containsKey(),matcher(),matches()
+BufferedByteWriter,put32
+
+iterator(),hasNext(),next(),removePluginObserver(),remove()
+function
+Preconditions.checkArgument(),NETTY_CHANNEL_POOL_MAP.containsKey(),NETTY_CHANNEL_POOL_MAP.get(),Channel.release()
+function()` - a method that returns a String value stored in the variable `systemId`.
+function,putParcelableArrayList,return
+URIBuilder() - a constructor method for the URIBuilder class.,function() - a method that sets the fragment of the URI and returns the current instance of the URIBuilder class.
+void function,long
+getInt(),PropertyKey.WORKER_SESSION_TIMEOUT_MS
+Collections.unmodifiableMap,Map.function
+SimpleDateFormat(),setTimeZone(),getTimeZone(),format(),new Date()
+void function()
+void function,String,addTablesSQL
+clear(),individualStructures
+function(),return,this,.languageVersion
+
+Predicate function(),return pred;
+DenseMatrix64F,MatrixFeatures.isDiagonalPositive
+putInt() method,bitwise AND operator,type casting
+
+setBreakOnExceptions,getMenubar,setSelected
+function,int,float,return
+USAddress(),return new USAddress()
+
+mArray.get(int)` retrieves an element at the given index from the `mArray` object.,loc0 == null ? null : loc0 instanceof JSONObject ? (JSONObject) loc0 : null` is a ternary operator that checks if `loc0` is null. If `loc0` is not null, it checks if it is an instance of `JSONObject`. If it is, it returns `loc0` casted as a `JSONObject`. Otherwise, it returns `null`.,JSONObject function(int arg0)` is a method that takes an integer argument `arg0`, retrieves an element from `mArray` at the index `arg0`, and returns a `JSONObject` if the retrieved element is an instance of `JSONObject`, or `null` otherwise.
+PermuteArray(),next(),get()
+findBySiteUrl
+java.rmi.server.UID(): This method creates a new unique identifier object.,toString(): This method returns a string representation of the object.
+
+
+List,String,function(),return,registeredScopes
+void function(File arg0),void traverseDir(File directory, FileAction action),FileAction (anonymous inner class),void act(File arg1),void delete(),IOException(String message, Throwable cause),String error(String msg, Throwable t)
+
+
+shuffle,getPilotos,runTurno,notificarObservadoresRondaTerminada,incrementAndGet
+getOriginalPath(),endsWith(),substring()
+void`: indicates that the method returns no value,IdUtils.createFileId()`: a method call to a static method named `createFileId()` of the class `IdUtils,long`: the return type of `createFileId()` is a `long` integer value,Assert.assertNotEquals()`: a method call to a static method named `assertNotEquals()` of the class `Assert
+List<>,PropertyDescriptor<>,ArrayList<>,return statement
+new ReaderInputStream(reader)` - creates a new `ReaderInputStream` object with the provided `reader` object.,return` - returns the created `ReaderInputStream` object.
+
+void,function,Profile,getManager,registerProfile,arg0
+boolean isResolvedTypeMatch(Method arg1, Method arg0, Map<TypeVariable, Type> arg2),Method findGenericDeclaration(Method arg0)
+setForegroundColor(),fillCircle()
+containsKey,throw,format,get
+final Path loc0 = new Path("srini_string");,final String loc1 = HadoopUtils.getPathWithoutScheme(loc0);,Assert.assertFalse("srini_string".equals(loc1));
+
+
+add()
+WSDLCorbaFactory(),findFactoryImplName(),newInstance()
+
+propertyDescriptorsFor(String, Object),getName()
+throw,IllegalArgumentException
+format,toString
+void function(JPanel arg0),uiStack.addToStack(arg0)
+function()` - returns a boolean value named `defaultNillable`.
+validateInstance,getProblems,problemToExceptionList
+DiffBuilder,final,ComparisonListener,addAll,Arrays.asList
+void function(ConduitSelector arg0),this.conduitSelector = arg0;
+getExchange(),getOutFaultMessage(),get(),class
+getSystemService(),hideSoftInputFromWindow()
+BigDecimal function()
+
+Rect()
+List: This is the name of a Java interface that defines an ordered collection of elements.,Playlist: This is the name of a Java class that represents a playlist.,function: This is the name of a Java method that returns a list of playlists.,ArrayList: This is the name of a Java class that implements the List interface using an array as the underlying data structure.,playlists: This is a Java Map that maps keys to Playlist objects.,values: This is a Java Map method that returns a Collection view of the values contained in the map.,Collections: This is a Java class that contains various utility methods for working with collections, such as sorting.,sort: This is a Java method from the Collections class that sorts the elements in a list in ascending order.
+Class.forName(),newInstance(),DriverManager.getConnection(),Documents.createDb()
+void,function,CString,arg0,this,paramName
+
+String function(String arg0),if(arg0 == null),throw new NullPointerException(),return DAVRepository.class.getName() + "srini_string" + arg0;
+void function,Object arg0,_out.writeStreamingObject
+if,NoFileAssertListener,setCpdListener,add,File,verify
+setNextContainerId,assertEquals,getNewContainerId
+checkRankNUpdate (int, int)
+when,mockServerSession.getId(),thenReturn,notificationController.registerUserSession,mockServerSession,mockServerMessage
+Rectangle(),panel.getPreferredSize(),Rectangle(int x, int y, int width, int height),panel.getWidth(),panel.getHeight()
+
+loadResourceAsStream,getClassLoader,RuleSetNotFoundException
+getLineItem(),getQuantity(),getValue(),intValue()
+function()
+ValidateAccess(),new ValidateAccess()
+String function(HttpServletRequest arg0),arg0.getParameter(WebService.FORMAT),loc0 == null ?,loc0.toLowerCase()
+DishCollectionRepository.save(),log.debug()
+Sha256Hash,Utils.doubleDigest
+
+String function(),GregorianCalendar.getInstance(),fromCalendar()
+DiffBuilder,final,Object,getSource,return,new
+put(),JSONException(),warn()
+T(): This method returns a value named V.
+
+void function(String[] arg0),LOG.debug(String),TurnLauncher loc0 = new TurnLauncher(),loc0.start(),LOG.error(String, Throwable)
+void function,byte[]
+valueOf(),SimpleDateFormat(),format()
+int function(SymmetricQrAlgorithm arg0, double arg1, double arg2),arg0.getNumberOfEigenvalues(),arg0.getEigenvalue(loc1),Math.abs(),loc0++,return loc0;
+BasicNameManager,ServiceInfo,BasicNameManager.initialize()
+ConfigurationHandler function() - This method returns an object of the ConfigurationHandler class, which is assigned to the variable "handler".
+FederationProposal function(String arg0),List<FederationProposal> getPendingFederationProposals(),String.equals(Object obj)
+void function,String,this,_cssText,arg0
+Block constructor,Block.fileName() method,Block.number() method,pg.read() method,Page.getInt() method
+Object(),InitialContext(),lookup(),getClass(),getMethod(),invoke()
+List,String,function,return
+void,function,BundleContext,for,AutoSIMConnectionConfig,config.connections,environments.deregisterConnectionFactory,loc0.name,factories.remove,loc0.name
+String of(),Borders FULL
+
+function()
+WebUtils.convertMsToClockTime(),TimeUnit.SECONDS.toMillis(),Assert.assertEquals()
+
+
+function(): returns a String named `runtimeDir`.
+isEmpty(),parseBoolean(),trim()
+getProgress(),getMax(),setProgress()
+void function(),assertEquals(int, int),time.getHour()
+getDayOfMonth(),getMonth(),getYear(),Calendar.getInstance(),set(),getTime()
+void function(Timestamp arg0)
+boolean isEmpty(): This method is used to check if the collection is empty or not.,contains(Object o): This method is used to check if the given object is present in the collection or not. It returns true if the object is present, otherwise false.
+NodeVisitor function(Node arg0)
+
+valueOf,toUpperCase,catch,error,throw
+getScaledPagingTouchSlop(ViewConfiguration)` of class `IMPL
+function,parse
+try,setSteerTo,null,fail,catch,IllegalArgumentException,assertTrue,getMessage,contains,Exception
+If statement,Null check,Method invocation
+void function(final PropertyChangeListener arg0),m_PropertyChangeSupport.addPropertyChangeListener(arg0)
+Client function()
+String function(AccessibilityServiceInfo arg0),IMPL.getDescription(arg0)
+Locale.setDefault(),HashMap<String, ResourceBundle>()
+getPubKey(),encodeToBitcoin(),data(),build()
+Timestamp function(),return,this,receiptDate;
+void function(boolean),enforceKnownIssuer
+ValidateAccess
+
+moveTo,blockNumber,id
+void function(WalkDirection arg0),viewer.moveCharacter2d(arg0)
+Preconditions.checkNotNull(),IdUtils.getRandomNonNegativeLong(),RetryHandlingBlockWorkerClient()
+
+Map.put()
+hashCode() from the Object class,super.hashCode() - calling the hashCode() method of the superclass Object
+ValidatedItemDTO[] function(String arg0, boolean arg1),try{},return stub.validateAuthnRequest(arg0, arg1);,catch(RemoteException loc0){},log.error("srini_string", loc0);,throw new AxisFault(loc0.getMessage(), loc0);
+Sha256Hash,function,Block,getHash
+Files.move(),File()
+List - A generic interface for an ordered collection of elements that can be accessed by an index.,ArrayList - A class that implements the List interface, which provides a resizable array implementation.,JSONArray - A class that represents an array in JSON (JavaScript Object Notation) format.,Object - A class that is the root of the Java class hierarchy, and every class has Object as a superclass.,for - A keyword that introduces a for loop.,add - A method that adds an element to a list.,new - A keyword that creates a new object.,JSONObject - A class that represents a JSON object, which is an unordered set of name/value pairs.
+clear() - This method is used to remove all the elements from the md5Cache.
+return`: This keyword is used to return the value of the `inactivationReasonType` variable of the current instance of the `String` class.
+log.error(),throw new AxisFault()
+ByteBuffer.allocate(int capacity): Allocates a new byte buffer with the specified capacity.,ByteBuffer.putInt(int value): Writes an integer to the buffer at the current position.,ByteBuffer.flip(): Flips this buffer. The limit is set to the current position, and the position is set to zero.
+
+boolean function(String arg0),arg0.length(),Character.isJavaIdentifierStart(arg0.charAt(0)),for loop with int loc0, loc0 < arg0.length(), and loc0++,Character.isJavaIdentifierPart(arg0.charAt(loc0))
+boolean return type,function name: "function",empty parameter list "()",calling the method "loadDefault()" on an object named "config",returning the result of "loadDefault()" method as a boolean value.
+void function(List<Double> arg0),profits.add(arg0)
+
+InStreamOptions,function,long,mSeekBufferSizeBytes,arg0,return
+String formatUTC(Date date, DateTimeFormat format, boolean showTimeZone),Date new Date()
+void function(T arg0): This is the main method that takes an argument of type T and performs certain operations on it.,Integer loc0 = counter.get(arg0): This line of code uses the get() method of the HashMap class to retrieve the value associated with the key arg0. The retrieved value is then assigned to the Integer variable loc0.,if (loc0 == null): This is a conditional statement that checks whether loc0 is null or not.,counter.put(arg0, 1): If loc0 is null, this line of code uses the put() method of the HashMap class to add a new key-value pair to the counter HashMap. The key is arg0 and the value is 1.,counter.put(arg0, loc0 + 1): If loc0 is not null, this line of code uses the put() method of the HashMap class to update the value associated with the key arg0. The new value is loc0 + 1.
+List,void,function,TestResultDTO
+Scriptable function,Context,Scriptable,Object,Class,new NativeJavaObject()
+function()` - returns the value of the `mTierAlias` variable as a `String`.
+PaymentChannelServerState,Wallet,TransactionBroadcaster,checkArgument
+getPrefix,collect
+copyRecordsFrom(),getTableInfo(),open(),new MultiBufferProductScan()
+
+ServerSession,String,return,userSessionMap,get
+
+List<>,String,function(),links.getVertexLabels()
+contains,getVal,fieldName,value,RuntimeException
+
+LocalAlluxioClusterResource,put,toString
+StringUtils.isEmpty(),isValidOverBlackListPatterns(),getPatternString(),String.format(),IdentityValidationException()
+schema()` method,return` statement
+function,contains,getSource,add
+HashMap(),tintColor(),getRandomColor(),getColorString()
+setPopulationSize(),setIterations()
+createElement,appendChild,getDomainAssignment,writeSourceSinkDomPair
+size() - a method of the List interface that returns the number of elements in the list.
+function()
+getClass(),XDebugMessage(),getName(),add()
+putLong(),return statement
+getInstance(),appendToConsole(),setLedsAnimation(),spinLeft(),doFor(),hover()
+ResponseEntity,@PathVariable,log.debug(),ingredientService.findOne(),Optional.ofNullable(),map(),new ResponseEntity<>(result, HttpStatus.OK),orElse(),new ResponseEntity<>(HttpStatus.NOT_FOUND)
+"void function(Element arg0)" - This method takes an argument of type "Element" and does not return anything. The method name is "function".
+getStringValue()
+lastIndexOf,substring
+internalEquals,internalEqualsNext
+String function(),lineItem.getLineItem(),getItem(),getSellersItemIdentification(),getID(),getValue()
+function(int arg0)
+function()
+assertEquals(),getDefaultTotalCapacityBytes(),getCapacityBytes()
+peek(),clear(),loc0(),add(),poll()
+setSentenceCount,assertEquals,getSentenceCount
+function(String arg0)
+getProxy(),getAuth(),getUsername(),getPassword()
+DefaultEventHandler(),RawRtfParser(),parse()
+function,equals,getSource,add
+NormOps.conditionP2(),assertEquals(),checkUncountable()
+Mockito.when(),mClient.listObjects(),Matchers.any(),thenThrow(),mOSSUnderFileSystem.delete(),Assert.assertFalse()
+List: a generic interface in Java that represents an ordered collection of elements.,Language: a class or data type used to represent programming languages.,File: a class in Java that represents a file or directory path.,getName(): a method in the File class that returns the name of the file or directory as a string.,getLanguagesForFile(): a method that returns a List of Language objects associated with a given file.
+Arrays.asList(),suppressing()
+void function,AudioManager.registerRemoteControlClient,RemoteControlClientCompat.getActualRemoteControlClientObject
+
+values(),size(),iterator(),next(),remove()
+function()`, which returns the value of `theURI`.
+void function(String arg0),this.config.getServletContext(),this.config.getFilterName(),this.config.getFilterName() + "srini_string" + arg0,this.config.getServletContext().log()
+
+new GSVParser("srini_string"),loc0.getSatelliteInfo(),loc1.size(),assertEquals(2, loc1.size()),loc1.get(0),loc1.get(1),testSatelliteInfo(loc1.get(0), "srini_string", 56, 182, 51),testSatelliteInfo(loc1.get(1), "srini_string", 38, 163, 47)
+DataByteBuffer(),getNettyOutput(),assertTrue()
+function()`: A boolean method that returns the value of a variable named `loggingEnabled`.
+RegisteredClient function,getIssuer,get,return
+String.lastIndexOf(String str)`: Returns the index within this string of the last occurrence of the specified substring.,String.substring(int beginIndex, int endIndex)`: Returns a new string that is a substring of this string. The substring begins at the specified `beginIndex` and extends to the character at index `endIndex - 1`.,String function(String arg0)`: A method named `function` that takes a `String` argument and returns a `String`.
+boolean function(String, FieldSigMask),fields.keySet(),arg1.covers(FieldSignature),fields.get(FieldSignature),fields.get(FieldSignature).contains(String)
+getLastPathComponent(),getParentPath(),fireChildrenChanged(),fireChildChanged(),getIndexOfChild()
+
+this.testId = arg0;
+values(),iterator(),hasNext(),next(),close(),remove()
+JSONArray,List,add,toJSONObject
+boolean function(),mrnaValue(),MRNA.DOWNREGULATED
+return,POST
+boolean,DeleteLineageOptions,mCascade
+
+getWorkflow(),getRun()
+getPath(),getParent(),getChildNumber(),put()
+function()
+
+add() method,String datatype,void return type,function() method
+function(boolean arg0)
+void function(File arg0),Scanner loc0 = new Scanner(arg0),loc0.useDelimiter("srini_string"),while(loc0.hasNext()),_ignoreWords.add(loc0.next()),loc0.close()
+function(String arg0)
+void function(Result arg0),withExceptionHandling(Trans<Object>),new Trans<Object>(),public Object transform(),transformation.transformTo(arg0),return null;
+removeVertex(),remove(),getId()
+add(),addAll()
+getName(),getNamespaceURI(),uriToPrefix.get(),loc2.size(),undeclared.add(),arg1.add()
+GetOfferDetailsResponse,Return,DetailOfferData,function(),new
+Supplier<T> interface,Preconditions.checkNotNull(Object) method,ThreadSafeSupplier<T> class constructor
+getValues(),Matrix()
+function`: returns a `List<Node>` object named `evaluationResults`.
+function()` : This method returns a boolean value indicating whether the variable `services` is not null.
+remaining(),arraycopy(),wrap(),position()
+String function(),matchStringConstant(),throw new BadSyntaxException(),String loc0 = tok.sval;,nextToken()
+boolean function(Integer arg0),graph.addNode(arg0)
+
+Message,JSONValue.parseWithException,ParseException,ParserException,parseJSONValueToMessage
+DenseMatrix64F: creates a new dense matrix with 64-bit floating point values,numRows: returns the number of rows in a matrix,numCols: returns the number of columns in a matrix,Math.min(): returns the minimum value between two numbers,Math.loc0(): computes the location of the first element in the bidiagonal matrix B,double[]: creates a new array of double-precision floating-point values
+String function(),String label()
+String,getImageUri,Uri,toString
+get() from the object totalElapsed, which returns a long value.
+String: Java class for manipulating strings.,BufferedReader: Java class for reading text from a character-input stream.,readLine(): Method of the BufferedReader class that reads a line of text from the input stream.,trim(): Method of the String class that removes whitespace from both ends of a string.,startsWith(): Method of the String class that checks if a string starts with a specified prefix.
+final double loc0 = 95.56789;,vtg.setMagneticCourse(loc0);,assertTrue(vtg.toString().contains("srini_string"));,assertEquals(loc0, vtg.getMagneticCourse(), 0.1);
+void function(MessageContext): This method takes a MessageContext object as an argument and assigns it to a variable named "mc".
+Objects.hashCode(Object obj)
+get` - a method of an object named `W` that takes two integer arguments and returns a double value.
+toArray,size
+parseInt,get
+boolean function(Bits arg0),ordinal()
+
+
+getString(),length()
+Collections.singletonList(),new PropertyValue(),new PropertyDeclaration(),CSSName.DISPLAY,new CascadedStyle(),loc1.iterator()
+String function(),avoidNull(),xmlParser.getTitle()
+identityHashCode,while loop,modulo operator,return statement
+
+URI function(QName arg0),for loop,ServiceContractResolver.loc0,URI.loc1,null check,return statement
+hasMoves (OthelloSide side),!,return
+getBundle,getName,println,getResourceBundleAsProperties,assertEquals
+synchronized,add,startQueueWorker
+void function(Date)
+
+int function(int arg0, int arg1): Method signature,toLong(int value): Method call on arg0 and arg1 parameters,(int): Type casting to int,/: Division operator
+Type,getSingleTypeParameter
+getWriteTypeStandalone,getTypeMapping,getTypeCreator,createType
+reliableEndpoint.getManager(),.getIdGenerator(),.generateSequenceIdentifier()
+distinctValues(String arg0)
+ByteBuffer.allocate(int capacity),ByteBuffer.put(byte[] src),ByteBuffer.rewind(),MessageDigest.getInstance(String algorithm),MessageDigest.update(byte[] input),MessageDigest.digest(),Arrays.copyOf(byte[] original, int newLength),BufferUtils.newByteArrayFromByteBuffer(ByteBuffer buffer),fingerprintHash(byte[] input)
+setMaxLocks,BlockLockManager,lockBlock,unlockBlock,lockExpectingHang
+checkNotNull,String.length(),StringBuilder(),StringBuilder.append(),StringBuilder.toString()
+assertNotNull
+matrixItemUtility[arg0][arg1],matrixItemRemainingUtility[arg0][arg1]
+function()
+try,if,return,catch
+Long.valueOf()
+internal_error(String)` : creates an instance of an exception class called `internal_error`, which takes a string argument as its message.
+getAndSet(),schedule()
+checkSymmRankNMinus_U
+boolean function,job(),arg0.job()
+
+
+StringUtils.isEmpty(),isValidOverWhiteListPatterns(),IdentityValidationException(),String.format(),getPatternString()
+final,assertEquals,getSpeed,setSpeed
+
+assertEquals,instance.getLongitude,instance.setLongitude,assertEquals,instance.getLongitude,assertEquals,instance.getLongitudeHemisphere
+Iterable<T> function,Iterable<T> (constructor),Predicate<? super T> arg1,new Iterable<T>(),@Override,public Iterator<T> iterator(),return new FilteringIterator<T>(arg0.iterator(), arg1)
+
+void function(@ModelAttribute Schedule arg0)` - This method takes a single argument of type `Schedule` annotated with `@ModelAttribute`, and saves it to a repository using the `save()` method.
+asyncFx,waitForMillis
+void function,Logger,Popup.
+setSeconds,assertEquals,getSeconds
+ByteBuffer.allocate(int capacity),ByteBuffer.order(ByteOrder bo),ByteBuffer.putInt(int index, int value),ByteBuffer.flip(),ByteBuffer.getInt(int index),ByteBuffer.get(byte[] dst),ByteBuffer.get(int index, byte[] dst),ByteBuffer.put(byte[] src),ByteBuffer.put(int index, byte[] src),ByteBuffer.position(int newPosition),ByteBuffer.limit(int newLimit)
+IllegalArgumentException(),createParserImpl()
+
+RPCBlockReadResponse constructor with parameters: BLOCK_ID, OFFSET, LENGTH, null, STATUS,RPCBlockReadResponse.encode() method with parameter mBuffer,RPCBlockReadResponse.decode() method with parameter mBuffer,assertValid() method with parameters: BLOCK_ID, OFFSET, LENGTH, STATUS, loc0,assertValid() method with parameters: BLOCK_ID, OFFSET, LENGTH, STATUS, loc1
+doubleValue(),getPriceAmount(),getValue(),getTheItemPrice()
+AtomicLongMap(),ConcurrentHashMap()
+function(boolean arg0)
+Preconditions.checkNotNull(),blocksInTheSameDir(),requestSpaceSatisfied()
+GetOfferDetailsResponse,Return,function,new
+ParamChecker.notNull(),createSAXBuilder(),SAXBuilder.build(),Document.getRootElement()
+JobLauncher,SimpleJobLauncher,setJobRepository
+void function(Object[] arg0),notEmpty(Object[] arg0, String str)
+function() (return type: boolean)
+Enumeration,Object,IteratorEnumeration,gen2
+boolean function()
+function()
+Project function(),makeEmptyProject(boolean)
+generateCreateTableScript,get
+String: a data type in Java representing a sequence of characters,function: the name of the method being declared,return: a keyword used to specify the value to be returned by the method,_uriResolver: a private variable or object that holds the URI resolver,getBaseUri(): a method of the URI resolver object that returns the base URI
+ThreadContext.peek(),ThreadContext.pop()
+void function(),new Mode(),Mode.getDefault(),Assert.assertEquals(),loc0.getOwnerBits(),loc0.getGroupBits(),loc0.getOtherBits(),loc0.toShort()
+
+add(),equals(),hashCode(),toString(),NullPointerException()
+ConfigurationFactory.getInstance()
+checkPositionIndexes,isWellFormedSlowPath
+void,CallbackHandler
+function() : Returns a two-dimensional array of type String named "matrix".
+createTemporaryDirectory,getAbsolutePath
+boolean function(HttpServletRequest),String getEmailId(HttpServletRequest)
+function,reset,getString
+for loop,try-catch block,method call: getSentenceListeners(),method call: readingStopped(),method call: log() (from the LOGGER object),Level.WARNING (a constant value from the Level class)
+Object[] constructor: Creates a new array of objects.,invokeMethod: Invokes a method on an object using reflection.
+try,setHour,fail,catch,IllegalArgumentException
+Pageable,log.debug,bookRepository.findAll
+add,getWork,StoredBlock
+
+Vector()
+boolean function(boolean arg0),String toString(),handleLine(String, String),StringBuilder()
+forName,getMessage
+function(ObjectType arg0)
+Void return type,Method name: function,Parameter type: Timestamp,Parameter name: arg0,Assignment operator =,Accessing instance variable: fetcherStartTimestamp,Parameter value assignment: arg0
+void,String,this
+boolean,equalsIgnoreCase
+instance(),SearchConditionBuilder(),DEFAULT_LANGUAGE
+File,function,return,sourceCodeFile
+void,function,DataHandler,this,attachinfo,arg0
+void function,LocalAlluxioClusterResource,AlluxioURI,waitForPersist,Constants.SECOND_MS
+System.out.println(),String loc0 = "",FileHandler loc1 = new FileHandler(),loc1.readFromGameFile(),.getNodeName(),assertEquals()
+String.format,String.%s (used as a format specifier)
+WorkflowStore(S arg0)
+function: returns a byte array named chainCode.
+synchronized()
+return,POST
+mockUnderFileSystem,anyString
+int function(StoredBlock arg0),getInterval()
+try,catch,IOException,RuntimeException,close()
+hashBytes(),asInt()
+File,String,com.gitblit.utils.FileUtils.resolveParameter,Constants.baseFolder$,baseFolder,arg0
+SpecializedOps.qualityTriangular,decomp.getQR
+void function,final int,final ByteBuffer,final MediaCodec.BufferInfo,if,>,mStatredCount,mMediaMuxer,writeSampleData
+FilenameFilter,Filter,File,Override,boolean,accept,String,toString
+valueOf,getXpathNamespaceContext
+function() with a parameter of type Attribute and a return type of String.
+getInt
+function()` is a method that returns a String named `url`.
+function
+T,String,Class,Object,getProperty
+function: returns an array of String objects named "dnsSeeds".
+Map - creates a map object that stores key-value pairs.,HashMap - creates a hash map object that implements the Map interface.,put - adds the specified key-value pair to the map.,return - returns the map object with the added key-value pair.
+getInodeList,getClientUser,getGroups,isPrivilegedUser,checkInodeList
+void function(),new Time("srini_string"),assertEquals(int, int),assertEquals(int, int),assertEquals(double, double, double)
+
+boolean function(Language arg0),for(RuleSet loc0 : ruleSets),if(loc0.usesDFA(arg0)),return true;,return false;
+boolean function(String, String),STSUtils.TOKEN_TYPE_SCT_05_02.equals(String),STSUtils.TOKEN_TYPE_SCT_05_12.equals(String)
+function() - This method returns the value of the String variable "propertyName".
+function (int arg0) - This method takes an integer argument (arg0) and returns the result of dividing it by 3.
+async,waitForMillis
+getNonTargetAttributes(),decisionTreeLearning()
+void function(),this.m_selectorManager.addChannelInterestNow(),this.m_socketChannel,SelectionKey.OP_WRITE
+OutStreamOptions` with a parameter of type `long` named `arg0`.,mTtl = arg0,return this;
+void function(EntityClassifier<EntityViewInfo> arg0),entityTree.getBoundingBox(),applyClassifierAndUpdateTree(),fireMapDataEvent(new MapEvent(this, MapEvent.Type.MAP_MODIFIED))
+final,hdg.setVariation(),assertEquals(),assertTrue(),hdg.getVariation(),hdg.toString(),contains()
+void function(Long arg0)
+
+function()` - It is a void method that sets the boolean variable `async` to `true`.
+HashCodeBuilder` : A constructor for creating an object of the `HashCodeBuilder` class.,function` : A method for performing a calculation on a character argument.,iTotal` : A variable for storing the accumulated hash code value.,iConstant` : A constant variable for use in the hash code calculation.,arg0` : The character argument to be hashed.,return` : A keyword for returning the `this` reference of the `HashCodeBuilder` object.
+String function(boolean, String),getDataSourceName()
+void,function,IdentityMapper,arg0,this,identityMapper
+copyDiag,copyOff,setQ,setFastEigenvalues,process,copyEigenvalues
+String function(),null,return,if,!=,else,"srini_string"
+WebUtils.convertMsToClockTime(),TimeUnit.HOURS.toMillis(),Assert.assertEquals()
+void,function,int,this,bufferedImageType,arg0
+setFirstRecordPosition(),setLastRecordPosition(),append()
+
+DecompositionFactory.quality(mat, eig)
+isAuthenticationEnabled(),isAuthorizationEnabled()
+void function,HashMap,Node,Integer
+int function(MatrixPosition): This is the name of the method.,MatrixPosition: This is the name of the class of the parameter being passed to the method.,return: This is a keyword used to indicate the value to be returned by the method.,originalMatrix: This is the name of a variable that is likely an instance of a class that has a field called matrixItemRemainingUtility.,.matrixItemRemainingUtility: This is a field of the object referenced by originalMatrix.,arg0.row: This is a reference to a field called row of the object referenced by arg0.,arg0.column: This is a reference to a field called column of the object referenced by arg0.
+setHeading,assertEquals,getHeading
+
+
+function()
+void,function,Crypto,this,signatureCrypto,arg0
+final,setCourse,assertTrue,toString,contains,assertEquals,getCourse
+
+GregorianCalendar(),setTime(),get(),setHour(),setMinutes(),setSeconds()
+empty(),pop(),getStyle(),subSequence(),replace()
+return,new,String[],{ },"srini_string"
+
+valueOf` method of the `String` class,addHolder` method (not specified which class it belongs to)
+getConduit(),instanceof,HTTPConduit
+setInputMode(),remaining()
+String function(),getInstance(),getFirstProperty()
+
+Map,LinkedHashMap,for loop,getStrings,split,put
+AbstractAction,function,return
+void,for,ProviderListener,providerUpdate
+function,Collection.add,Collection.contains,for-each loop
+get(),new DocumentElement(),new IntegerHolder(),put(),inc()
+void function(FullyQualifiedClassType arg0)` - a void method that takes a parameter of type `FullyQualifiedClassType` named `arg0` and assigns its value to the instance variable `handlerClass` of the current object.
+
+showMessageDialog
+length(),return
+void,function,new,PlainSaslServer,MockCallbackHandler
+
+Boolean,int,Object,get,instanceof,return,Boolean,throw,IllegalStateException
+function()
+CommandHandler.valueOf(String): Returns an enum constant of the specified type with the specified name.,Exception: Represents any exception that can occur during the execution of a Java program.,try: Defines a block of code that may throw an exception, and specifies one or more handlers for the exceptions that may be thrown.,catch: Defines a block of code that is executed when an exception occurs in a try block.,return: Terminates the execution of a method and returns a value to the caller.,null: A special literal that represents a null reference, meaning the absence of a value.
+void,function,String,this,roleClassifierType,arg0
+findResource,openStream,toString,closeQuietly
+void,function,FMLInitializationEvent,arg0,proxy,registerRenders
+compareTo(),mod()
+if statement,return statement,null check,calling method (size()) on an object (items)
+void,function,String,this,feedId,arg0
+return,CSSValue.CSS_PRIMITIVE_VALUE
+MatrixPosition constructor,accessing array elements,returning a value
+permissionFromRole,repositoryFromRole,toLowerCase,add,put
+function,add
+compareTo,boolean function.
+String function(),this.placeId
+
+ByteBuffer.wrap(),String.getBytes(),ByteBuffer.allocate(),UnsupportedEncodingException() - constructor,ByteBuffer() - constructor,LOG.error()
+DataServerMessage,request
+boolean function(),Date(),expires.before(Date)
+Builder function(@Nullable String arg0)
+boolean function(final Callable<Boolean> arg0),loc0 = arg0.call(),catch(Exception loc1),LOG.error("srini_string" + arg0, loc1),CliUtils.printPassInfo(loc0),return loc0;
+append,fileName,BTPageFormatter
+boolean,for,int,<,++,if,return
+finalize(),close()
+void function(Class arg0, Connection arg1),closeConnection(String arg0, Connection arg1),getName()
+
+applyUMask
+void function(),futa.nextStep()
+size()
+getInstance(),appendToConsole(),goRight(),doFor(),hover()
+get()
+
+function,ConstantFunction
+
+
+function,setup
+Mockito.when(),mockRepository.getAll(),thenReturn(),assertTrue(),service.isBlacklisted(),Mockito.verify(),times()
+checkNotNull,Long.parseLong,throw new NumberFormatException
+function()` - This method returns the `authenticationHolder` object of type `AuthenticationHolderEntity`.
+try,catch,setMessageCount,fail,assertTrue,getMessage
+checkArgument,arg0.size(),ScriptBuilder,smallNum(),data(),build()
+getEnum,equals
+void,String
+throw,length,new,for,abs,return
+Builder,function
+add()
+function` - returns a long value named `timeElapsed`.
+setRenderingHints,getRenderingHints
+
+createFileStream,parseMap
+function,get,instanceof,throw,IllegalStateException
+Thread constructor,Thread.start(),Thread.join(),Assert.assertTrue()
+iterator(),hasNext(),next(),isSubtype(),remove()
+
+void function(String arg0) - A method that takes a String argument and assigns it to a class member variable called "name" using the "this" keyword.
+void function(),Util.getCurrentTime()
+void,String
+for loop,write,assertEquals,assertArrayEquals,copyOfRange
+put16.,bitwise AND operator (&).
+void function(InodeFile arg0),getBucketContaining(arg0),loc0.removeFile(arg0)
+
+if(),arg1.getInodeList(),getClientUser(),getGroups(),checkInodeList()
+String.format(),ep.sparql()
+expect,expectMessage,deleteLineage
+function()
+CString(),setValue()
+void,function,SshDisconnectedEvent,System.out.println,getHost(),connected = false
+
+isSetIssuerDNConstraints(),getIssuerDNConstraints(),getRegularExpression(),java.util.Collections.emptyList()
+List,void,String,this
+ArrayList(),List.size(),List.add(),TransactionSignature.encodeToBitcoin(),createMultiSigInputScriptBytes()
+bitwise AND operator: "&",constant: "INT_MASK"
+function()
+debug,findByHost
+wrap,getIncreasingByteArray
+setStatus,assertTrue,toString,contains
+length(),charAt()
+final keyword (used to make the parameter values constant),D1Submatrix64F (a data structure for a submatrix of a matrix),BlockHouseHolder.innerProdRow (calculates the inner product of two rows of a matrix),arg1.get (gets the value at a specific index of the submatrix),arg1.set (sets the value at a specific index of the submatrix),BlockVectorOps.add_row (adds a scalar multiple of one row of a matrix to another row),* (multiplication operator),- (subtraction operator),+ (addition operator),/ (division operator),arg1.col1 (returns the ending column index of the submatrix),arg1.col0 (returns the starting column index of the submatrix)
+replaceAll,replace
+clone(),andNot(),cardinality()
+for loop,if statement,getUUID method
+size()
+DagEngine(),return new DagEngine()
+System.out.println(),String loc0 = "",ResourceLoader loc1 = new ResourceLoader(),InputStream loc2 = null,InputStream loc3 = loc1.getResourceStream(loc0),Assert.assertNotNull()
+void function(Iterable<? extends T> arg0),offerAll(arg0.iterator())
+ProjectValidation() - This method is a constructor for the `ProjectValidation` class, which creates and returns a new instance of the `ProjectValidation` object.
+boolean function(Map<String, String> arg0, String arg1, String arg2): This method takes in three parameters - a Map of Strings, and two String values. It returns a boolean value. The method checks if the Map is null or if either of the two String values are empty. If any of these conditions are true, it returns false. Otherwise, it adds the second String value as a value in the Map with the first String value as the key and returns true.
+function()
+
+getContent,getCurrentStackTraceElement,getMessage,printStackTrace,e (from Log class)
+Set,String,function,return
+boolean function(Fiat arg0),compareTo(Fiat arg0)
+void,function,String,this,type,arg0
+String function (String arg0),CacheUtil.md5sum(String arg0)
+BufferedByteWriter,ensureCapacity,putInt
+String,Object,getFacade(),isAAttribute(),isReadOnly(),isAOperation(),isLeaf()
+
+
+
+void,String[],new,SshExample()
+replaceAll
+
+getTtlIntervalStartTimeMs()
+Document,InputStream,extractAll
+Arrays.sort(),Arrays.fill(),Arrays.copyOf(),Collections.unmodifiableList()
+getTime(),assertNotNull(),assertEquals()
+assertEquals(),cal.get(),Calendar.DAY_OF_MONTH,instance.getDay()
+assertEquals,LanguageRegistry.findLanguageVersionByTerseName
+escape(),replace()
+BigDecimal arg0` - represents a numerical value with arbitrary precision.
+OperationMetric,function,return,calculator
+assertEquals,getSentenceIndex
+SiteUrl: constructor method for creating a new instance of the SiteUrl class,log.debug: a method from the log object to output a debug level log message,siteUrlRepository.save: a method to save the SiteUrl object to the repository and return the saved instance,return: a keyword to return the saved SiteUrl instance from the method
+DataServerMessage(),DataServerMessage(boolean, RPCMessage.Type),ByteBuffer.allocate(int)
+getTransaction(),isActive()
+assertEquals
+void,function,SshDisconnectedEvent,System.out.println,getHost,connected
+
+boolean next(),RID getDataRid(),void moveToRid(RID)
+void function(),seekInternal(),mEOFBlockStream,(int) BLOCK_LENGTH
+try,catch,setMonth,fail,IllegalArgumentException
+validatePopulation(),clearInstrumentation(),setPopulationSize(),ga()
+
+void function(QName arg0),path.addLast(),path.getLast(),attributes.get()
+EncryptionProperties()
+getAccessTokenForUser,Mode.SHARED
+void function,@Nullable,Closeable,boolean,if,try,catch,IOException,logger,Level.WARNING,throw
+void function,final String,properties.setProperty()
+
+isFull,Math.min,containsKey,get,put
+assertEquals()
+empty(),throw,peek(),intValue()
+lastIndexOf,substring
+SetAttributeOptions.defaults(),Assert.assertNull()
+
+void,List,String
+isEmpty(),! (logical not operator)
+Mockito.when,mClient.listObjectsV2,Matchers.any,thenThrow,AmazonClientException.class,mS3UnderFileSystem.delete,Assert.assertFalse
+function(int arg0)
+List,ByteBuffer,ArrayList,size(),for loop,add(),cloneByteBuffer()
+
+Hashtable,checkForNewVertex,put
+createMap(),putString(),Nullable
+List,ArrayList
+finishRunningJobs,put,valueOf,getId,run
+
+void,function,UriPrefixPair,[] (array),this,packagePrefixes,arg0
+void function(long): Assigns the value of the input argument 'arg0' to the instance variable 'seqId'.
+
+DenseMatrix64F(),MatrixFeatures.isVector(),CommonOps.identity(),CommonOps.multAddTransB()
+and(),not()
+Waypoint,String,new,getLatitude,getLongitude
+void function(long arg0)
+Boolean variable assignment,Constructor reference,Boolean parameter declaration and assignment
+void function,final ProtocolHandler,this.m_readHandler,setProtocolHandler
+isRaw(),format.checkType(char, boolean),getByteArrayLength(),getByteArrayInternal(int, byte[], int, int)
+LogoutRequestSender() - constructor method of an object/class
+
+String function(),mUri.getPath(),loc0.lastIndexOf(),loc0.substring()
+function,setRequestId,getId
+instanceof,equals
+getPage(),draw(),invalidate()
+final,double,+,/,instance.setLatitude(),assertTrue(),instance.toString(),contains(),assertEquals(),instance.parseLatitude()
+removeTextChangedListener()
+put - a method of the HashMap class.,String - a built-in Java class for working with strings.,HighLevelChangeRenaming - a custom class used as the value in a HashMap.
+void function(String, Bundle, RequestListener, Object),request(String, Bundle, String, RequestListener, Object)
+void function(Rotation arg0),this.rotation = arg0;,for(StateListener loc0 : this.listeners),loc0.onRotationChanged(this.rotation);
+
+void function(),BufferUtils.getIncreasingByteBuffer(int)
+void function(),assertTrue(),rte.isFirst()
+void function(List<RSSItem> arg0): This method takes a List of RSSItem objects as its argument and assigns it to the "_items" field of the class instance.
+None. There are no method calls in this method.
+expect,getIncreasingByteBuffer,assertEquals,append,close
+assertEquals(long expected, long actual)
+debug() - a method in the LOG object,runFullTest() - a method taking an instance of YahooImageSearcher as an argument
+parse,toArray
+function()
+function: This is the name of the method.,byte: This is the return type of the method.,[]: This indicates that the return type is an array of bytes.,this: This refers to the current object instance.,errors: This is a field or variable that belongs to the current object instance and holds a byte array.
+getName(),compareTo()
+equals(),startsWith(),endsWith()
+flush(),new LogIterator(),ListIterator<BasicLogRecord> function()
+GetOfferDetailsResponse,Return,DetailOfferData,Merchant,Addresses
+append()
+void,function,Node,NodeTest
+function(int arg0)
+get(),remove()
+tryMoveToEntityLiving()
+asLink,retrieveJson
+length()` method of the `CharSequence` class.,charAt(int index)` method of the `CharSequence` class.,isHighSurrogate(char ch)` method of the `Character` class.,isLowSurrogate(char ch)` method of the `Character` class.
+String function(),mAlluxioMaster.getRPCBindHost()
+escape(),stringOrNull(),function()
+when` from `Mockito,listObjects` from `mClient,any` from `Matchers,thenThrow` from `Mockito,rename` from `mOSSUnderFileSystem,assertFalse` from `Assert
+op(),chunks.size()
+Configuration.set,GreedyAllocator.class.getName,Allocator.Factory.create,Assert.assertTrue
+void,String,this
+if statement,logical OR operator,length() method,finishLine() method with a boolean argument.
+function()` - This method increments the value of the `_use_count` variable by 1.
+while loop,if statement,isDirectory method,File constructor,exists method
+putExtra(),getIntent(),getStringExtra()
+Iterator,function,new,OrderLineTypeFacade,Iterator,order,getOrderLine
+function` - a void method that takes a `FolderInfo.CheckedFlag` object as an argument and assigns it to the `checkedFlag` field of the current object.
+
+sLock,getBuffer,getString
+
+getRuleChainVisitor(),add()
+void function(),trigger(null)
+element(),tagList.openTag(),tagList.closeTag(),assertFalse(),assertTrue()

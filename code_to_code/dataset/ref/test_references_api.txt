@@ -1,0 +1,100 @@
+serialize,LittleEndianOutput.writeShort
+addAll(BlockList<T> src),addAll(src.directory[srcDirIdx], 0, BLOCK_SIZE),addAll(src.tailBlock, 0, src.tailBlkIdx)
+writeByte,addBlock
+getObjectId()
+deleteDomainEntry`: method name,DeleteDomainEntryResult`: return type,DeleteDomainEntryRequest`: parameter type,beforeClientExecution`: method called with `request` parameter,executeDeleteDomainEntry`: method called with `request` parameter
+ramBytesUsed()` of `termOffsets,ramBytesUsed()` of `termsDictOffsets
+getFullMessage,RawParseUtils.tagMessage,RawParseUtils.decode,guessEncoding
+POIFSFileSystem,createEmptyBATBlock,setOurBlockIndex,setNextBlock
+init(int address),assert,>> (right shift operator),.buffers[],& (bitwise AND operator),.length
+setPath,String
+listIngestions,beforeClientExecution,executeListIngestions
+public - access modifier,QueryParserTokenManager - method name,CharStream - parameter data type,stream - parameter name,int - parameter data type,lexState - parameter name,this() - constructor call,SwitchTo() - method call with parameter
+getShardIterator,beforeClientExecution,executeGetShardIterator
+ModifyStrategyRequest,super,setMethod
+synchronized,if,throw,try,return,available()
+
+synchronized,read,Arrays.checkOffsetAndCount
+public - access modifier,OpenNLPSentenceBreakIterator - constructor name,NLPSentenceDetectorOp - parameter data type,sentenceOp - parameter variable name,this - keyword,sentenceOp - class variable name
+public void print(String str),String.valueOf((Object) null),write(str != null ? str : String.valueOf((Object) null))
+String` constructor: Takes a string argument `functionName`.,NotImplementedException` constructor: Takes a `NotImplementedException` argument `cause`.,super`: Calls the constructor of the superclass (`Exception`) with the arguments `functionName` and `cause`.,Assignment: Assigns the value of `functionName` to the instance variable `this.functionName`.
+next(),super.nextEntry(),getValue()
+System.arraycopy(),refill(),readInternal()
+tagQueue,beforeClientExecution,executeTagQueue
+remove()
+modifyCacheSubnetGroup,ModifyCacheSubnetGroupRequest,beforeClientExecution,executeModifyCacheSubnetGroup
+setParams` method,super.setParams` method,StringTokenizer` class,hasMoreTokens` method of `StringTokenizer,nextToken` method of `StringTokenizer
+beforeClientExecution,executeDeleteDocumentationVersion
+equals,instanceof,length,for loop,equals (string comparison)
+getInstanceAccessDetails,beforeClientExecution,executeGetInstanceAccessDetails
+createPolygon,setParent,setAnchor,add,onCreate
+getSheetName,getBoundSheetRec,getSheetname
+getDashboard,beforeClientExecution,executeGetDashboard
+associateSigninDelegateGroupsWithAccount,beforeClientExecution,executeAssociateSigninDelegateGroupsWithAccount
+addMultipleBlanks,getNumColumns,setColumn,setRow,setXFIndex,insertCell
+StringBuilder.append(),String.indexOf(),String.substring(),StringBuilder.toString()
+
+public ArrayPtg(Object[][] values2d),int nColumns = values2d[0].length;,int nRows = values2d.length;,_nColumns = (short) nColumns;,_nRows = (short) nRows;,Object[] vv = new Object[_nColumns * _nRows];,for (int r=0; r<nRows; r++),{,Object[] rowData = values2d[r];,for (int c=0; c<nColumns; c++),{,vv[getValueIndex(c, r)] = rowData[c];,},},_arrayValues = vv;,_reserved0Int = 0;,_reserved1Short = 0;,_reserved2Byte = 0;
+getIceServerConfig,beforeClientExecution,executeGetIceServerConfig
+getClass(),getName(),getValueAsString()
+toString(String field)
+incrementAndGet()
+UpdateConfigurationSetSendingEnabledRequest,beforeClientExecution,executeUpdateConfigurationSetSendingEnabled
+getXBATEntriesPerBlock(),LittleEndianConsts.INT_SIZE
+getInstance,Math.abs,mulShift
+toString(),StringBuilder(),length(),append(),getComponent(),File.separatorChar,toString()` (from StringBuilder)
+withFetcher,ECSMetadataServiceCredentialsFetcher,setRoleName
+
+reset(),first(),eof(),parseEntry()
+previous(),iterator(),previousIndex(),NoSuchElementException()
+None.
+for loop,if statement
+stem,CharArraySet,contains
+getGatewayResponses,GetGatewayResponsesRequest,beforeClientExecution,executeGetGatewayResponses,GetGatewayResponsesResult
+setPosition,(int),>>,&,long,int,=,[]
+Math.min(),Math.max()
+
+writeShort,writeByte,putUnicodeLE,putCompressedUnicode,intValue
+lastIndexOf(String),lastIndexOf(String, int)
+addLastImpl
+unsetSection,get,unsetSection,compareAndSet
+
+addSubRecord,add,SubRecord,add(index, element)
+synchronized,delegate(),remove()
+create,DoubleMetaphoneFilter,TokenStream,maxCodeLength,inject
+inCoreLength()
+
+Pair: constructor method for creating objects of the Pair class.,ContentSource: a class or type used as a parameter for the constructor method.,oldSource: a variable name used to refer to an instance of the ContentSource class passed as a parameter to the constructor method.,newSource: a variable name used to refer to another instance of the ContentSource class passed as a parameter to the constructor method.,this: a keyword used to refer to the current object being constructed.
+get,count,entries,ArrayIndexOutOfBoundsException
+CreateRepoRequest(),super(),setUriPattern(),setMethod()
+isDeltaBaseAsOffset()
+next(),previous(),throw new IllegalStateException(),throw new ConcurrentModificationException()
+mergeShards,beforeClientExecution,executeMergeShards
+allocateHostedConnection,beforeClientExecution,executeAllocateHostedConnection
+
+getTerms,getTerms
+compact()` from the ByteBuffer class,ReadOnlyBufferException()
+&` (Bitwise AND),>>>` (Unsigned right shift),<<` (Left shift),|` (Bitwise OR),++` (Increment operator),[]` (Array access)
+getHumanishName(),getPath(),getHost(),IllegalArgumentException(),equals(),scheme,LOCAL_FILE.matcher(),split(),length,Constants.DOT_GIT,endsWith(),substring()
+describeNotebookInstanceLifecycleConfig,beforeClientExecution,executeDescribeNotebookInstanceLifecycleConfig
+
+createVpnConnection,beforeClientExecution,executeCreateVpnConnection
+describeVoices,DescribeVoicesRequest,beforeClientExecution,executeDescribeVoices
+ListMonitoringExecutionsRequest,beforeClientExecution,executeListMonitoringExecutions
+DescribeJobRequest,setVaultName,setJobId
+getEscherRecord(),get()
+getApis,beforeClientExecution,executeGetApis
+deleteSmsChannel,beforeClientExecution,executeDeleteSmsChannel
+getTrackingRefUpdate()
+print,valueOf
+
+NotIgnoredFilter(int workdirTreeIndex)
+AreaRecord constructor,RecordInputStream.readShort() method
+GetThumbnailRequest(),super(),setProtocol()
+describeTransitGatewayVpcAttachments,DescribeTransitGatewayVpcAttachmentsRequest,DescribeTransitGatewayVpcAttachmentsResult,beforeClientExecution,executeDescribeTransitGatewayVpcAttachments
+putVoiceConnectorStreamingConfiguration,beforeClientExecution,executePutVoiceConnectorStreamingConfiguration
+getOrdRange,String get,HashMap get
+toString(),getInputStream(),getText(),escapeWhitespace(),String.format(),Locale.getDefault(),Interval.of()
+peekFirstImpl()
+createWorkspaces,beforeClientExecution,executeCreateWorkspaces
+clone(),copy(),NumberFormatIndexRecord()

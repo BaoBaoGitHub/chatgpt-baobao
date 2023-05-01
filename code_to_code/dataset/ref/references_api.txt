@@ -1,0 +1,1000 @@
+serialize,LittleEndianOutput.writeShort
+addAll(BlockList<T> src),addAll(src.directory[srcDirIdx], 0, BLOCK_SIZE),addAll(src.tailBlock, 0, src.tailBlkIdx)
+writeByte,addBlock
+getObjectId()
+deleteDomainEntry`: method name,DeleteDomainEntryResult`: return type,DeleteDomainEntryRequest`: parameter type,beforeClientExecution`: method called with `request` parameter,executeDeleteDomainEntry`: method called with `request` parameter
+ramBytesUsed()` of `termOffsets,ramBytesUsed()` of `termsDictOffsets
+getFullMessage,RawParseUtils.tagMessage,RawParseUtils.decode,guessEncoding
+POIFSFileSystem,createEmptyBATBlock,setOurBlockIndex,setNextBlock
+init(int address),assert,>> (right shift operator),.buffers[],& (bitwise AND operator),.length
+setPath,String
+listIngestions,beforeClientExecution,executeListIngestions
+public - access modifier,QueryParserTokenManager - method name,CharStream - parameter data type,stream - parameter name,int - parameter data type,lexState - parameter name,this() - constructor call,SwitchTo() - method call with parameter
+getShardIterator,beforeClientExecution,executeGetShardIterator
+ModifyStrategyRequest,super,setMethod
+synchronized,if,throw,try,return,available()
+
+synchronized,read,Arrays.checkOffsetAndCount
+public - access modifier,OpenNLPSentenceBreakIterator - constructor name,NLPSentenceDetectorOp - parameter data type,sentenceOp - parameter variable name,this - keyword,sentenceOp - class variable name
+public void print(String str),String.valueOf((Object) null),write(str != null ? str : String.valueOf((Object) null))
+String` constructor: Takes a string argument `functionName`.,NotImplementedException` constructor: Takes a `NotImplementedException` argument `cause`.,super`: Calls the constructor of the superclass (`Exception`) with the arguments `functionName` and `cause`.,Assignment: Assigns the value of `functionName` to the instance variable `this.functionName`.
+next(),super.nextEntry(),getValue()
+System.arraycopy(),refill(),readInternal()
+tagQueue,beforeClientExecution,executeTagQueue
+remove()
+modifyCacheSubnetGroup,ModifyCacheSubnetGroupRequest,beforeClientExecution,executeModifyCacheSubnetGroup
+setParams` method,super.setParams` method,StringTokenizer` class,hasMoreTokens` method of `StringTokenizer,nextToken` method of `StringTokenizer
+beforeClientExecution,executeDeleteDocumentationVersion
+equals,instanceof,length,for loop,equals (string comparison)
+getInstanceAccessDetails,beforeClientExecution,executeGetInstanceAccessDetails
+createPolygon,setParent,setAnchor,add,onCreate
+getSheetName,getBoundSheetRec,getSheetname
+getDashboard,beforeClientExecution,executeGetDashboard
+associateSigninDelegateGroupsWithAccount,beforeClientExecution,executeAssociateSigninDelegateGroupsWithAccount
+addMultipleBlanks,getNumColumns,setColumn,setRow,setXFIndex,insertCell
+StringBuilder.append(),String.indexOf(),String.substring(),StringBuilder.toString()
+
+public ArrayPtg(Object[][] values2d),int nColumns = values2d[0].length;,int nRows = values2d.length;,_nColumns = (short) nColumns;,_nRows = (short) nRows;,Object[] vv = new Object[_nColumns * _nRows];,for (int r=0; r<nRows; r++),{,Object[] rowData = values2d[r];,for (int c=0; c<nColumns; c++),{,vv[getValueIndex(c, r)] = rowData[c];,},},_arrayValues = vv;,_reserved0Int = 0;,_reserved1Short = 0;,_reserved2Byte = 0;
+getIceServerConfig,beforeClientExecution,executeGetIceServerConfig
+getClass(),getName(),getValueAsString()
+toString(String field)
+incrementAndGet()
+UpdateConfigurationSetSendingEnabledRequest,beforeClientExecution,executeUpdateConfigurationSetSendingEnabled
+getXBATEntriesPerBlock(),LittleEndianConsts.INT_SIZE
+getInstance,Math.abs,mulShift
+toString(),StringBuilder(),length(),append(),getComponent(),File.separatorChar,toString()` (from StringBuilder)
+withFetcher,ECSMetadataServiceCredentialsFetcher,setRoleName
+
+reset(),first(),eof(),parseEntry()
+previous(),iterator(),previousIndex(),NoSuchElementException()
+None.
+for loop,if statement
+stem,CharArraySet,contains
+getGatewayResponses,GetGatewayResponsesRequest,beforeClientExecution,executeGetGatewayResponses,GetGatewayResponsesResult
+setPosition,(int),>>,&,long,int,=,[]
+Math.min(),Math.max()
+
+writeShort,writeByte,putUnicodeLE,putCompressedUnicode,intValue
+lastIndexOf(String),lastIndexOf(String, int)
+addLastImpl
+unsetSection,get,unsetSection,compareAndSet
+
+addSubRecord,add,SubRecord,add(index, element)
+synchronized,delegate(),remove()
+create,DoubleMetaphoneFilter,TokenStream,maxCodeLength,inject
+inCoreLength()
+
+Pair: constructor method for creating objects of the Pair class.,ContentSource: a class or type used as a parameter for the constructor method.,oldSource: a variable name used to refer to an instance of the ContentSource class passed as a parameter to the constructor method.,newSource: a variable name used to refer to another instance of the ContentSource class passed as a parameter to the constructor method.,this: a keyword used to refer to the current object being constructed.
+get,count,entries,ArrayIndexOutOfBoundsException
+CreateRepoRequest(),super(),setUriPattern(),setMethod()
+isDeltaBaseAsOffset()
+next(),previous(),throw new IllegalStateException(),throw new ConcurrentModificationException()
+mergeShards,beforeClientExecution,executeMergeShards
+allocateHostedConnection,beforeClientExecution,executeAllocateHostedConnection
+
+getTerms,getTerms
+compact()` from the ByteBuffer class,ReadOnlyBufferException()
+&` (Bitwise AND),>>>` (Unsigned right shift),<<` (Left shift),|` (Bitwise OR),++` (Increment operator),[]` (Array access)
+getHumanishName(),getPath(),getHost(),IllegalArgumentException(),equals(),scheme,LOCAL_FILE.matcher(),split(),length,Constants.DOT_GIT,endsWith(),substring()
+describeNotebookInstanceLifecycleConfig,beforeClientExecution,executeDescribeNotebookInstanceLifecycleConfig
+
+createVpnConnection,beforeClientExecution,executeCreateVpnConnection
+describeVoices,DescribeVoicesRequest,beforeClientExecution,executeDescribeVoices
+ListMonitoringExecutionsRequest,beforeClientExecution,executeListMonitoringExecutions
+DescribeJobRequest,setVaultName,setJobId
+getEscherRecord(),get()
+getApis,beforeClientExecution,executeGetApis
+deleteSmsChannel,beforeClientExecution,executeDeleteSmsChannel
+getTrackingRefUpdate()
+print,valueOf
+
+NotIgnoredFilter(int workdirTreeIndex)
+AreaRecord constructor,RecordInputStream.readShort() method
+GetThumbnailRequest(),super(),setProtocol()
+describeTransitGatewayVpcAttachments,DescribeTransitGatewayVpcAttachmentsRequest,DescribeTransitGatewayVpcAttachmentsResult,beforeClientExecution,executeDescribeTransitGatewayVpcAttachments
+putVoiceConnectorStreamingConfiguration,beforeClientExecution,executePutVoiceConnectorStreamingConfiguration
+getOrdRange,String get,HashMap get
+toString(),getInputStream(),getText(),escapeWhitespace(),String.format(),Locale.getDefault(),Interval.of()
+peekFirstImpl()
+createWorkspaces,beforeClientExecution,executeCreateWorkspaces
+clone(),copy(),NumberFormatIndexRecord()
+describeRepositories,beforeClientExecution,executeDescribeRepositories
+SparseIntArray - Constructor method,ArrayUtils.idealIntArraySize - Static method for computing ideal array size,int[] - Array of integers data type,mKeys - Integer array instance variable for keys,mValues - Integer array instance variable for values,mSize - Integer instance variable for size/count of elements in the array.
+TokenStream`: A Java interface used to generate a stream of tokens from a given text.,HyphenatedWordsFilter`: A Java class that implements the `TokenFilter` interface and filters hyphenated words from the `TokenStream`.
+createDistributionWithTags,beforeClientExecution,executeCreateDistributionWithTags
+RandomAccessFile,String,File,FileNotFoundException,this
+deleteWorkspaceImage,beforeClientExecution,executeDeleteWorkspaceImage
+StringBuilder(),writeHex(),toString()
+updateDistribution,beforeClientExecution,executeUpdateDistribution
+getColor,getIndex,getColor (second occurrence),_palette.getColor,CustomColor
+evaluate()
+writeShort,serialize
+
+
+toBigEndianUtf16Bytes,char[],offset,length,byte[],int,end,resultIndex,for loop,char,>> operator
+uploadArchive,beforeClientExecution,executeUploadArchive
+List<Token>,getHiddenTokensToLeft(int),getHiddenTokensToLeft(int, int)
+equals(),getClass(),compiled.equals(),term.equals()
+makeSpanClause(),size(),iterator(),hasNext(),get(),new SpanBoostQuery(),new SpanOrQuery()
+
+get(),HashMap.get()
+describeEventSource,DescribeEventSourceRequest,beforeClientExecution,executeDescribeEventSource
+getDocumentAnalysis,beforeClientExecution,executeGetDocumentAnalysis,GetDocumentAnalysisRequest,GetDocumentAnalysisResult
+cancelUpdateStack,beforeClientExecution,executeCancelUpdateStack
+modifyLoadBalancerAttributes,beforeClientExecution,executeModifyLoadBalancerAttributes
+beforeClientExecution,executeSetInstanceProtection
+modifyDBProxy,beforeClientExecution,executeModifyDBProxy
+
+FetchLibrariesRequest,super,setProtocol,ProtocolType.HTTPS
+
+FilterOutputStream(OutputStream out)
+ScaleClusterRequest(),super(),setUriPattern(),setMethod()
+DVConstraint.createTimeConstraint(int, String, String)
+listObjectParentPaths,ListObjectParentPathsRequest,beforeClientExecution,executeListObjectParentPaths
+describeCacheSubnetGroups,DescribeCacheSubnetGroupsRequest,beforeClientExecution,executeDescribeCacheSubnetGroups
+setSharedFormula,setShortBoolean
+
+addErrorNode,ErrorNodeImpl,addAnyChild,setParent
+LatvianStemFilterFactory,Map,String,super,isEmpty,IllegalArgumentException
+beforeClientExecution,executeRemoveSourceIdentifierFromSubscription
+public static`: A public class-level method that can be called without creating an instance of the class.,TokenFilterFactory`: The return type of the method.,forName`: The name of the method.,String name`: A parameter of type String with the name "name".,Map<String,String> args`: A parameter of type Map with the key and value types of String, with the name "args".,return`: The keyword used to return a value from the method.,loader`: A variable or object being used in the method that is not defined in the code snippet.,newInstance`: A method called on the `loader` object that is not defined in the code snippet.
+AddAlbumPhotosRequest(),super(),setProtocol(),ProtocolType.HTTPS
+getThreatIntelSet,beforeClientExecution,executeGetThreatIntelSet
+clone(),Binary(),a.clone(),b.clone()
+equals() method, which takes an Object parameter named "o" and returns a boolean value. The method uses the "instanceof" keyword to check if the object passed as a parameter is an instance of the ArmenianStemmer class.
+protectedHasArray()
+UpdateContributorInsights,UpdateContributorInsightsRequest,beforeClientExecution,executeUpdateContributorInsights
+remove(),null
+SolrSynonymParser,super,this
+requestSpotInstances,beforeClientExecution,executeRequestSpotInstances
+getObjectData(),findObjectRecord(),getObjectData() (inside findObjectRecord())
+getContactAttributes,beforeClientExecution,executeGetContactAttributes
+toString()
+ListTextTranslationJobsRequest,beforeClientExecution,executeListTextTranslationJobs
+getContactMethods,beforeClientExecution,executeGetContactMethods
+lookupIndexByName,getInstance,getFunctionByNameInternal,getInstanceCetab,getIndex
+describeAnomalyDetectors(),DescribeAnomalyDetectorsRequest(),beforeClientExecution(),executeDescribeAnomalyDetectors()
+insertId,ObjectId
+getObjectSize,copy,getObjectSize` (again),OBJ_ANY,MissingObjectException,IncorrectObjectTypeException,IOException,JGitText.get,unknownObjectType2
+importInstallationMedia,beforeClientExecution,executeImportInstallationMedia
+putLifecycleEventHookExecutionStatus,beforeClientExecution,executePutLifecycleEventHookExecutionStatus
+LittleEndianInput.readDouble()
+getFieldLevelEncryptionConfig,beforeClientExecution,executeGetFieldLevelEncryptionConfig
+describeDetector,DescribeDetectorRequest,beforeClientExecution,executeDescribeDetector
+reportInstanceStatus,beforeClientExecution,executeReportInstanceStatus
+deleteAlarm,beforeClientExecution,executeDeleteAlarm
+TokenStream`: Represents a sequence of tokens (words) produced by a tokenizer and processed by filters.,create`: A method that creates and returns a new instance of a `PortugueseStemFilter`.,PortugueseStemFilter`: A filter that applies stemming to words in Portuguese, reducing them to their base form.
+FtCblsSubRecord(),new byte[]
+@Override,public boolean remove(Object object),synchronized,c.remove(object)
+getDedicatedIp,beforeClientExecution,executeGetDedicatedIp
+toString()
+ListStreamProcessorsRequest,beforeClientExecution,executeListStreamProcessors,ListStreamProcessorsResult
+DeleteLoadBalancerPolicyRequest,setLoadBalancerName,setPolicyName
+
+UnbufferedCharStream - Constructor method,int - Data type for bufferSize parameter,n - Integer variable initialization,data - Integer array initialization with size of bufferSize parameter
+getOperations,beforeClientExecution,executeGetOperations
+encodeInt32
+readShort()
+stopWorkspaces,beforeClientExecution,executeStopWorkspaces
+close(),isOpen(),dump(),truncate(),close() on channel object,close() on fos object
+describeMatchmakingRuleSets,beforeClientExecution,executeDescribeMatchmakingRuleSets
+getPronunciation(int, char[], int, int): String
+getPath()
+devsq,Double.isNaN,null check,length,for loop,addition,division,subtraction,ternary operator.
+beforeClientExecution,executeDescribeResize
+hasPassedThroughNonGreedyDecision()
+end(int)
+traverse,isEmpty,mulAndCheck,subAndCheck,addAndCheck,onCell
+
+compareTo(),get(),Float.compare()
+switch,case,for,int,len,break
+serialize,LittleEndianOutput,writeShort
+
+KeySchemaElement,setAttributeName,setKeyType,toString
+getAssignment,beforeClientExecution,executeGetAssignment
+findOffset(AnyObjectId id)
+setAllGroups(boolean): Sets the value of the boolean variable allGroups and returns the current object (an instance of GroupingSearch) to allow method chaining.
+synchronized,setMultiValued,get,put
+getCellsVal(),cells.keySet(),iterator(),hasNext(),next(),at()
+deleteVoiceConnector,beforeClientExecution,executeDeleteVoiceConnector
+deleteLifecyclePolicy,beforeClientExecution,executeDeleteLifecyclePolicy
+write,checkPosition,arraycopy
+getRebaseResult()
+public static int getNearestSetSize(int maxNumberOfValuesExpected, float desiredSaturation),for (int i = 0; i < usableBitSetSizes.length; i++),int numSetBitsAtDesiredSaturation = (int) (usableBitSetSizes[i] * desiredSaturation);,int estimatedNumUniqueValues = getEstimatedNumberUniqueValuesAllowingForCollisions(usableBitSetSizes[i], numSetBitsAtDesiredSaturation);,if (estimatedNumUniqueValues > maxNumberOfValuesExpected),return usableBitSetSizes[i];,return -1;
+describeDashboard,DescribeDashboardRequest,beforeClientExecution,executeDescribeDashboard
+CreateSegmentRequest,beforeClientExecution,executeCreateSegment,CreateSegmentResult
+toString(),StringBuilder.append(),HexDump.intToHex(),HexDump.shortToHex()
+getUndeletedList()
+toString()
+
+BufferedReader(),PlainTextDictionary(),Reader()
+StringBuilder.append(CharSequence),StringBuilder.appendNull(),StringBuilder.append0(CharSequence, int, int)
+ListAssociatedStacksRequest,beforeClientExecution,executeListAssociatedStacks
+Math.abs(),length,+=,/,double
+describeByoipCidrs,DescribeByoipCidrsRequest,DescribeByoipCidrsResult,beforeClientExecution,executeDescribeByoipCidrs
+getDisk,beforeClientExecution,executeGetDisk
+beforeClientExecution,executeCreateDBClusterParameterGroup
+public static CharBuffer wrap(char[] array, int start, int charCount),Arrays.checkOffsetAndCount(int, int, int),ReadWriteCharArrayBuffer(char[]),CharBuffer.position(int),CharBuffer.limit(int),CharBuffer.return(CharBuffer)
+
+describeGameServerGroup,DescribeGameServerGroupRequest,beforeClientExecution,executeDescribeGameServerGroup
+pattern()
+setValue
+stem(CharSequence word),getLastOnPath(CharSequence word),apply(StringBuilder text, CharSequence cmd)
+RenameFaceRequest,super,setProtocol,ProtocolType.HTTPS
+requireChar,Map,charAt
+toStringTree(Tree t),toStringTree(Tree t, List<String> list)
+toString()
+GetRepoWebhookLogListRequest(),super(),setUriPattern(),setMethod()
+getJobUnlockCode(),GetJobUnlockCodeRequest(),beforeClientExecution(),executeGetJobUnlockCode()
+RemoveTagsRequest,setResourceId
+getBytes,UnsupportedEncodingException
+addCommand,Collection.addAll
+getOrCreateLinkTable(),checkExternSheet(int sheetNumber)
+equals(Object)
+build,getChildren,getTag,add,setMinimumNumberShouldMatch,build
+describeStreamProcessor,DescribeStreamProcessorRequest,beforeClientExecution,executeDescribeStreamProcessor
+describeDashboardPermissions,beforeClientExecution,executeDescribeDashboardPermissions
+try,catch,getRefDatabase(),peel()
+alignObjectSize,sizeOf
+getDomainSuggestions,GetDomainSuggestionsRequest,beforeClientExecution,executeGetDomainSuggestions
+describeStackEvents,beforeClientExecution,executeDescribeStackEvents
+setRule(int idx, ConditionalFormattingRule cfRule)
+createResolverRule,beforeClientExecution,executeCreateResolverRule
+readShort() - a method of the RecordInputStream class in Java that reads a short value from the stream.
+GetStylesRequest(),super(),setMethod()
+serialize,LittleEndianOutput.writeShort
+equals,getClass,getStartOffset,getEndOffset
+createGatewayGroup,beforeClientExecution,executeCreateGatewayGroup
+beforeClientExecution,executeCreateParticipantConnection
+
+registerWorkspaceDirectory,beforeClientExecution,executeRegisterWorkspaceDirectory
+include(),getName()
+evaluate,getSingleValue,coerceValueToString,matches,group,equals,length,String.valueOf
+pollLast(),backingMap.pollLastEntry(),entry.getKey()
+readUByte(),<< operator
+ModifySnapshotAttributeRequest,setSnapshotId,setAttribute,toString,setOperationType
+ListBonusPaymentsRequest,beforeClientExecution,executeListBonusPayments,ListBonusPaymentsResult
+NullPointerException()
+create(),create(input),super.create(input)
+
+initiateMultipartUpload,beforeClientExecution,executeInitiateMultipartUpload
+StringBuilder insert(int offset, int i),insert0(int offset, String str),Integer.toString(int i)
+decode,long[],int,for loop,++ operator,final,shift,>>> operator,& operator
+create(),TokenStream(),ElisionFilter()
+boolean eat(Row in, int remap[]),iterator(),hasNext(),next()
+final,public,int,getToken,(int index),Token,t =,jj_lookingAhead,?,jj_scanpos,:,token,for,int i,=,0,i <,index,;,i++,{,if,(,t.next,!=,null,),t =,t.next,;,else,t =,t.next =,token_source.getNextToken(),;,},return,t;
+toString(),getClass().getName(),StringBuilder(),append(),getRange(),HexDump.shortToHex(),HexDump.intToHex(),_formula.getTokens(),ptg.getRVAType()
+getFolder,GetFolderRequest,beforeClientExecution,executeGetFolder,GetFolderResult
+@Override,add,int,location,E,object,throw,UnsupportedOperationException
+
+CreateRepoBuildRuleRequest(),super(),setUriPattern(),setMethod()
+BaseRef: Constructor method.,AreaEval: Parameterized input data type.,getFirstRow: Method of the AreaEval class to retrieve the index of the first row in the area.,getFirstColumn: Method of the AreaEval class to retrieve the index of the first column in the area.,getLastRow: Method of the AreaEval class to retrieve the index of the last row in the area.,getLastColumn: Method of the AreaEval class to retrieve the index of the last column in the area.
+
+reset(),first()
+reset(),implReset()
+BufferedReader(),Reader(),IllegalArgumentException(),char()
+describeCodeRepository,beforeClientExecution,executeDescribeCodeRepository
+beforeClientExecution,executeCreateDBSubnetGroup
+setOldName,checkCallable
+setForce,checkCallable
+stopCompilationJob,beforeClientExecution,executeStopCompilationJob,StopCompilationJobRequest,StopCompilationJobResult
+synchronized,final,incrementSecondaryProgressBy
+
+
+super(),setUriPattern(),setMethod()
+createExportJob,beforeClientExecution,executeCreateExportJob
+createDedicatedIpPool,beforeClientExecution,executeCreateDedicatedIpPool
+equals,== operator,!= operator,instanceof operator,final keyword,type casting (HSSFCellStyle),if statement,return statement,null check,method parameter (Object obj),boolean data type,_format.equals method,getter method (_format),logical AND operator (&&),logical OR operator (||)
+releaseHosts,beforeClientExecution,executeReleaseHosts
+equals,hashCode,size,containsAll
+setRefLogMessage,disableRefLog
+StreamIDRecord,RecordInputStream,readShort()
+RecognizeCarRequest,super,setMethod,MethodType.POST
+ByteOrder.nativeOrder()
+
+
+getCloudFrontOriginAccessIdentityConfig,GetCloudFrontOriginAccessIdentityConfigRequest,beforeClientExecution,executeGetCloudFrontOriginAccessIdentityConfig
+matches(int symbol, int minVocabSymbol, int maxVocabSymbol)
+deleteTransitGateway,beforeClientExecution,executeDeleteTransitGateway
+assert,oversize,growExact
+CreateTransactionRequest(),super(),setProtocol(),ProtocolType.HTTPS
+setRefLogIdent,PersonIdent
+getLaunchTemplateData,beforeClientExecution,executeGetLaunchTemplateData
+Constructor method "ParseInfo",Parameter "ProfilingATNSimulator",Assignment operator "=","this" keyword,Parameter "atnSimulator"
+SimpleQQParser,String,[],indexField,=
+beforeClientExecution,executePromoteReadReplicaDBCluster
+describeCapacityReservations,DescribeCapacityReservationsRequest,beforeClientExecution,executeDescribeCapacityReservations
+toString(),return,"+" operator,reader.toString(),";" character,"executor=" string,executor.toString(),"; sliceExecutionControlPlane " string,sliceExecutor.toString(),")" character
+
+writeShort() method of LittleEndianOutput class.
+decode(byte[], int, int[], int, int),readLong(byte[], int)
+getInterpreter(),getState(),atn.states.get(),atn.nextTokens(),contains(),invokingState,transition(),(ParserRuleContext)ctx.parent,Token.EPSILON,Token.EOF
+updateStream,beforeClientExecution,executeUpdateStream
+evaluate,getSingleValue,translateErrorCodeToErrorTypeValue,getErrorCode
+getClass(),getName()
+ListAssignmentsForHITRequest,beforeClientExecution,executeListAssignmentsForHIT
+deleteAccessControlRule,beforeClientExecution,executeDeleteAccessControlRule
+getFirstArc,getFirstArc
+decode,long[],int,for loop,++ operator,final,int shift,& operator,>>> operator
+skip
+getRefsMap()
+updateApiKey,beforeClientExecution,executeUpdateApiKey
+openStream(),PackInputStream(),DfsReader(),newReader(),getReverseIdx(),open(),close(),InflaterInputStream(),BufferedInputStream(),ObjectStream.Filter()
+ArrayList(): Constructor method for creating an ArrayList object.
+updateDetectorVersion,beforeClientExecution,executeUpdateDetectorVersion
+resize()
+RevFlagSet,Collection,this(),addAll
+
+getLong,position,SizeOf.LONG,limit,BufferUnderflowException,Memory.peekLong,backingArray,offset,order
+insert(int, long),insert0(int, String),Long.toString(long)
+TurkishLowerCaseFilter,TokenStream,super
+match,matchImpl
+addIfNoOverlap,getPhraseList,isOffsetOverlap,getTermsInfos,addAll
+public - Access modifier,ThreeWayMerger - Return type,newMerger - Method name,(Repository db) - Parameter,return - Keyword to return the value from the method,new - Keyword to create a new instance of a class,InCoreMerger - Class name to create an instance of,(db) - Constructor parameter to pass the argument to the class constructor.
+docScore()
+findAllRuleNodes,evaluate
+toString(),StringBuilder(),append(),getConditionType(),getOptions(),containsFontFormattingBlock(),containsBorderFormattingBlock(),containsPatternFormattingBlock(),_fontFormatting,_borderFormatting,_patternFormatting,getFormula1(),getTokens(),getFormula2()
+describeServiceUpdates,DescribeServiceUpdatesRequest,beforeClientExecution,executeDescribeServiceUpdates
+getNameAt,getNameName
+describeLocations(),describeLocations(DescribeLocationsRequest)
+toString(),getValueString(),getChild()
+getDirCacheEntry(),currentSubtree == null,currentEntry
+put(int[] src, int srcOffset, int intCount),Arrays.checkOffsetAndCount(int, int, int),remaining(),put(int),BufferOverflowException()
+trimToSize(),size(),length(),return(),EmptyArray.OBJECT,Object[],System.arraycopy(),modCount++
+describeLocalGatewayVirtualInterfaces,DescribeLocalGatewayVirtualInterfacesRequest,beforeClientExecution,executeDescribeLocalGatewayVirtualInterfaces
+create,TokenStream,RussianLightStemFilter
+toArray,arraycopy
+BasicSessionCredentials(): Constructor method,IllegalArgumentException(): Exception handling method,System.currentTimeMillis(): Method to get the current time in milliseconds
+get,remaining,throw,System.arraycopy
+activateEventSource,beforeClientExecution,executeActivateEventSource
+describeReceiptRuleSet,DescribeReceiptRuleSetRequest,beforeClientExecution,executeDescribeReceiptRuleSet
+setName(String name)
+
+createTrafficPolicyInstance,beforeClientExecution,executeCreateTrafficPolicyInstance
+JapaneseIterationMarkCharFilter,Reader,super,reset
+writeLong,writeInt
+ConcurrentHashMap(),CopyOnWriteArrayList()
+getRef3DEval,createExternSheetRefEvaluator,getSheetName,getLastSheetName,getExternalWorkbookNumber,LazyRefEval
+beforeClientExecution,executeDeleteDataset
+startRelationalDatabase,StartRelationalDatabaseRequest,beforeClientExecution,executeStartRelationalDatabase
+describeReservedCacheNodesOfferings,describeReservedCacheNodesOfferings (with parameter)
+Math.pow(),return statement
+describeDocumentVersions,DescribeDocumentVersionsRequest,beforeClientExecution,executeDescribeDocumentVersions
+ListPublishingDestinationsRequest(),beforeClientExecution(),executeListPublishingDestinations()
+Constructor: DeleteAccountAliasRequest,Parameter: accountAlias,Method: setAccountAlias
+grow.,grow.
+outputToString(Object output),instanceof,outputToString(T output),List<T>,StringBuilder,append(char c),size(),get(int index),toString()
+public void notifyDeleteCell(Cell cell),_bookEvaluator.notifyDeleteCell,new HSSFEvaluationCell,(HSSFCell)cell
+replace0(int, int, String)
+SetIdentityPoolConfigurationRequest,beforeClientExecution,executeSetIdentityPoolConfiguration,SetIdentityPoolConfigurationResult
+public static double kthSmallest(double[] v, int k),Arrays.sort(v)
+set,>>>,&,<<,~,|
+toString(),getChildren(),size(),StringBuilder(),append(),for loop,QueryNode.toString(),toString() (on StringBuilder instance),sb.toString()
+sumTokenSizes,getSize()
+setReadonly(boolean readonly),IllegalStateException()
+remove(),throw new,IllegalStateException()
+subList,synchronized,RandomAccessList,list.subList
+
+attachLoadBalancers,beforeClientExecution,executeAttachLoadBalancers
+InitiateJobRequest,setAccountId,setVaultName,setJobParameters
+
+setName,setValue,setReplace
+add`: This method is used to add an element to a collection.,IndexableField`: This is the type of the parameter that is being added to the collection.,fields.add`: This is the method call to add the parameter to the collection named `fields`.
+DeleteStackSetRequest,beforeClientExecution,executeDeleteStackSet,DeleteStackSetResult
+GetRepoBuildRuleListRequest(),super(),setUriPattern(),setMethod()
+SparseArray,ArrayUtils.idealIntArraySize,int[],Object[]
+InvokeServiceRequest,super,setMethod,MethodType.POST
+ListAlbumPhotosRequest,super,setProtocol,ProtocolType.HTTPS
+hasPrevious()
+deleteHsmConfiguration,beforeClientExecution,executeDeleteHsmConfiguration
+public - Access modifier,CreateLoadBalancerRequest - Constructor name,String - Data type of parameter loadBalancerName,setLoadBalancerName - Method name,loadBalancerName - Parameter name passed to the constructor.
+decode(),getUserInfo()
+tagAttendee,beforeClientExecution,executeTagAttendee
+getRefName()
+toArray,new SpanNearQuery
+
+describeDBProxies,DescribeDBProxiesRequest,beforeClientExecution,executeDescribeDBProxies
+getVoiceConnectorProxy,beforeClientExecution,executeGetVoiceConnectorProxy
+getBoolean(String, String, boolean),getInt(String, String, int, int),getLong(String, String, long, long),setPackedGitUseStrongRefs(boolean),setPackedGitOpenFiles(int),setPackedGitLimit(long),setPackedGitWindowSize(int),setPackedGitMMAP(boolean),setDeltaBaseCacheLimit(int),getRuntime(),getStreamFileThreshold(),setStreamFileThreshold(int),Math.min(long, long),Math.min(long, int)
+getJavaDate(double date),getJavaDate(double date, boolean use1904windowing, TimeZone timeZone, boolean roundSeconds)
+startPersonTracking,beforeClientExecution,executeStartPersonTracking
+size()
+getRoute(),GetRouteRequest(),beforeClientExecution(),executeGetRoute()
+deleteCluster,beforeClientExecution,executeDeleteCluster
+StringBuilder.append,Integer.toHexString,getAddMenuCount,getDelMenuCount,String.toString
+FileBasedConfig`: constructor method,super`: keyword to call superclass constructor,cfgLocation`: parameter variable of type `File,fs`: parameter variable of type `FS,snapshot`: instance variable of type `FileSnapshot,hash`: instance variable of type `ObjectId,ObjectId.zeroId()`: static method call to `zeroId()` of `ObjectId` class.
+int,following,if,throw,IllegalArgumentException,else if,0==,sentenceStarts.length,text.setIndex,DONE,else,currentSentence,/,2,moveToSentenceAt,current()
+updateParameterGroup,UpdateParameterGroupRequest,beforeClientExecution,executeUpdateParameterGroup,UpdateParameterGroupResult
+
+public static double calcDistanceFromErrPct,Shape.getBoundingBox(),Rectangle.getCenter(),SpatialContext.getDistCalc(),Distance.distance()
+codePointAt(int index),Character.codePointAt(char[] a, int index, int limit)
+setPasswordVerifier(int passwordVerifier)
+ListVaultsRequest,setAccountId
+SquashMessageFormatter,GitDateFormatter,Format.DEFAULT
+GetVideoCoverRequest(),super(),setProtocol()
+int lastIndexOf(Object object),int size(),boolean equals(Object object),Object previous()
+describeSpotFleetRequests,beforeClientExecution,executeDescribeSpotFleetRequests
+indexFaces,beforeClientExecution,executeIndexFaces
+getBreakIterator,switch,clone
+toString(),append(),append(int),append(String),toString()` (on `StringBuilder` object)
+
+StringBuilder(),append(),toString()
+getToUnicodeLE,getBytes,UTF16LE
+getFooterLines(String),getFooterLines(FooterKey)
+super.refresh(),clearReferences()
+checkIndex,getFloat
+DeleteDetectorRequest(),beforeClientExecution(),executeDeleteDetector(),DeleteDetectorResult()
+assert,ArrayUtil.grow
+ListExclusionsRequest,beforeClientExecution,executeListExclusions,ListExclusionsResult
+public static: a method that can be called without creating an instance of the class,SpatialStrategy: return type of the method,getSpatialStrategy: name of the method,int roundNumber: parameter of type int,SpatialStrategy result: declaration of a variable of type SpatialStrategy,spatialStrategyCache.get(roundNumber): method call on an object of type spatialStrategyCache,result == null: a comparison of the variable result to null,throw new IllegalStateException("Strategy should have been init'ed by SpatialDocMaker by now"): a statement that throws an IllegalStateException with a specified message,return result: returns the variable result
+beforeClientExecution,executeRestoreDBClusterToPointInTime,restoreDBClusterToPointInTime
+writeShort
+postAgentProfile,beforeClientExecution,executePostAgentProfile
+getTokenStream(),getTokenSource(),instanceof,compileParseTreePattern(String pattern, int patternRuleIndex, Lexer lexer),throw new UnsupportedOperationException()
+backtrackDBCluster,beforeClientExecution,executeBacktrackDBCluster
+
+formatHexByte
+lineMap,nextLF,IntList,fillTo,add
+getAdditionalHaves(),Collections.emptySet()
+synchronized,ramBytesUsed,BASE_RAM_BYTES_USED,fields.size(),RamUsageEstimator.NUM_BYTES_OBJECT_REF,termsCache.values(),SimpleTextTerms,ramBytesUsed()
+StringBuilder.append(),getRecordName(),getEscherRecords(),EscherRecord.toXml(),String.toString()
+GalicianMinimalStemFilter(input)
+toString(),append(),name(),toString(),isSameObject(),UTF_8,message
+IndicNormalizationFilterFactory,super,isEmpty,IllegalArgumentException,throw
+"beforeClientExecution" method (presumably defined elsewhere) that takes a parameter of type "CreateOptionGroupRequest" and returns the modified request.,"executeCreateOptionGroup" method (presumably defined elsewhere) that takes a parameter of type "CreateOptionGroupRequest" and returns an object of type "OptionGroup".
+beforeClientExecution,executeAssociateMemberAccount
+run(),doRefreshProgress()
+setTerminationProtection,SetTerminationProtectionRequest,beforeClientExecution,executeSetTerminationProtection
+getErrorHeader,RecognitionException,getOffendingToken,getLine,getCharPositionInLine
+asReadOnlyBuffer(),CharToByteBufferAdapter(),byteBuffer.asReadOnlyBuffer(),limit,position,mark,byteBuffer.order()
+stopSentimentDetectionJob,beforeClientExecution,executeStopSentimentDetectionJob
+
+hash(),new byte[],clear(),super.clear()
+reset(),synchronized(),checkNotClosed(),throw,IOException(),mark(),==,pos()
+readInt()
+beforeClientExecution,executeSuspendGameServerGroup
+evaluate,args.length,ErrorEval.VALUE_INVALID,evaluate,srcRowIndex,srcColumnIndex,args[0],args[1],args[2]
+super(String, String, String, String),setUriPattern(String),setMethod(MethodType.GET)
+setDate` (from the surrounding class),dateToString` (from `DateTools` class)
+create
+toArray()
+Arrays.checkOffsetAndCount,synchronized,expand,System.arraycopy
+after,getTime
+
+beforeClientExecution,executeDeregisterTransitGatewayMulticastGroupMembers
+
+createAlgorithm` - Creates an algorithm.,beforeClientExecution` - Performs actions before executing the client request.,executeCreateAlgorithm` - Executes the create algorithm request.
+readByte()
+NB.encodeInt32,setLength
+describeScalingProcessTypes(),describeScalingProcessTypes(DescribeScalingProcessTypesRequest)
+listResourceRecordSets,ListResourceRecordSetsRequest,beforeClientExecution,executeListResourceRecordSets
+recoverInline,InputMismatchException,ParserRuleContext,getContext,getParent,ParseCancellationException
+beforeClientExecution,executeSetTagsForResource
+super()` - It calls the constructor of the superclass with the specified arguments.,"CloudCallCenter"` - Argument for the superclass constructor.,"2017-07-05"` - Argument for the superclass constructor.,"ModifyStrategy"` - Argument for the superclass constructor.,"CloudCallCenter"` - Argument for the superclass constructor.,"innerAPI"` - Argument for the superclass constructor.
+describeVpcEndpointServices,DescribeVpcEndpointServicesRequest,beforeClientExecution,executeDescribeVpcEndpointServices
+enableLogging,beforeClientExecution,executeEnableLogging
+containsValue(Object o)`: It checks if the ConcurrentHashMap contains a mapping for the specified value.
+SheetRangeIdentifier,String,NameIdentifier,super,bookName,firstSheetIdentifier,lastSheetIdentifier
+DomainMetadataRequest(String domainName)
+super()` - Calls the constructor of the superclass.,initialise()` - It is a custom method that initializes a MessageImpl object.,QueryParserMessages.INVALID_SYNTAX` - Refers to a constant value in the QueryParserMessages class.,MessageImpl()` - Constructs a MessageImpl object.
+super(),setProtocol()
+writer()
+NGramTokenizerFactory,Map,super,getInt,NGramTokenizer,IllegalArgumentException
+
+public: Access modifier for method visibility.,IndonesianStemFilter: Constructor method name.,TokenStream: Data type for the input parameter.,super: Keyword for calling the parent constructor.,this: Keyword for referring to the current object.,stemDerivational: Boolean variable name for stemDerivational parameter.,=: Assignment operator for assigning values.,input: Variable name for TokenStream input parameter.,stemDerivational: Variable name for boolean stemDerivational parameter.
+createTrafficPolicy,beforeClientExecution,executeCreateTrafficPolicy
+writeInt,writeUnicodeString
+floor(),isNaN(),Math.floor()
+ByteArrayDataOutput,reset
+getChildren,ArrayList,getChildCount,getChild
+clear()
+RefreshAllRecord(boolean),RefreshAllRecord(int),setRefreshAll(boolean)
+deleteNamedQuery,beforeClientExecution,executeDeleteNamedQuery
+GraphvizFormatter,HashMap<>,append(),formatHeader(),style=invis,label="",BOS_LABEL
+CheckMultiagentRequest(),super(),setMethod()
+listUserProfiles,beforeClientExecution,executeListUserProfiles
+createRelationalDatabaseFromSnapshot,beforeClientExecution,executeCreateRelationalDatabaseFromSnapshot
+startTask,beforeClientExecution,executeStartTask
+
+FeatSmartTag,RecordInputStream,in,readRemainder
+Change,ChangeAction.toString(),ResourceRecordSet
+deleteImage,beforeClientExecution,executeDeleteImage
+CreateConfigurationSetRequest,beforeClientExecution,executeCreateConfigurationSet,CreateConfigurationSetResult
+iterator(),CowIterator()
+public void visitContainedRecords(RecordVisitor rv),if (_recs.isEmpty()),return;,rv.visitRecord(_bofRec);,for (int i = 0; i < _recs.size(); i++),RecordBase rb = _recs.get(i);,if (rb instanceof RecordAggregate),((RecordAggregate) rb).visitContainedRecords(rv);,else,rv.visitRecord((org.apache.poi.hssf.record.Record) rb);,rv.visitRecord(EOFRecord.instance);
+toString(),StringBuilder(),append(),getDataSize(),HexDump.toHex()
+createEmptyBATBlock,BATBlock,POIFSBigBlockSize,getXBATEntriesPerBlock,POIFSConstants.END_OF_CHAIN
+beforeClientExecution,executeTagResource
+beforeClientExecution,executeDeleteMailboxPermissions
+ListDatasetGroupsRequest,ListDatasetGroupsResult,beforeClientExecution,executeListDatasetGroups
+resumeProcesses,beforeClientExecution,executeResumeProcesses
+getPersonTracking,beforeClientExecution,executeGetPersonTracking
+isSet(),toFormulaString()
+merge(T, T)
+toString(),getKey(),getLocalizedMessage()
+XPath,Parser,String,split
+Constructor: CreateAccountAliasRequest,Parameter: accountAlias,Setter method: setAccountAlias
+public,void,decode,byte[],int,long[],int,int,for,final,byte,>>> (unsigned right shift),&,1,++ (increment)
+openPush(),TcpPushConnection()
+strcpy,char[],int,while,!=,[],=,0
+getKey()`: Returns the key of the map entry.
+public static int numNonnull(Object[] data),int n = 0;,if ( data == null ) return n;,for (Object o : data),if ( o!=null ) n++;,return n;
+add(int location, E object)`: Adds an element of type `E` at the specified `location` in the list.,Link<E> link = voidLink`: Creates a new `Link` object and assigns it to `link` variable.,link.next`: Returns the next `Link` object in the list.,link.previous`: Returns the previous `Link` object in the list.,Link<E> previous = link.previous;`: Assigns the previous `Link` object to `previous` variable.,Link<E> newLink = new Link<E>(object, previous, link);`: Creates a new `Link` object with specified `object`, `previous` and `link` objects.,previous.next = newLink;`: Sets the `next` object of the `previous` object to the new `Link` object.,link.previous = newLink;`: Sets the `previous` object of the `link` object to the new `Link` object.,size++;`: Increases the size of the list by one.,modCount++;`: Increases the modification count of the list by one.,throw new IndexOutOfBoundsException();`: Throws an `IndexOutOfBoundsException` if the specified `location` is less than 0 or greater than the size of the list.
+describeDomain,beforeClientExecution,executeDescribeDomain
+flush() method.
+public: Access modifier indicating that the method is visible and can be called from other parts of the program.,PersianCharFilterFactory: Name of the Java class and constructor method.,Map<String,String> args: Input parameter of type Map, which maps a key of type String to a value of type String.,super(args): Calls the constructor of the parent class with the specified argument(s).,if (!args.isEmpty()): Checks if the Map object args is empty.,throw new IllegalArgumentException("Unknown parameters: " + args): Throws an exception of type IllegalArgumentException with the specified message "Unknown parameters: " concatenated with the value of args.
+clearAttributes(),append(),setOffset()
+allocate,IllegalArgumentException,ReadWriteFloatArrayBuffer
+public final Edit after(Edit cut),Edit(cut.endA, endA, cut.endB, endB)
+updateRuleVersion,beforeClientExecution,executeUpdateRuleVersion
+ListVoiceConnectorTerminationCredentialsRequest,beforeClientExecution,executeListVoiceConnectorTerminationCredentials
+getDeploymentTarget,beforeClientExecution,executeGetDeploymentTarget
+setNoChildReport,instanceof,setNoChildReport
+get,try,return,catch,throw,java.util.ArrayList.throwIndexOutOfBoundsException
+describeDataSet,beforeClientExecution,executeDescribeDataSet
+constructor: SkipWorkTreeFilter,parameter: int treeIdx,instance variable: treeIdx
+describeNetworkInterfaces(),describeNetworkInterfaces(DescribeNetworkInterfacesRequest)
+boolean,int
+toString()
+getPatchType()
+Iterator<K>,iterator(),KeyIterator(),return
+createScript,beforeClientExecution,executeCreateScript
+next(),termUpto(),info.terms.size(),info.sortedTerms[],info.terms.get(),br
+toString()` - a method of the `CharsRef` class that returns a `String` representation of the `CharsRef` object.
+associateWebsiteAuthorizationProvider,beforeClientExecution,executeAssociateWebsiteAuthorizationProvider
+unpop,resetToMiddle,add,canUnpop,resetToEnd,next
+EdgeNGramTokenizerFactory,Map<String, String> args,super(args),getInt(args, "minGramSize", EdgeNGramTokenizer.DEFAULT_MIN_GRAM_SIZE),getInt(args, "maxGramSize", EdgeNGramTokenizer.DEFAULT_MAX_GRAM_SIZE),!args.isEmpty(),IllegalArgumentException,throw
+ModifyDBParameterGroupRequest,setDBParameterGroupName,setParameters,java.util.List,Parameter
+getHostedZoneLimit,GetHostedZoneLimitRequest,beforeClientExecution,executeGetHostedZoneLimit
+set,>>> (unsigned right shift),& (bitwise AND),<< (left shift),~ (bitwise complement),| (bitwise OR)
+clone(),pattern(),new PatternSearch()
+toString(),toString(),equals(),hashCode(),toString(),toString(),== operator,? : ternary operator
+for loop,Enhanced for loop,if statement,Return statement
+lastIndexOf(String subString, int start)
+public DeleteNetworkAclEntryResult deleteNetworkAclEntry(DeleteNetworkAclEntryRequest request),request = beforeClientExecution(request),return executeDeleteNetworkAclEntry(request)
+associateMemberToGroup,beforeClientExecution,executeAssociateMemberToGroup
+committer: int,nextLF: int,match: int
+
+addPath,add
+getPushTemplate,beforeClientExecution,executeGetPushTemplate
+describeVault,DescribeVaultRequest,beforeClientExecution,executeDescribeVault
+describeVpcPeeringConnections(),describeVpcPeeringConnections(DescribeVpcPeeringConnectionsRequest)
+putLong,int,long,index,value,ByteBuffer,ReadOnlyBufferException
+registerDevice,beforeClientExecution,executeRegisterDevice
+public static Format byId(int id),Format.values(),format.getId(),throw new IllegalArgumentException()
+deleteApp,beforeClientExecution,executeDeleteApp
+getBaiduChannel,beforeClientExecution,executeGetBaiduChannel
+getBytesReader()
+public static boolean isValidSchemeChar(int index, char c),c >= 'a',c <= 'z',c >= 'A',c <= 'Z',return true,index > 0,c >= '0',c <= '9',c == '+',c == '-',c == '.',return false
+ListAppliedSchemaArnsRequest,ListAppliedSchemaArnsResult,beforeClientExecution,executeListAppliedSchemaArns
+name()
+evaluate(),OperandResolver.getSingleValue(),OperandResolver.coerceValueToString(),evaluateBooleanArg(),evaluateIndirect()
+compareUInt32()
+removeName,remove
+GetQueueAttributesRequest,setQueueUrl,setAttributeNames,java.util.List,String
+copyOf,copyOfRange
+setEnabled` - takes a boolean parameter named `enabled` and assigns its value to the static variable `ENABLED`.
+deleteLogPattern,beforeClientExecution,executeDeleteLogPattern
+containsKey
+getFirstSheetIndexFromExternSheetIndex,linkTable.getFirstInternalSheetIndexForExtIndex
+length()` - Returns the length of a string.,charAt()` - Returns the character at a specified index in a string.,startsWith()` - Checks if a string starts with a specified prefix.
+register,getName
+ramBytesUsed(),index.ramBytesUsed()
+setId,setName,setCallerReference
+getFindings,beforeClientExecution,executeGetFindings
+describeTopicsDetectionJob,DescribeTopicsDetectionJobRequest,beforeClientExecution,executeDescribeTopicsDetectionJob,DescribeTopicsDetectionJobResult
+processMatch,instanceof,NumericValueEval,getNumberValue,null,double,<,return.
+writeByte,writeShort
+public static void main(String[] args) throws IOException,boolean printTree = false;,String path = null;,for(int i=0;i<args.length;i++),if (args[i].equals("-printTree")),printTree = true;,else,path = args[i];,if (args.length != (printTree ? 2 : 1)),System.out.println("\nUsage: java -classpath ... org.apache.lucene.facet.util.PrintTaxonomyStats [-printTree] /path/to/taxononmy/index\n");,System.exit(1);,Directory dir = FSDirectory.open(Paths.get(path));,TaxonomyReader r = new DirectoryTaxonomyReader(dir);,printStats(r, System.out, printTree);,r.close();,dir.close();
+setByteValue,instanceof,IllegalArgumentException,getClass,getSimpleName,valueOf
+public static int initialize(),initialize(DEFAULT_SEED)
+CachingDoubleValueSource,HashMap()
+AttributeDefinition,setAttributeName,setAttributeType,toString
+join(),StringUtils.join()
+ListTaskDefinitionFamiliesRequest,beforeClientExecution,executeListTaskDefinitionFamilies
+listComponents,beforeClientExecution,executeListComponents
+ActivatePhotosRequest,super,setProtocol,ProtocolType.HTTPS
+createMatchmakingRuleSet,beforeClientExecution,executeCreateMatchmakingRuleSet
+ListAvailableManagementCidrRanges,beforeClientExecution,executeListAvailableManagementCidrRanges
+getBaseObjectIds(),ObjectIdSubclassMap(),return()
+DeletePushTemplateRequest,beforeClientExecution,executeDeletePushTemplate
+createDomainEntry,beforeClientExecution,executeCreateDomainEntry
+getEncodedSize,length,for-each loop,getEncodedSize
+OpenNLPTokenizerFactory: Constructor method.,require: A custom method used to extract specific values from the map passed as argument.,args: A map object used to store key-value pairs of arguments passed to the constructor method.,super: A keyword used to call the constructor of the parent class.,SENTENCE_MODEL: A constant string representing a key used to retrieve a specific value from the map.,TOKENIZER_MODEL: A constant string representing a key used to retrieve a specific value from the map.,IllegalArgumentException: A type of exception that is thrown when an illegal or inappropriate argument is passed to a method.
+getInt,checkIndex,SizeOf.INT,Memory.peekInt
+matches,newHeads,FileNameMatcher.EMPTY_HEAD_LIST
+ByteBuffer.putShort(short value),ReadOnlyBufferException()
+writeUnshared
+Character.offsetByCodePoints()
+getUniqueAlt,getAlts,cardinality,nextSetBit
+"Date(long date)" from the Date class.
+RuleTagToken,IllegalArgumentException
+disableOrganizationAdminAccount,beforeClientExecution,executeDisableOrganizationAdminAccount
+createRoom,beforeClientExecution,executeCreateRoom
+beforeClientExecution,executeDeleteReplicationGroup
+decode,newDecoder,onMalformedInput,onUnmappableCharacter,REPLACE,ByteBuffer,CharBuffer,CharacterCodingException,Error
+Distribution: constructor method,setId: setter method,setStatus: setter method,setDomainName: setter method
+protectedArray()` - a protected method (not shown in this code snippet) that returns an array of double values.
+readShort(),DateWindow1904Record(RecordInputStream in)
+DeleteDBSnapshotRequest,setDBSnapshotIdentifier
+getExtension,get
+inform,getResourceLoader,getChunkerModel
+completeVaultLock,beforeClientExecution,executeCompleteVaultLock
+clone(),getCharIntervals()
+values.ramBytesUsed(),super.ramBytesUsed(),Long.BYTES,RamUsageEstimator.NUM_BYTES_OBJECT_REF
+beforeClientExecution,executeRegisterInstancesWithLoadBalancer
+DescribeClusterUserKubeconfigRequest(),super(),setUriPattern(),setMethod()
+PrecisionRecord constructor: Takes a RecordInputStream parameter and initializes the field_1_precision variable by reading a short value from the input stream.
+serialize,LittleEndianOutput.writeShort,getLeftRowGutter,getTopColGutter,getRowLevelMax,getColLevelMax
+DeleteVirtualInterfaceRequest,beforeClientExecution,executeDeleteVirtualInterface,DeleteVirtualInterfaceResult
+getEntry,contains,FileNotFoundException,directory.getEntry,wrapEntry
+StringBuilder.append,Integer.toHexString,Object.toString
+DeleteVoiceConnectorOriginationRequest - method to create a request object for deleting the origination settings of a voice connector.,beforeClientExecution - method to perform actions before executing the client request.,executeDeleteVoiceConnectorOrigination - method to execute the request for deleting the origination settings of a voice connector.,DeleteVoiceConnectorOriginationResult - method to create a result object for the request to delete the origination settings of a voice connector.
+append(),write()
+equals(),throw new IllegalArgumentException(),startsWith(),Long.parseLong(),substring()
+fromOption,equals,values,IllegalArgumentException,MessageFormat.format,get` (from `JGitText.get()`),length,option
+startContentModeration,beforeClientExecution,executeStartContentModeration
+StringBuilder(),length(),charAt(),append(),toString()
+set()
+QueryParserTokenManager(CharStream stream)
+Math.round(),long(),double(),% (Modulo Operator)
+limit(),position(),instanceof,get()
+clear()
+CommonTokenStream,TokenSource
+listObjectPolicies,ListObjectPoliciesRequest,beforeClientExecution,executeListObjectPolicies
+public - keyword used to define the visibility of the method,ObjectToPack - method name,(AnyObjectId src, int type) - method parameters,super - keyword used to call the constructor of the parent class,flags - variable name,type - variable used in the method,<< - bitwise left shift operator,TYPE_SHIFT - constant variable used in the method
+numVowels(char[] s, int len),endsWith(char[] s, int len, String suffix),unpalatalize(char[] s, int len)
+recover,getErrorRecoverySet,consumeUntil
+append,charAt,length,toString
+UnlinkFaceRequest(),super(),setProtocol(),setMethod()
+ConfigurationOptionSetting` - Constructor method,setNamespace` - Setter method for a namespace variable,setOptionName` - Setter method for an option name variable,setValue` - Setter method for a value variable
+StringBuilder(),size(),get(),length(),charAt(),append()
+describeMountTargetSecurityGroups,DescribeMountTargetSecurityGroupsRequest,beforeClientExecution,executeDescribeMountTargetSecurityGroups
+getApiMapping,beforeClientExecution,executeGetApiMapping
+HttpRequest(String strUrl)` - Constructor for creating an HTTP request object with a specified URL.
+
+getHighFreqTerms,MultiTerms.getTerms,Terms.iterator,TermStatsQueue,Comparator,FieldInfos.getIndexedFields
+deleteApnsVoipChannel,beforeClientExecution,executeDeleteApnsVoipChannel
+ListFacesRequest,beforeClientExecution,executeListFaces,ListFacesResult
+ShapeFieldCacheDistanceValueSource,SpatialContext,ShapeFieldCacheProvider,Point
+
+updateConfigurationProfile,beforeClientExecution,executeUpdateConfigurationProfile
+describeLifecycleHooks,DescribeLifecycleHooksRequest,beforeClientExecution,executeDescribeLifecycleHooks
+describeHostReservations,beforeClientExecution,executeDescribeHostReservations
+fromRuleContext,get,parent,transition,create
+toString(),append(),intToHex(),byteToHex(),shortToHex(),toString()` (on the `StringBuilder` object)
+toString(),StringBuilder.append(),getResultPath(),StringBuilder.toString()
+ListChangeSetsRequest,beforeClientExecution,executeListChangeSets
+
+FeatRecord,FtrHeader,setRecordType
+put(short c)
+setQuery,CharSequence,QueryParserMessages.INVALID_SYNTAX_CANNOT_PARSE,MessageImpl
+public: keyword indicating the accessibility of the method,StashApplyCommand: name of the return type of the method,stashApply: name of the method,(): empty parentheses indicating that the method takes no arguments,{ }: curly braces enclosing the body of the method,return: keyword indicating the value to be returned,new: keyword used to create a new instance of a class,repo: argument passed to the constructor of the StashApplyCommand class during instantiation.
+Collections.unmodifiableSet,dictionary.values()
+public static int getEffectivePort(String scheme, int specifiedPort)
+ListAssessmentTemplatesRequest,beforeClientExecution,executeListAssessmentTemplates
+restoreFromClusterSnapshot,beforeClientExecution,executeRestoreFromClusterSnapshot
+setPatriarch,setParent,add
+equals(Object o),== operator,null check,getClass() method,Type comparison using !=,Type casting,Field comparison using !=,Object reference comparison using equals() method,Return statement
+public: access modifier keyword,static: keyword to indicate a method is associated with the class rather than an instance of the class,final: keyword to indicate that the variable cannot be changed after initialization or that the method cannot be overridden in subclasses,int: return type of the method (integer),prev: method name,byte[] b: parameter of type byte array,int ptr: parameter of type integer,char chrA: parameter of type character,if: keyword for conditional statement,==: equality operator,b.length: length property of the byte array,while: keyword for loop statement,>=: greater than or equal to operator,--: decrement operator,return: keyword to return a value from the method,ptr: return value of the method (integer)
+
+emitEOF,getCharPositionInLine,getLine,_factory.create,_tokenFactorySourcePair,Token.EOF,Token.DEFAULT_CHANNEL,_input.index(),emit
+UpdateUserRequest constructor,setUserName method
+create,negate
+setTagger,PersonIdent
+automatic(),Runtime.getRuntime(),Math.max(),new BufferSize(),Math.min()
+isWhitespace()
+TopMarginRecord: constructor method,RecordInputStream: parameter type,in: parameter name,readDouble: method called on "in" object,field_1_margin: class field or variable name
+RetrieveEnvironmentInfoRequest,setInfoType,toString
+createPlayerSessions,beforeClientExecution,executeCreatePlayerSessions
+createProxySession,beforeClientExecution,executeCreateProxySession
+
+
+append()
+FetchAlbumTagPhotosRequest(),super(),setProtocol(),ProtocolType.HTTPS
+deleteMembers,beforeClientExecution,executeDeleteMembers
+getContactReachabilityStatus,GetContactReachabilityStatusRequest,GetContactReachabilityStatusResult,beforeClientExecution,executeGetContactReachabilityStatus
+@Override,public boolean remove(Object o),Impl.this.remove(o),!=,null
+last(),backingMap.lastKey()
+CreateStreamingDistributionRequest,beforeClientExecution,executeCreateStreamingDistribution,CreateStreamingDistributionResult
+
+disableAddOn,beforeClientExecution,executeDisableAddOn
+describeAlias,beforeClientExecution,executeDescribeAlias,DescribeAliasRequest,DescribeAliasResult
+next(int delta),while loop,if statement,null check,ptr += currentSubtree.getEntrySpan(),ptr++,eof(),parseEntry()
+clone(),a.clone(),b.clone(),new Binary()
+
+
+toString(),StringBuilder(),length(),append(),instanceof,return,char[]` (array of characters),this` (reference to the current object)
+describeSignalingChannel,beforeClientExecution,executeDescribeSignalingChannel
+attachStaticIp,beforeClientExecution,executeAttachStaticIp
+StringBuilder(): Creates a new StringBuilder object with an initial capacity of 64 characters.,CellReference(): Creates a new CellReference object with the given row and column indexes, and specifies whether the row and column indexes are absolute or relative.,append(): Appends the string representation of the given value to the StringBuilder object.,getClass(): Returns the runtime class of the object.,getName(): Returns the name of the class.,formatAsString(): Returns a string representation of the cell reference in the format "A1" (column letter followed by row number).,toString(): Returns the string representation of the StringBuilder object.
+BloomFilteringPostingsFormat,PostingsFormat,BloomFilterFactory,super,BLOOM_CODEC_NAME,delegatePostingsFormat,bloomFilterFactory
+listTemplates,ListTemplatesRequest,beforeClientExecution,executeListTemplates
+public TimerThread(long, Counter),super(String),this.resolution = long,this.counter = Counter,this.setDaemon(boolean)
+DrawingRecord()` - This is a constructor method which initializes an instance of the `DrawingRecord` class. It sets the `recordData` variable to an empty byte array.
+ListDirectoriesRequest,beforeClientExecution,executeListDirectories
+decode,>>> (bitwise right shift),& (bitwise AND),++ (increment),[] (array access),final (modifier)
+disableCaching(),this.maxCacheRAMMB,this.maxDocsToCache,return
+public static int idealByteArraySize(int need),for,if,return,<< (left shift),- (subtraction),<= (less than or equal to)
+UpdateAssessmentTargetRequest,beforeClientExecution,executeUpdateAssessmentTarget,UpdateAssessmentTargetResult
+modifyVolume,beforeClientExecution,executeModifyVolume
+merge,equals,hashCode,if,new
+map(),add(),position(),allocate(),readFully()
+respondActivityTaskCompleted,beforeClientExecution,executeRespondActivityTaskCompleted
+
+compareMetadata,isAssumeValid,isUpdateNeeded,isModeDifferent,getRawMode,getType,isSmudged,getLength,getEntryLength,getLastModifiedInstant,getEntryLastModifiedInstant,timestampComparator.compare,getOptions().getCheckStat()
+convertToNumberRecord,getColumn,setColumn,getRow,setRow,getXFIndex,setXFIndex,getValue,setValue
+put(),limit(),position(),instanceof(),ReadWriteDirectByteBuffer.put(),ReadWriteHeapByteBuffer.put()
+Iterator,iterator(),hasNext(),next(),at()
+BeiderMorseFilterFactory,valueOf,get,getBoolean,new,PhoneticEngine,getSet,from,isEmpty,IllegalArgumentException
+varp,devsq
+public: Access modifier indicating that the method is public and can be accessed from any class.,PersianNormalizationFilterFactory: Class name of the constructor method.,Map<String,String> args: Parameter of the constructor method of type Map with key-value pairs of type String.,super(args): Call to the parent constructor passing the args parameter.,if: Conditional statement used to check if the args parameter is empty or not.,!args.isEmpty(): Inverted boolean expression to check if the args parameter is not empty.,throw new IllegalArgumentException("Unknown parameters: " + args): Throws an exception with an error message indicating that there are unknown parameters in the args parameter.
+getTerms,visit,BoostedTermExtractor,toArray
+deleteDocumentationPart,beforeClientExecution,executeDeleteDocumentationPart
+StringBuilder.append,Object.getClass,Object.hashCode,Object.notify,Object.notifyAll,Object.wait,String.toString,String.valueOf
+get,checkIndex
+toString()
+evaluateRef,resolveRange
+clear()
+int findEndOffset(StringBuilder buffer, int start),buffer.length(),buffer.substring(start),bi.setText(...),bi.next()
+PrimaryQuery(),FieldsQuery(),PrefixOperatorQuery(),SimpleTerm(),OptionalWeights()
+deleteApiKey,beforeClientExecution,executeDeleteApiKey
+InsertTagsRequest(),super(),setMethod()
+beforeClientExecution,executeDeleteUserByPrincipalId
+describeNetworkInterfaces,DescribeNetworkInterfacesRequest,DescribeNetworkInterfacesResult,beforeClientExecution,executeDescribeNetworkInterfaces
+listener.beforeRecordSerialize(),LittleEndian.putShort(),LittleEndian.putInt(),listener.afterRecordSerialize()
+createSecurityConfiguration,beforeClientExecution,executeCreateSecurityConfiguration
+describeClientVpnConnections,beforeClientExecution,executeDescribeClientVpnConnections
+fill,length
+
+reset(int[] postings)
+bitwise AND operator (&),equality operator (==)
+modifyAccount,beforeClientExecution,executeModifyAccount
+lazyInit(),LB(int k),sync(int i),tokens.size(),tokens.get(int i)
+removeSheet,fixTabIdRecord,getNameRecord,setSheetNumber,removeSheet (from linkTable)
+getNameIndex,removeName
+equals(),instanceof(),getValue(),getID(),typesAreEqual(),getClass(),isAssignableFrom(),byte[]
+GetRepoBuildListRequest(),super(),setUriPattern(),setMethod()
+MessageWriter(),ByteArrayOutputStream(),OutputStreamWriter(),getRawStream()
+append` - adds a `RecordBase` object to the `_recs` list.
+read(),MessageFormat.format(),throw,inf.getRemaining(),onObjectData(),use(),inf.reset()
+describeModelPackage,DescribeModelPackageRequest,beforeClientExecution,executeDescribeModelPackage
+construct,insertCell,instanceof,peekNextClass,getNext
+clone(),new,DeflateDecompressor()
+updateS3Resources,beforeClientExecution,executeUpdateS3Resources
+GroupQueryNode,QueryNodeError,MessageImpl,QueryParserMessages,allocate,setLeaf,add
+append(),getFirstPathElement(),getPathElements(),escape(),toString()
+findCellComment,getDrawingPatriarch,removeShape
+
+activateUser,beforeClientExecution,executeActivateUser
+
+modifySnapshotCopyRetentionPeriod,ModifySnapshotCopyRetentionPeriodRequest,beforeClientExecution,executeModifySnapshotCopyRetentionPeriod
+deleteClusterSubnetGroup,DeleteClusterSubnetGroupRequest,beforeClientExecution,executeDeleteClusterSubnetGroup
+public,static,String,decode,byte[],buffer,return,decode,buffer,0,buffer.length
+
+stopTask,beforeClientExecution,executeStopTask
+assert,instanceof,copyFrom,copyBytes
+SeriesToChartGroupRecord,RecordInputStream,readShort()
+writeUnicodeStringFlagAndData,hasMultibyte,writeByte,putUnicodeLE,putCompressedUnicode
+beforeClientExecution,executeAuthorizeSecurityGroupIngress
+addFile,checkFileNames,Collections.singleton,setFiles.add,namedForThisSegment
+setSize,int,width,height
+setPrecedenceFilterSuppressed,|=,&=,~
+LOOK: IntervalSet,LOOK: (ATNState, TokenStream, RuleContext): IntervalSet
+serialize,LittleEndianOutput.writeShort,getOptionFlags,getRowHeight
+
+Hashtable - constructor method,int - primitive data type representing an integer,capacity - parameter representing the initial capacity of the Hashtable,float - primitive data type representing a floating-point number,loadFactor - parameter representing the load factor of the Hashtable,this - keyword referring to the current object,IllegalArgumentException - exception thrown when an illegal argument is passed to a method or constructor,<= - less than or equal to comparison operator,0 - integer literal representing zero,Float.isNaN - static method of the Float class that returns true if the specified floating-point value is a Not-a-Number (NaN) value,throw - keyword used to throw an exception,"Load factor: " - string literal representing the error message for the IllegalArgumentException
+get(CharSequence key)
+ListHyperParameterTuningJobsResult,ListHyperParameterTuningJobsRequest,beforeClientExecution,executeListHyperParameterTuningJobs
+deleteTable(String),deleteTable(DeleteTableRequest.withTableName)
+lessThan(),getScore(),fragNum
+assert,>=,<=,final
+UpdateHITTypeOfHITResult,updateHITTypeOfHIT,UpdateHITTypeOfHITRequest,beforeClientExecution,executeUpdateHITTypeOfHIT
+updateRecommenderConfiguration,beforeClientExecution,executeUpdateRecommenderConfiguration
+compareTo,Arrays.compareUnsigned
+stem,endsWith
+describeDBSnapshots,beforeClientExecution,executeDescribeDBSnapshots
+SortedSetDocValuesFacetField,super,verifyLabel,this
+createDocumentationPart,beforeClientExecution,executeCreateDocumentationPart
+
+duplicate(),asReadOnlyBuffer()
+updateDataSourcePermissions,beforeClientExecution,executeUpdateDataSourcePermissions
+getSid(),_recordCreatorsById.get(),constructor.create(),UnknownRecord() constructor.
+getCount()
+DeleteApplicationReferenceDataSourceRequest,beforeClientExecution,executeDeleteApplicationReferenceDataSource,DeleteApplicationReferenceDataSourceResult
+createProjectVersion,beforeClientExecution,executeCreateProjectVersion
+slice(),remaining(),ReadOnlyIntArrayBuffer()
+get,position,limit,throw,BufferUnderflowException,block,peekByte,offset
+put,checkIndex
+StoredField,super,fieldsData
+getExpectedTokensWithinCurrentRule(),getInterpreter(),atn(),ATN.states.get(),atn.nextTokens()
+StringBuilder(),append(),getReadOnly(),getPassword(),getUsername(),toString()
+SubmoduleInitCommand,Repository,super,ArrayList
+Repository.isValidRefName(name),Constants.HEAD.equals(name),IllegalArgumentException(MessageFormat.format(JGitText.get().invalidRefName, name)),include.containsKey(name),IllegalStateException(JGitText.get().duplicateRef + name),include.put(name, id.toObjectId())
+beforeClientExecution,executeEnableSnapshotCopy
+getValueFiller()
+writeByte,writeShort,length,serialize
+newCounter(): This method returns an instance of the Counter class.,newCounter(false): This method creates a new instance of the Counter class with the argument "false" passed as a parameter.
+get,getProperty,indexOf,substring,valueOf
+preSerialize(),getTabpos(),TabIdRecord,get(),fixTabIdRecord(),size()
+LimitTokenCountAnalyzer,Analyzer.getReuseStrategy(),super(),delegate.getReuseStrategy()
+createInternalReferences(),ExternalBookBlock(),new ExternalNameRecord[0],new CRNBlock[0]
+StringBuilder.append(),getProtect(),StringBuilder.toString()
+setThin(boolean): sets the value of the boolean thin parameter,checkCallable(): checks if the method can be called,return this: returns the object itself
+compareTo,Double.compare
+create,TokenStream,ReverseStringFilter,in
+BlockList(),newDirectory(),newBlock()
+HashMap(),WeightedSpanTerm.getWeight(),Math.max()
+equals(Object),assert,instanceof,null,return,if-else
+charset()
+describeExperiment(),DescribeExperimentRequest(),beforeClientExecution(),executeDescribeExperiment()
+EscherGraphics() - Constructor method,new Font() - Object instantiation method.,HSSFShapeGroup() - Constructor method,HSSFWorkbook() - Constructor method,Color() - Constructor method
+
+deleteRouteTable,DeleteRouteTableRequest,beforeClientExecution,executeDeleteRouteTable,DeleteRouteTableResult
+beforeClientExecution,executeAssociateVPCWithHostedZone
+putIntegration,beforeClientExecution,executePutIntegration
+SimpleEntry,K,V
+for loop,bitwise AND (&),bitwise OR (|),left shift (<<),right shift (>>>),array indexing ([]),increment operator (++),variable declaration (with final modifier)
+beforeClientExecution,executeDisassociateConnectionFromLag
+
+toString()` - overridden method from the Object class. This method returns a string representation of an object. In this case, the method returns the string representation of the object `m` by invoking its `toString()` method.
+stopKeyPhrasesDetectionJob,beforeClientExecution,executeStopKeyPhrasesDetectionJob
+toString(),getRow(),getColumn()
+ListDominantLanguageDetectionJobsRequest,ListDominantLanguageDetectionJobsResult,beforeClientExecution,executeListDominantLanguageDetectionJobs
+toString()
+parseHexInt4,digits16,throw,ArrayIndexOutOfBoundsException
+Attribute,setName,setValue
+describeStackSetOperation,beforeClientExecution,executeDescribeStackSetOperation
+getCell(int cellnum),getCell(int cellnum, MissingCellPolicy policy)
+write,writeContinueIfRequired,_ulrOutput.write
+ResetImageAttributeRequest,setImageId,setAttribute,toString
+discardResultContents()
+getPeeledObjectId(),getLeaf(),getPeeledObjectId()` (called on `getLeaf()`)
+beforeClientExecution,executeUndeprecateDomain
+writeByte,length,putUnicodeLE,putCompressedUnicode
+deleteQueue(String queueUrl),deleteQueue(new DeleteQueueRequest().withQueueUrl(queueUrl))
+
+swap() method uses variable assignment to swap the values of four integer variables.
+
+putMetricData,beforeClientExecution,executePutMetricData
+getCelebrityRecognition,beforeClientExecution,executeGetCelebrityRecognition,GetCelebrityRecognitionRequest,GetCelebrityRecognitionResult
+public: Access modifier keyword in Java.,CreateQueueRequest: Name of the class.,String: Data type of the parameter.,setQueueName: Name of a method that is being called with the parameter.,queueName: Name of the parameter being passed into the method.
+Area3DPxg,super,getSheetIdentifier,getName,instanceof,SheetRangeIdentifier,getLastSheetIdentifier
+
+moveAddressToVpc,beforeClientExecution,executeMoveAddressToVpc
+toString(),getName(),collectionModel.getName(),String.format(Locale.ROOT, ...),!=` operator,if...else` statement
+describeLags,DescribeLagsRequest,beforeClientExecution,executeDescribeLags
+offset()
+limit,position,put,instanceof,ReadWriteDirectByteBuffer,ReadWriteHeapByteBuffer
+
+write,IOException,out.write
+describeImportImageTasks,DescribeImportImageTasksRequest,beforeClientExecution,executeDescribeImportImageTasks
+readUShort(),switch(),remaining(),readByte()
+Status(): Constructor method,super(): Call to parent constructor method,diff.getAdded(): Accessor method to get added items from the IndexDiff object,diff.getChanged(): Accessor method to get changed items from the IndexDiff object,diff.getRemoved(): Accessor method to get removed items from the IndexDiff object,diff.getMissing(): Accessor method to get missing items from the IndexDiff object,diff.getModified(): Accessor method to get modified items from the IndexDiff object,diff.getConflicting(): Accessor method to get conflicting items from the IndexDiff object,!diff.getAdded().isEmpty(): Boolean negation of the check for whether the added items list from the IndexDiff object is empty,!diff.getChanged().isEmpty(): Boolean negation of the check for whether the changed items list from the IndexDiff object is empty,!diff.getRemoved().isEmpty(): Boolean negation of the check for whether the removed items list from the IndexDiff object is empty,!diff.getMissing().isEmpty(): Boolean negation of the check for whether the missing items list from the IndexDiff object is empty,!diff.getModified().isEmpty(): Boolean negation of the check for whether the modified items list from the IndexDiff object is empty,!diff.getConflicting().isEmpty(): Boolean negation of the check for whether the conflicting items list from the IndexDiff object is empty,this.diff = diff: Assigning the parameter value to the instance variable,hasUncommittedChanges = : Assigning a boolean value to the instance variable,clean = : Assigning a boolean value to the instance variable
+createExperiment,beforeClientExecution,executeCreateExperiment
+clone(),copy()
+limit,position,slice,order,clear
+describeSnapshotSchedules,DescribeSnapshotSchedulesRequest,beforeClientExecution,executeDescribeSnapshotSchedules
+listImages,beforeClientExecution,executeListImages
+Diff.
+StringBuilder.append,String[].length,String[].<index>,String.toString()
+public: access modifier keyword in Java,static: static keyword in Java,void: return type indicating the method does not return a value,setupEnvironment: method name,String[]: array of strings as a parameter,ForkedEvaluator[]: array of ForkedEvaluator objects as a parameter,WorkbookEvaluator[]: array of WorkbookEvaluator objects,for: loop keyword in Java,int: keyword representing an integer data type,<, >, =: comparison operators in Java,length: array property that returns the length of the array,i++: incrementation operator in Java,_evaluator: instance variable of ForkedEvaluator object,CollaboratingWorkbooksEnvironment.setup: static method call,workbookNames: parameter passed to CollaboratingWorkbooksEnvironment.setup() method,wbEvals: parameter passed to CollaboratingWorkbooksEnvironment.setup() method
+ListPhotoTagsRequest(),super(),setProtocol()
+RandomSamplingFacetsCollector,XORShift64Random
+allocateStaticIp,beforeClientExecution,executeAllocateStaticIp
+FeatRecord,RecordInputStream,FtrHeader,CellRangeAddress,FeatProtection,FeatFormulaErr2,FeatSmartTag,logger,POILogger
+getHead(),getHeadName(Ref),RefNotFoundException(MessageFormat),walk.lookupCommit(ObjectId),walk.isMergedInto(RevCommit, RevCommit),tryFastForward(String, RevCommit, RevCommit)
+createSnapshotSchedule,beforeClientExecution,executeCreateSnapshotSchedule
+hasNext(),RuntimeException(),get(),get(int index),size(),add(Object o),remove(int index)
+toString(),RawParseUtils.decode(),buf.toByteArray()
+ListTablesRequest,setExclusiveStartTableName,List
+enableAlarmActions,beforeClientExecution,executeEnableAlarmActions
+Builder()
+equals,is_final,Arrays.equals,referenceEquals
+create,TokenStream,EnglishPossessiveFilter
+cloneStringIfRequired(),clearFormatting(),addToSSTIfRequired()
+assert,Math.min(),Arrays.fill()
+deleteRouteResponse,beforeClientExecution,executeDeleteRouteResponse
+toPrivateString()
+CreatePresignedDomainUrlRequest,beforeClientExecution,executeCreatePresignedDomainUrl
+write,doWrite
+
+toString(),valueToString()
+getSaturation()
+
+toString(),getClass(),getName()
+deleteDataSource,beforeClientExecution,executeDeleteDataSource
+RebootNodeResult` - Name of the return type,rebootNode` - Name of the method,RebootNodeRequest` - Name of the parameter type,beforeClientExecution` - Name of a method being called on the `request` object,executeRebootNode` - Name of a method being called with the `request` object as an argument
+convertRawBytesToEscherRecords()
+CreateOrUpdateTagsRequest(),beforeClientExecution(),executeCreateOrUpdateTags(),createOrUpdateTags()
+getSnapShot()
+getResourceAsStream,IOException
+toString(),StringBuilder(),append(),getClass(),getName(),HexDump.shortToHex(),HexDump.toHex(),length(),toString()
+
+isDefaultField,getTermEscapeQuoted
+copy()
+isOutput()` - This method is a getter method that returns the value of a boolean variable called `output`.
+createNetworkInterface,beforeClientExecution,executeCreateNetworkInterface
+serialize,LittleEndianOutput.writeShort
+stopDominantLanguageDetectionJob,beforeClientExecution,executeStopDominantLanguageDetectionJob
+withConnectionTimeout,int,milliseconds,ECSMetadataServiceCredentialsFetcher,return
+getGatewayGroup,beforeClientExecution,executeGetGatewayGroup
+slice(),remaining(),ReadOnlyFloatArrayBuffer()
+StringBuilder(),size(),append(),toString()
+toString(),toString() (called on objects a and b)
+ListSubscriptionsByTopicRequest,setTopicArn,setNextToken
+
+terminateClientVpnConnections,TerminateClientVpnConnectionsRequest,beforeClientExecution,executeTerminateClientVpnConnections,TerminateClientVpnConnectionsResult
+Constructor: ReceiveMessageRequest,Parameter: String queueUrl,Method call: setQueueUrl(queueUrl)
+writeShort
+common(Object output1, Object output2)
+createVariable,beforeClientExecution,executeCreateVariable
+match,length,return,for,if,int,byte,[] (array),+ (addition),< (less than),!= (not equal to)
+readHeader(),LittleEndian.getInt(),throw new RecordFormatException()
+createCloudFrontOriginAccessIdentity,CreateCloudFrontOriginAccessIdentityRequest,beforeClientExecution,executeCreateCloudFrontOriginAccessIdentity
+getFeature(),XmlPullParser.FEATURE_PROCESS_NAMESPACES
+
+
+synchronized,incRef()
+binarySearch()
+readUShort(),readShort()
+
+PasswordRecord constructor,RecordInputStream.readShort()
+HashMap(int, float): constructor method with two arguments: an integer for capacity and a float for load factor.,this(capacity): calls another constructor method of the same class with the capacity parameter.,loadFactor <= 0: less than or equal to comparison operator.,Float.isNaN(loadFactor): checks if the load factor is not a number (NaN).,throw new IllegalArgumentException(String): throws an exception with a message.
+lock(),awaitNanos(),unlock(),getMaxCompletedSequenceNumber(),maybeRefreshBlocking()
+
+pollFirst,size,removeFirstImpl
+CreatePhotoRequest(),super(),setProtocol(),ProtocolType.HTTPS
+
+StringBuilder.length(),StringBuilder.charAt(),Set.contains()
+setObjectChecker
+Constructor - BaseRef,Parameter - AreaEval,Null assignment - _refEval,Variable assignment - _areaEval = ae,Variable assignment - _firstRowIndex = ae.getFirstRow(),Variable assignment - _firstColumnIndex = ae.getFirstColumn(),Variable assignment - _height = ae.getLastRow() - ae.getFirstRow() + 1,Variable assignment - _width = ae.getLastColumn() - ae.getFirstColumn() + 1
+createVpcEndpoint,beforeClientExecution,executeCreateVpcEndpoint
+deregisterWorkspaceDirectory,beforeClientExecution,executeDeregisterWorkspaceDirectory
+readShort(),readByte(),new CFRTID(),for loop
+newMerger,Repository,OneSide,treeIndex
+createDataSourceFromRedshift,beforeClientExecution,executeCreateDataSourceFromRedshift
+for loop,array access,new operator,method call: `getDecisionState(),object instantiation: `DFA(),assignment operator,length attribute access
+removeName(String),getNameIndex(String),removeName(int)
+StringBuilder(),append(),getMargin(),toString()
+copy()
+StandardQueryNodeProcessorPipeline` - Constructor method.,add` - Method used to add processors to the pipeline.,WildcardQueryNodeProcessor` - Method that processes wildcard queries.,MultiFieldQueryNodeProcessor` - Method that processes multi-field queries.,FuzzyQueryNodeProcessor` - Method that processes fuzzy queries.,RegexpQueryNodeProcessor` - Method that processes regular expression queries.,MatchAllDocsQueryNodeProcessor` - Method that processes queries that match all documents.,OpenRangeQueryNodeProcessor` - Method that processes open range queries.,PointQueryNodeProcessor` - Method that processes point queries.,PointRangeQueryNodeProcessor` - Method that processes point range queries.,TermRangeQueryNodeProcessor` - Method that processes term range queries.,AllowLeadingWildcardProcessor` - Method that allows leading wildcards in queries.,AnalyzerQueryNodeProcessor` - Method that processes queries using an analyzer.,PhraseSlopQueryNodeProcessor` - Method that processes phrase queries with a specified slop value.,BooleanQuery2ModifierNodeProcessor` - Method that processes Boolean queries.,NoChildOptimizationQueryNodeProcessor` - Method that optimizes queries with no child nodes.,RemoveDeletedQueryNodesProcessor` - Method that removes deleted query nodes.,RemoveEmptyNonLeafQueryNodeProcessor` - Method that removes empty non-leaf query nodes.,BooleanSingleChildOptimizationQueryNodeProcessor` - Method that optimizes Boolean queries with a single child node.,DefaultPhraseSlopQueryNodeProcessor` - Method that sets a default slop value for phrase queries.,BoostQueryNodeProcessor` - Method that sets a boost value for queries.,MultiTermRewriteMethodProcessor` - Method that processes multi-term queries with a specified rewrite method.
+StringBuilder.append(),SheetNameFormatter.format(),CellReference(),CellReference.formatAsString(),String.equals(),StringBuilder.toString()
+put,throw,ReadOnlyBufferException
+mode(int)
+
+set,add
+
+max,Double.NEGATIVE_INFINITY,Math.max
+UpdateRepoWebhookRequest(),super(),setUriPattern(),setMethod()
+setDomainName,setItemName,setAttributes,setExpected
+StringBuilder.append(),for loop,_fieldInfos.length,_fieldInfos[i].appendDebugInfo(),StringBuilder.append('\n'),StringBuilder.toString()
+isSuccessful,getMergeStatus,getStatus
+setBytesValue,new BytesRef
+describeConnections,beforeClientExecution,executeDescribeConnections
+DeletePhotosRequest(),super(),setProtocol(),ProtocolType.HTTPS
+add(),iterator.add(),subList.sizeChanged()
+allocate,IllegalArgumentException,new,ReadWriteHeapByteBuffer
+getSubQuery,get
+Math.min()
+StringBuilder.append,HexDump.shortToHex,Object.toString
+describeLogPattern,beforeClientExecution,executeDescribeLogPattern
+beforeClientExecution,executeRegisterTransitGatewayMulticastGroupMembers
+getPhoneNumberSettings,beforeClientExecution,executeGetPhoneNumberSettings
+
+isDirect()
+DeleteServerCertificateRequest,setServerCertificateName
+append,getInstance,appendDouble
+getEvaluation,beforeClientExecution,executeGetEvaluation,GetEvaluationRequest,GetEvaluationResult
+
+boolean find(int start),void findImpl(address, input, findPos, matchOffsets)
+getLifecyclePolicyPreview,beforeClientExecution,executeGetLifecyclePolicyPreview
+addAttribute(Class<T> clazz),CharTermAttribute.class,PositionIncrementAttribute.class
+serialize,LittleEndianOutput.writeShort
+StringBuilder.append(),Constants.typeString(),Object.getType(),Object.name(),StringBuilder.toString()
+setRemote,checkCallable
+findStartOfRowOutlineGroup(int rowNumber),getRow(int rowIx),writeHidden(RowRecord row, int rowIx),createRow(int rowIx),insertRow(RowRecord row),setCollapsed(boolean collapsed)
+associateSkillGroupWithRoom,beforeClientExecution,executeAssociateSkillGroupWithRoom
+toString(),StringBuilder(),append(),getSeriesNumbers(),Arrays.toString(),toString()` (called on the `StringBuilder` object),return
+
+getClassArg(),getClass(),getName(),get()
