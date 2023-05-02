@@ -217,3 +217,41 @@ func CalcClassNumFromPath(path string) string {
 	}
 	return fmt.Sprintf("%.2f", 100.0*float64(cnt)/float64(lineCnt)) + "%"
 }
+
+// AddSpace 从srcPath中读取每行，并在适当位置添加空格
+func AddSpace(srcPath, dstPath string) {
+	srcFile, err := os.Open(srcPath)
+	FatalCheck(err)
+	defer srcFile.Close()
+	scanner := bufio.NewScanner(srcFile)
+
+	dstFile, err := os.Create(dstPath)
+	FatalCheck(err)
+	defer dstFile.Close()
+	writer := bufio.NewWriter(dstFile)
+
+	for scanner.Scan() {
+		line := scanner.Text()
+		res := parseSpace(line)
+		writer.WriteString(res + "\n")
+	}
+	writer.Flush()
+}
+
+// parseSpace 为s中适当位置添加空格
+func parseSpace(s string) string {
+	s = strings.ReplaceAll(s, "(", " ( ")
+	s = strings.ReplaceAll(s, ")", " ) ")
+	s = strings.ReplaceAll(s, ".", " . ")
+	s = strings.ReplaceAll(s, ",", " , ")
+	s = strings.ReplaceAll(s, "<", " < ")
+	s = strings.ReplaceAll(s, ">", " > ")
+	s = strings.ReplaceAll(s, ";", " ; ")
+	s = strings.ReplaceAll(s, "[", " [ ")
+	s = strings.ReplaceAll(s, "]", " ] ")
+	s = strings.ReplaceAll(s, "++", " ++ ")
+	s = strings.ReplaceAll(s, "--", " -- ")
+	s = strings.ReplaceAll(s, "@", " @ ")
+	s = strings.ReplaceAll(s, "...", " ... ")
+	return s
+}

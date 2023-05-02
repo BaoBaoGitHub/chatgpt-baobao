@@ -6,11 +6,15 @@ import (
 )
 
 const (
-	FullPrompts                      = "full_prompts"
-	TestPrompts                      = "test_prompts"
-	TaskPrompts                      = "task_prompts"
-	DetailedPrompts                  = "detailed_prompts"
-	GuidedPromptsWithAPIAndException = "guided_prompts_api_exception"
+	FullPrompts                                    = "full_prompts"
+	TestPrompts                                    = "test_prompts"
+	TaskPrompts                                    = "task_prompts"
+	DetailedPrompts                                = "detailed_prompts"
+	GuidedPromptsWithAPIAndException               = "guided_prompts_api_exception"
+	GuidedPromptsWithAPI                           = "guided_prompts_api"
+	DetailedPromptsWithoutRemove                   = "detaileed_prompts_without_remove_statement"
+	TaskPromptsWithBackticks                       = "task_prompts_backticks"
+	GuidedPromptsWithAPIAndExceptionAndConciseness = "guided_prompts_api_exception_conciseness"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts
@@ -113,6 +117,12 @@ func GenerateQueryBasedPromts(data map[string]any, promptMode string, line ...st
 			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
 			res = context + requirement + guidelines
 		}
+	case DetailedPromptsWithoutRemove:
+		{
+			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
+			requirement := fmt.Sprintf(` Write a method named function  to "%s" `, nl)
+			res = context + requirement
+		}
 	case GuidedPromptsWithAPIAndException:
 		{
 			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
@@ -128,6 +138,37 @@ func GenerateQueryBasedPromts(data map[string]any, promptMode string, line ...st
 			}
 
 			requirement := fmt.Sprintf(` Write a method named function %swith%s exception handling to "%s" `, line[0], line[1], nl)
+			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
+			res = context + requirement + guidelines
+		}
+	case GuidedPromptsWithAPI:
+		{
+			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
+			if strings.TrimSpace(line[0]) == "" {
+				line[0] = ""
+			} else {
+				line[0] = fmt.Sprintf("that calls %s ", line[0])
+			}
+
+			requirement := fmt.Sprintf(` Write a method named function %s to "%s" `, line[0], nl)
+			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
+			res = context + requirement + guidelines
+		}
+	case GuidedPromptsWithAPIAndExceptionAndConciseness:
+		{
+			context := fmt.Sprintf(`Remember you have a Java class named "%s", member variables "%s", member functions "%s".`, className, memberVariablesStr, memberFunctionsStr) + "\n"
+			if strings.TrimSpace(line[0]) == "" {
+				line[0] = ""
+			} else {
+				line[0] = fmt.Sprintf("that calls %s ", line[0])
+			}
+			if strings.TrimSpace(line[1]) == "true" {
+				line[1] = ""
+			} else {
+				line[1] = "out"
+			}
+
+			requirement := fmt.Sprintf(` Write a concise method named function %swith%s exception handling to "%s" `, line[0], line[1], nl)
 			guidelines := `remove comments; remove summary; remove throws; remove function modifiers; change method name to "function"; change argument names to "arg0", "arg1"...; change local variable names to "loc0", "loc1"...`
 			res = context + requirement + guidelines
 		}

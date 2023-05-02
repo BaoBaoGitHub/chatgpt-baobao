@@ -127,6 +127,10 @@ func GenQueryBasedPrompts(code, api, exception string, promptsMode string) strin
 			}
 			res = fmt.Sprintf("Translate C# code into Java code %s with%s exception handling:\n%s", api, exception, code)
 		}
+	case chat.TaskPromptsWithBackticks:
+		{
+			res = "Translate C# code delimited by triple backticks into Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
+		}
 	default:
 		{
 			res = ""

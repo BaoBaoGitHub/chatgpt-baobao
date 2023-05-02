@@ -45,7 +45,7 @@ func main() {
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
 	//TODO 使用的是哪个prompt，一个是GuidedPromptsWithAPIAndException，一个是TaskPrompts
-	promptsMode := chat.GuidedPromptsWithAPIAndException
+	promptsMode := chat.TaskPromptsWithBackticks
 
 	datasetDir := "code_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
@@ -62,7 +62,7 @@ func main() {
 	testExceptionPath := refDir + "test_references_exception.txt"
 
 	//TODO 是否使用测试数据
-	if testFlag := true; testFlag {
+	if testFlag := false; testFlag {
 		csPath = testCSharpPath
 		javaPath = testJavaPath
 		apiPath = testAPIPath
@@ -116,5 +116,5 @@ func main() {
 	// 7. predictions中以类开头的百分比
 	log.Println(utils.CalcClassNumFromPath(predictionPath))
 
-	//log.Println(tokenInfo)
+	log.Println(tokenInfo)
 }

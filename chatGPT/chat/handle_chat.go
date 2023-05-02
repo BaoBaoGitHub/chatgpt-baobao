@@ -133,13 +133,13 @@ func HandleErrorTokeninfoVersion(
 	var newURI = baseURI
 	if err2, ok := err.(error); ok {
 		//log.Println(accessToken, err2)
-		if strings.Contains(err2.Error(), "429") {
+		if strings.Contains(err2.Error(), "429") || strings.Contains(err2.Error(), "202") {
 			//cli = NewDefaultClient(uuid.New().String(), "https://freechat.lidong.xin")
 			//indexOfToken, ok := tokenInfo.GetIndexOfToken(accessToken)
 			//if !ok {
 			//	log.Fatalln(accessToken, "不在tokeninfo中！")
 			//}
-			time.Sleep(time.Second * 10 * time.Duration(tokenInfo.GetCntOf429ForToken(accessToken)))
+			time.Sleep(time.Minute * 1 * time.Duration(tokenInfo.GetCntOf429ForToken(accessToken)))
 			newToken, newURI = tokenInfo.Handle429(accessToken)
 			cli = NewDefaultClient(newToken, newURI)
 			//cli = NewDefaultClient(uuid.New().String(), "https://freechat.xyhelper.cn")	//境外服务器

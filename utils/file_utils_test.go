@@ -28,3 +28,9 @@ func TestGenerateReferencesFromPath(t *testing.T) {
 func TestCalcClassNumFromPath(t *testing.T) {
 	fmt.Println(CalcClassNumFromPath("D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception\\test0\\predictions.txt"))
 }
+
+func TestAddSpace(t *testing.T) {
+	src := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\test0\\predictions.txt"
+	dst := AddSuffix(src, "space")
+	AddSpace(src, dst)
+}

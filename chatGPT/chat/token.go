@@ -79,7 +79,7 @@ func (r *TokenInfo) Handle429(tokenOf429 string) (string, string) {
 	index := r.getSpareIndex()
 	r.flag[index] = false
 	r.cntOf429[index]++
-	log.Println("由于429错误accesstoken切换到", r.token[index])
+	log.Println("由于429或202错误accesstoken切换到", r.token[index])
 	return r.token[index], r.uri[index]
 }
 

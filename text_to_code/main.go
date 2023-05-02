@@ -44,7 +44,7 @@ func main() {
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
 	//TODO 使用的是哪个prompt，包括TaskPrompts、DetailedPrompts与GuidedPromptsWithAPIAndException
-	promptsMode := chat.GuidedPromptsWithAPIAndException
+	promptsMode := chat.GuidedPromptsWithAPIAndExceptionAndConciseness
 
 	datasetDir := "text_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"
@@ -106,6 +106,10 @@ func main() {
 
 	// 7. predictions中以类开头的百分比
 	log.Println(utils.CalcClassNumFromPath(predictionPath))
+	//defer utils.DeleteFiles(append([]string{}, predictionPath))
 
-	//log.Println(tokenInfo)
+	// 8. 添加空格以符合评估格式
+	predictionWithSpacePath := utils.AddSuffix(predictionPath, "space")
+	utils.AddSpace(predictionPath, predictionWithSpacePath)
+	log.Println(tokenInfo)
 }
