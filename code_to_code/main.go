@@ -45,7 +45,7 @@ func main() {
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
 	//TODO 使用的是哪个prompt，一个是GuidedPromptsWithAPIAndException，一个是TaskPrompts
-	promptsMode := chat.TaskPromptsWithBackticks
+	promptsMode := chat.TaskPromptsWithBackticksAndConciseness
 
 	datasetDir := "code_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
@@ -95,8 +95,8 @@ func main() {
 	splitResponsePath := make([]string, concurrentNum)
 	// 2. 并发处理代码翻译
 	for i, srcPath := range splitFilePaths {
-		//go translation.CodeTranslateFromFile(srcPath, tgtDir, accessToken[i], baseURI[i], filePathSuffix, wg.Done)
-		go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		//go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		go translation.CodeTranslateFromFileToekenInfoVersionWithSession(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
 		// tgt文件路径
 		targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 		splitResponsePath[i] = strings.TrimSuffix(targetFileName, path.Ext(targetFileName)) + ".json"
@@ -110,11 +110,12 @@ func main() {
 	defer utils.DeleteFiles(splitExceptionPath)
 	transitionJSONPath := utils.MergeJSONFile(splitResponsePath)
 
+	log.Println(tokenInfo)
+
 	// 5. 生成符合评估的predictions.txt文件
 	utils.GetPredictionFromJSONFIle(transitionJSONPath, predictionPath)
 
 	// 7. predictions中以类开头的百分比
 	log.Println(utils.CalcClassNumFromPath(predictionPath))
 
-	log.Println(tokenInfo)
 }

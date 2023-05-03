@@ -15,6 +15,7 @@ const (
 	DetailedPromptsWithoutRemove                   = "detaileed_prompts_without_remove_statement"
 	TaskPromptsWithBackticks                       = "task_prompts_backticks"
 	GuidedPromptsWithAPIAndExceptionAndConciseness = "guided_prompts_api_exception_conciseness"
+	TaskPromptsWithBackticksAndConciseness         = "task_prompts_backticks_conciseness"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts

@@ -100,6 +100,65 @@ func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode string,
 	tokenInfo.ReleaseToken(token)
 }
 
+// CodeTranslateFromFileToekenInfoVersion 代码翻译的池化版本
+func CodeTranslateFromFileToekenInfoVersionWithSession(srcPath, tgtDir, promptsMode string, tokenInfo *chat.TokenInfo, fileSuffix string, done func(), paths ...string) {
+	defer done()
+	// 0. chatGPT初始化
+	token, uri := tokenInfo.Use()
+	cli := chat.NewDefaultClient(token, uri)
+	conversationID := new(string)
+	parentMessage := new(string)
+	var text *chatgpt.ChatText
+
+	var apiScanner *bufio.Scanner
+	var exceptionScanner *bufio.Scanner
+	for _, path := range paths {
+		if strings.Contains(path, "api") {
+			f, err := os.Open(path)
+			if err != nil {
+				log.Panic(err)
+			}
+			defer f.Close()
+			apiScanner = bufio.NewScanner(f)
+		} else if strings.Contains(path, "exception") {
+			f, err := os.Open(path)
+			if err != nil {
+				log.Panic(err)
+			}
+			defer f.Close()
+			exceptionScanner = bufio.NewScanner(f)
+		}
+	}
+
+	// tgt文件路径
+	targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
+	targetFileName = strings.TrimSuffix(targetFileName, path.Ext(targetFileName)) + ".json"
+
+	// 1. 读取文件
+	filePtr, err := os.Open(srcPath)
+	defer filePtr.Close()
+	utils.FatalCheck(err)
+	scanner := bufio.NewScanner(filePtr)
+	for scanner.Scan() {
+		apiScanner.Scan()
+		exceptionScanner.Scan()
+		line := scanner.Text()
+		// 2.查询每一行代码
+		query := GenQueryBasedPrompts(line, apiScanner.Text(), exceptionScanner.Text(), promptsMode)
+		//log.Println(query)
+		text, token, uri = chat.HandleChatRobustlyTokeninfoVersionWithSession(query, conversationID, parentMessage, token, uri, tokenInfo, cli)
+		*conversationID = text.ConversationID
+		*parentMessage = text.MessageID
+		//// 3. 获取响应文件名(json文件)
+		//respFilePath := utils.AddSuffix(srcPath, fileSuffix)
+		//respFilePath = ModifyFileExtToJSON(respFilePath)
+		// 4. 写入到响应文件中去
+		utils.WriteToJSONFileFromString(targetFileName, text.Content, query)
+	}
+
+	tokenInfo.ReleaseToken(token)
+}
+
 // ModifyFileExtToJSON 修改文件后缀名为JSON
 func ModifyFileExtToJSON(path string) string {
 	path = strings.TrimSuffix(path, filepath.Ext(path))
@@ -130,6 +189,10 @@ func GenQueryBasedPrompts(code, api, exception string, promptsMode string) strin
 			res = fmt.Sprintf("Translate C# code into Java code %s with%s exception handling:\n%s", api, exception, code)
 		}
 	case chat.TaskPromptsWithBackticks:
+		{
+			res = "Translate C# code delimited by triple backticks into Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
+		}
+	case chat.TaskPromptsWithBackticksAndConciseness:
 		{
 			res = "Translate C# code delimited by triple backticks into Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
 		}
