@@ -139,7 +139,7 @@ func HandleErrorTokeninfoVersion(
 			//if !ok {
 			//	log.Fatalln(accessToken, "不在tokeninfo中！")
 			//}
-			time.Sleep(time.Minute * 1 * time.Duration(tokenInfo.GetCntOf429ForToken(accessToken)))
+			time.Sleep(time.Second * 10 * time.Duration(tokenInfo.GetCntOf429ForToken(accessToken)))
 			newToken, newURI = tokenInfo.Handle429(accessToken)
 			cli = NewDefaultClient(newToken, newURI)
 			//cli = NewDefaultClient(uuid.New().String(), "https://freechat.xyhelper.cn")	//境外服务器

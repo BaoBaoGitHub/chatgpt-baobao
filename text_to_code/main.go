@@ -59,7 +59,7 @@ func main() {
 	testExceptionPath := refDir + "test_references_exception.txt"
 	// 测试标志
 	//TODO 是否要使用测试数据源
-	if testFlag := true; testFlag {
+	if testFlag := false; testFlag {
 		concodePath = testConcodePath
 		apiPath = testAPIPath
 		exceptionPath = testExceptionPath
@@ -104,6 +104,7 @@ func main() {
 	// 6. 生成predictions文件
 	utils.GetPredictionFromJSONFIle(responsePath, predictionPath)
 
+	log.Println(tokenInfo)
 	// 7. predictions中以类开头的百分比
 	log.Println(utils.CalcClassNumFromPath(predictionPath))
 	//defer utils.DeleteFiles(append([]string{}, predictionPath))
@@ -111,5 +112,4 @@ func main() {
 	// 8. 添加空格以符合评估格式
 	predictionWithSpacePath := utils.AddSuffix(predictionPath, "space")
 	utils.AddSpace(predictionPath, predictionWithSpacePath)
-	log.Println(tokenInfo)
 }
