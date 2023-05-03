@@ -108,5 +108,6 @@ func CodeGenerationFromFileTokeninfoVersion(srcPath, tgtDir, promptMode string, 
 		// 4 结果处理
 		utils.WriteToJSONFileFromString(targetFileName, resContent, query)
 	}
+	tokenInfo.ReleaseToken(token)
 	return targetFileName
 }

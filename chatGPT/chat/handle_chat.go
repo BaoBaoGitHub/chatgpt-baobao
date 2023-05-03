@@ -135,7 +135,7 @@ func HandleErrorTokeninfoVersion(
 		//log.Println(accessToken, err2)
 		if strings.Contains(err2.Error(), "429") || strings.Contains(err2.Error(), "202") {
 			//cli = NewDefaultClient(uuid.New().String(), "https://freechat.lidong.xin")
-			//indexOfToken, ok := tokenInfo.GetIndexOfToken(accessToken)
+			//indexOfToken, ok := tokenInfo.getIndexOfToken(accessToken)
 			//if !ok {
 			//	log.Fatalln(accessToken, "不在tokeninfo中！")
 			//}

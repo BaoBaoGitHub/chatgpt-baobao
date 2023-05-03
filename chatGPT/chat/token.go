@@ -44,7 +44,7 @@ func (r *TokenInfo) Use() (string, string) {
 	return r.token[index], r.uri[index]
 }
 
-func (r *TokenInfo) GetIndexOfToken(token string) (int, bool) {
+func (r *TokenInfo) getIndexOfToken(token string) (int, bool) {
 	var indexOfToken int
 	for i, s := range r.token {
 		if s == token {
@@ -56,7 +56,7 @@ func (r *TokenInfo) GetIndexOfToken(token string) (int, bool) {
 }
 
 func (r *TokenInfo) GetCntOf429ForToken(token string) int {
-	index, ok := r.GetIndexOfToken(token)
+	index, ok := r.getIndexOfToken(token)
 	if !ok {
 		log.Fatalln(token, "不在tokenInfo中")
 		return -1
@@ -69,7 +69,7 @@ func (r *TokenInfo) Handle429(tokenOf429 string) (string, string) {
 	r.sm.Lock()
 	defer r.sm.Unlock()
 
-	var indexOfToken, ok = r.GetIndexOfToken(tokenOf429)
+	var indexOfToken, ok = r.getIndexOfToken(tokenOf429)
 	if !ok {
 		log.Fatalln(tokenOf429, "未找到")
 	}
@@ -118,4 +118,14 @@ func (r *TokenInfo) getMinValIndexSlice() []int {
 	}
 
 	return minIndexList
+}
+
+func (r *TokenInfo) ReleaseToken(token string) {
+	r.sm.Lock()
+	defer r.sm.Unlock()
+
+	indexOfToken, ok := r.getIndexOfToken(token)
+	if ok {
+		r.flag[indexOfToken] = true
+	}
 }
