@@ -96,6 +96,8 @@ func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode string,
 		// 4. 写入到响应文件中去
 		utils.WriteToJSONFileFromString(targetFileName, text.Content, query)
 	}
+
+	tokenInfo.ReleaseToken(token)
 }
 
 // ModifyFileExtToJSON 修改文件后缀名为JSON
