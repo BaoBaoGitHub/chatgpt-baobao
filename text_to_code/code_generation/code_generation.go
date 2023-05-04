@@ -154,10 +154,16 @@ func CodeGenerationFromFileTokeninfoVersionWithSession(srcPath, tgtDir, promptMo
 		// 封装了原来的GetChatText方法，保证可以访问
 		//text := chat.HandleChatRobustly(query, conversationID, parentMessage, accessToken, baseURI, cli)
 		text, token, uri = chat.HandleChatRobustlyTokeninfoVersionWithSession(query, conversationID, parentMessage, token, uri, tokenInfo, cli)
-
+		if text != nil {
+			*conversationID = text.ConversationID
+			*parentMessage = text.MessageID
+		} else {
+			*conversationID = ""
+			*parentMessage = ""
+		}
 		resContent := text.Content
-		*conversationID = text.ConversationID
-		*parentMessage = text.MessageID
+		//*conversationID = text.ConversationID
+		//*parentMessage = text.MessageID
 		//if strings.Count(resContent, "```") == 1 {
 		//	text = chat.HandleChatRobustly("continue", conversationID, parentMessage, accessToken, baseURI, cli)
 		//	*conversationID = text.ConversationID

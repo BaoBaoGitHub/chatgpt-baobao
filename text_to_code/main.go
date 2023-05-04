@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// 配置
-	concurrentNum := 25 //并发量
+	concurrentNum := 20 //并发量
 
 	accessToken := []string{
 		"b721d8c0-df4c-496a-a6d1-1fe46084d3c4", "3de1b933-fc23-40ba-a40a-ec753f33ded2",
@@ -30,11 +30,6 @@ func main() {
 		"2e58fc70-5695-4f1a-8556-5ae32d71bcc2", "553859b4-4491-4567-b981-ccae44f36c60",
 		"6aa2c665-c45e-4591-9225-b09ec471d07a", "6133f778-2074-41f0-99db-27b0eabc3486",
 		"4afa6f79-1dcf-40d5-97b1-0216ed125964", "b89f132f-7b42-4365-bb97-36c9b33edda2",
-		"c1afbec3-e980-4934-9727-8be5f03874de", "992af00d-9b7c-40e6-8c8d-dafc8cc30d9a",
-		"923f6ff6-9f2e-484c-a35a-b3b8421fb82d", "1c637b77-6591-4663-9d9a-5d7e73db8e96",
-		"c0f4316e-3e50-4718-912b-f95152db660e", "f5339bbc-7f24-455a-8d88-769dd76c4bc7",
-		"a5d5c29e-0eae-4902-8fb5-61aeeee9e0f4", "9196fbd7-d770-413d-9f40-727ac4b20e5a",
-		"c3dc930b-1e86-4bec-8339-229653952bf7", "4bde5ec9-41af-49f3-9dcd-b4cb6010e463",
 	}
 	baseURI := []string{} // 代理URI
 	for i := 0; i < len(accessToken); i++ {
@@ -104,6 +99,8 @@ func main() {
 
 	// 6. 生成predictions文件
 	utils.GetPredictionFromJSONFIle(responsePath, predictionPath)
+	//predictionPathWithoutComments := utils.AddSuffix(predictionPath, "without_comments")
+	//utils.GetPredictionWithoutCommentsFromJSONFIle(responsePath, tgtDir)
 
 	log.Println(tokenInfo)
 	// 7. predictions中以类开头的百分比
@@ -113,4 +110,5 @@ func main() {
 	// 8. 添加空格以符合评估格式
 	predictionWithSpacePath := utils.AddSuffix(predictionPath, "space")
 	utils.AddSpace(predictionPath, predictionWithSpacePath)
+	utils.GetPredictionWithoutCommentsWithSpaceFromJSONFile(responsePath, tgtDir)
 }

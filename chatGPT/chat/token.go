@@ -16,6 +16,14 @@ type TokenInfo struct {
 	cntOf429   []int  // cnt代表429次数
 }
 
+func (r *TokenInfo) SetFlag(flag []bool) {
+	r.flag = flag
+}
+
+func (r *TokenInfo) SetCntOf429(cntOf429 []int) {
+	r.cntOf429 = cntOf429
+}
+
 func NewTokenInfo(token []string, uri []string) *TokenInfo {
 	if len(token) != len(uri) {
 		log.Fatalln("tokeninfo初始化失败因为token和uri长度不等")
@@ -55,7 +63,7 @@ func (r *TokenInfo) getIndexOfToken(token string) (int, bool) {
 	return -1, false
 }
 
-func (r *TokenInfo) GetCntOf429ForToken(token string) int {
+func (r *TokenInfo) getCntOf429ForToken(token string) int {
 	index, ok := r.getIndexOfToken(token)
 	if !ok {
 		log.Fatalln(token, "不在tokenInfo中")
@@ -78,8 +86,7 @@ func (r *TokenInfo) Handle429(tokenOf429 string) (string, string) {
 
 	index := r.getSpareIndex()
 	r.flag[index] = false
-	r.cntOf429[index]++
-	log.Println("由于429或202错误accesstoken切换到", r.token[index])
+	log.Println(fmt.Sprintf("由于429或202错误accesstoken从%s切换到%s", tokenOf429, r.token[index]))
 	return r.token[index], r.uri[index]
 }
 
@@ -127,5 +134,7 @@ func (r *TokenInfo) ReleaseToken(token string) {
 	indexOfToken, ok := r.getIndexOfToken(token)
 	if ok {
 		r.flag[indexOfToken] = true
+	} else {
+		log.Fatalln(token, "没找到！")
 	}
 }

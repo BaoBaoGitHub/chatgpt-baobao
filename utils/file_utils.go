@@ -255,3 +255,95 @@ func parseSpace(s string) string {
 	s = strings.ReplaceAll(s, "...", " ... ")
 	return s
 }
+
+func deleteSpace(s string) string {
+	s = strings.ReplaceAll(s, " ( ", "(")
+	s = strings.ReplaceAll(s, " ) ", ")")
+	s = strings.ReplaceAll(s, " . ", ".")
+	s = strings.ReplaceAll(s, " , ", ",")
+	s = strings.ReplaceAll(s, " < ", "<")
+	s = strings.ReplaceAll(s, " > ", ">")
+	s = strings.ReplaceAll(s, " ; ", ";")
+	s = strings.ReplaceAll(s, " [ ", "[")
+	s = strings.ReplaceAll(s, " ] ", "]")
+	s = strings.ReplaceAll(s, " ++ ", "++")
+	s = strings.ReplaceAll(s, " -- ", "--")
+	s = strings.ReplaceAll(s, " @ ", "@")
+	s = strings.ReplaceAll(s, " ... ", "...")
+	return s
+}
+
+func deleteOverride(srcPath string, dstPath string) {
+	srcFile, err := os.Open(srcPath)
+	FatalCheck(err)
+	defer srcFile.Close()
+	scanner := bufio.NewScanner(srcFile)
+
+	dstFile, err := os.Create(dstPath)
+	FatalCheck(err)
+	defer dstFile.Close()
+	writer := bufio.NewWriter(dstFile)
+
+	for scanner.Scan() {
+		line := scanner.Text()
+		line = strings.ReplaceAll(line, "@Override ", "")
+		writer.WriteString(line + "\n")
+	}
+
+	writer.Flush()
+}
+
+// GetPredictionFromJSONFIle 修改json文件的格式，只保留代码部分，且为txt格式。将\n改为空格
+func GetPredictionWithoutCommentsFromJSONFIle(sourcePath string, tgtDir string) string {
+	contentSlice := ReadFromJsonFile(sourcePath)
+
+	tgtPath := filepath.Join(tgtDir, "predictions_without_comments.txt")
+	// 打开文件
+	file, err := os.Create(tgtPath)
+	FatalCheck(err)
+	writer := bufio.NewWriter(file)
+	defer file.Close()
+
+	var code string
+	for _, content := range contentSlice {
+		code = ""
+		if content["flag"].(bool) == true {
+			code = fmt.Sprintf("%s", content["code"])
+		} else if content["flag"].(bool) == false {
+			message := content["message"].(string)
+			if strings.Contains(message, "\n\npublic") && strings.Contains(message, "\n}\n\n") {
+				begin := strings.Index(message, "\n\npublic")
+				end := strings.Index(message, "\n}\n\n") + 4
+				code = message[begin:end]
+			} else {
+				code = message
+			}
+		} else {
+			panic("flag不存在！")
+		}
+		// 删掉注释，修改代码格式
+		code = removeComments(code)
+		code = ModifyCodeFormat(code)
+		file.WriteString(strings.TrimSpace(code) + "\n")
+	}
+	writer.Flush()
+	return tgtPath
+}
+
+// GetPredictionWithoutCommentsWithSpaceFromJSONFile json中拿出代码，然后创建一个删除注释并且添加了空格的目标文件
+func GetPredictionWithoutCommentsWithSpaceFromJSONFile(srcPath, tgtDir string) {
+	predictionWithoutCommentsPath := GetPredictionWithoutCommentsFromJSONFIle(srcPath, tgtDir)
+	AddSpace(predictionWithoutCommentsPath, AddSuffix(predictionWithoutCommentsPath, "with_space"))
+}
+
+// removeComments 从code里面remove掉单行注释
+func removeComments(code string) string {
+	var codeWithoutComments []string
+	lines := strings.Split(code, "\n")
+	for _, line := range lines {
+		if !strings.HasPrefix(strings.TrimSpace(line), "//") {
+			codeWithoutComments = append(codeWithoutComments, line)
+		}
+	}
+	return strings.Join(codeWithoutComments, "\n")
+}

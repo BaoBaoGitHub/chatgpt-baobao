@@ -90,6 +90,7 @@ func CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode string,
 		query := GenQueryBasedPrompts(line, apiScanner.Text(), exceptionScanner.Text(), promptsMode)
 		//log.Println(query)
 		text, token, uri = chat.HandleChatRobustlyTokeninfoVersion(query, conversationID, parentMessage, token, uri, tokenInfo, cli)
+
 		//// 3. 获取响应文件名(json文件)
 		//respFilePath := utils.AddSuffix(srcPath, fileSuffix)
 		//respFilePath = ModifyFileExtToJSON(respFilePath)
@@ -147,8 +148,15 @@ func CodeTranslateFromFileToekenInfoVersionWithSession(srcPath, tgtDir, promptsM
 		query := GenQueryBasedPrompts(line, apiScanner.Text(), exceptionScanner.Text(), promptsMode)
 		//log.Println(query)
 		text, token, uri = chat.HandleChatRobustlyTokeninfoVersionWithSession(query, conversationID, parentMessage, token, uri, tokenInfo, cli)
-		*conversationID = text.ConversationID
-		*parentMessage = text.MessageID
+		if text != nil {
+			*conversationID = text.ConversationID
+			*parentMessage = text.MessageID
+		} else {
+			*conversationID = ""
+			*parentMessage = ""
+		}
+		//*conversationID = text.ConversationID
+		//*parentMessage = text.MessageID
 		//// 3. 获取响应文件名(json文件)
 		//respFilePath := utils.AddSuffix(srcPath, fileSuffix)
 		//respFilePath = ModifyFileExtToJSON(respFilePath)
@@ -194,7 +202,47 @@ func GenQueryBasedPrompts(code, api, exception string, promptsMode string) strin
 		}
 	case chat.TaskPromptsWithBackticksAndConciseness:
 		{
-			res = "Translate C# code delimited by triple backticks into Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
+			res = "Translate C# code delimited by triple backticks into concise Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
+		}
+		//TaskPromptsWithBackticksAndAnnotationAndAPI             = "task_prompts_backtick_annotation_api"
+		//TaskPromptsWithBackticksAndAnnotationAndException       = "task_prompts_backtick_annotation_exception"
+		//TaskPromptsWithBackticksAndAnnotationAndAPIAndException = "task_prompts_backtick_annotation_api_exception"
+	case chat.TaskPromptsWithAnnotation:
+		{
+			res = "Translate C# code into Java code:\nDo not provide annotation.\n" + code
+		}
+	case chat.TaskPromptsWithBackticksAndAnnotationAndAPI:
+		{
+			if strings.TrimSpace(api) == "" {
+				api = ""
+			} else {
+				api = fmt.Sprintf("that calls %s", api)
+			}
+
+			res = fmt.Sprintf("Translate C# code delimited by triple backticks into Java code %s.\nDo not provide annotation.\n", api) + fmt.Sprintf("```%s```", code)
+		}
+	case chat.TaskPromptsWithBackticksAndAnnotationAndException:
+		{
+			if strings.TrimSpace(exception) == "true" {
+				exception = ""
+			} else {
+				exception = "out"
+			}
+			res = fmt.Sprintf("Translate C# code delimited by triple backticks into Java code with%s exception handling.\nD not provide annotation.\n", exception) + fmt.Sprintf("```%s```", code)
+		}
+	case chat.TaskPromptsWithBackticksAndAnnotationAndAPIAndException:
+		{
+			if strings.TrimSpace(api) == "" {
+				api = ""
+			} else {
+				api = fmt.Sprintf("that calls %s", api)
+			}
+			if strings.TrimSpace(exception) == "true" {
+				exception = ""
+			} else {
+				exception = "out"
+			}
+			res = fmt.Sprintf("Translate C# code delimited by triple backticks into Java code %s with%s exception handling.\nDo not provide annotation.\n", api, exception) + fmt.Sprintf("```%s```", code)
 		}
 	default:
 		{

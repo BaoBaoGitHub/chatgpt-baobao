@@ -6,16 +6,25 @@ import (
 )
 
 const (
+	TaskPrompts                      = "task_prompts"
+	GuidedPromptsWithAPIAndException = "guided_prompts_api_exception"
+	//上面是大家都用的
+
+	//下面是generation单独用的
 	FullPrompts                                    = "full_prompts"
 	TestPrompts                                    = "test_prompts"
-	TaskPrompts                                    = "task_prompts"
 	DetailedPrompts                                = "detailed_prompts"
-	GuidedPromptsWithAPIAndException               = "guided_prompts_api_exception"
 	GuidedPromptsWithAPI                           = "guided_prompts_api"
 	DetailedPromptsWithoutRemove                   = "detaileed_prompts_without_remove_statement"
-	TaskPromptsWithBackticks                       = "task_prompts_backticks"
 	GuidedPromptsWithAPIAndExceptionAndConciseness = "guided_prompts_api_exception_conciseness"
-	TaskPromptsWithBackticksAndConciseness         = "task_prompts_backticks_conciseness"
+
+	//下面是translation单独用的
+	TaskPromptsWithBackticks                                = "task_prompts_backticks"
+	TaskPromptsWithBackticksAndConciseness                  = "task_prompts_backticks_conciseness"
+	TaskPromptsWithAnnotation                               = "task_prompts_annotation"
+	TaskPromptsWithBackticksAndAnnotationAndAPI             = "task_prompts_backtick_annotation_api"
+	TaskPromptsWithBackticksAndAnnotationAndException       = "task_prompts_backtick_annotation_exception"
+	TaskPromptsWithBackticksAndAnnotationAndAPIAndException = "task_prompts_backtick_annotation_api_exception"
 )
 
 // GenerateQueryBasedPromts 根据data为代码生成功能制造完全版的prompts
