@@ -73,7 +73,7 @@ func main() {
 	tokenInfo := chat.NewTokenInfo(accessToken, baseURI)
 
 	//TODO 使用的是哪个prompt，一个是GuidedPromptsWithAPIAndException，一个是TaskPrompts
-	promptsMode := chat.TaskPromptsWithBackticksAndAnnotationAndAPIAndException
+	promptsMode := chat.TaskPromptsWithBackticksAndConciseness
 
 	datasetDir := "code_to_code/dataset/"
 	tgtDir := datasetDir + promptsMode + "/"     // 最好的prompts结果路径
@@ -124,8 +124,8 @@ func main() {
 	// 2. 并发处理代码翻译
 	for i, srcPath := range splitFilePaths {
 		//TODO 是否使用连续会话
-		go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
-		//go translation.CodeTranslateFromFileToekenInfoVersionWithSession(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		//go translation.CodeTranslateFromFileToekenInfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		go translation.CodeTranslateFromFileToekenInfoVersionWithSession(srcPath, tgtDir, promptsMode, tokenInfo, filePathSuffix, wg.Done, splitAPIPath[i], splitExceptionPath[i])
 		// tgt文件路径
 		targetFileName := tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 		splitResponsePath[i] = strings.TrimSuffix(targetFileName, path.Ext(targetFileName)) + ".json"

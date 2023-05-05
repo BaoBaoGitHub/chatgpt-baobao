@@ -2,6 +2,7 @@ package utils
 
 import (
 	"fmt"
+	"log"
 	"path/filepath"
 	"testing"
 )
@@ -48,4 +49,24 @@ func TestGetPredictionWithoutCommentsWithSpaceFromJSONFile(t *testing.T) {
 	srcJSONPath := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\round0\\test_shuffled_with_path_and_id_concode_response.json"
 	tgtDir := filepath.Dir(srcJSONPath)
 	GetPredictionWithoutCommentsWithSpaceFromJSONFile(srcJSONPath, tgtDir)
+}
+
+func TestFinishText2Code(t *testing.T) {
+	responsePath := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\round2\\test_shuffled_with_path_and_id_concode_response.json"
+	predictionPath := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\round2\\predictions.txt"
+	// 6. 生成predictions文件
+	GetPredictionFromJSONFIle(responsePath, predictionPath)
+	//predictionPathWithoutComments := utils.AddSuffix(predictionPath, "without_comments")
+	//utils.GetPredictionWithoutCommentsFromJSONFIle(responsePath, tgtDir)
+
+	//log.Println(tokenInfo)
+	// 7. predictions中以类开头的百分比
+	log.Println(CalcClassNumFromPath(predictionPath))
+	//defer utils.DeleteFiles(append([]string{}, predictionPath))
+
+	// 8. 添加空格以符合评估格式
+	predictionWithSpacePath := AddSuffix(predictionPath, "space")
+	AddSpace(predictionPath, predictionWithSpacePath)
+	tgtDir := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\round2"
+	GetPredictionWithoutCommentsWithSpaceFromJSONFile(responsePath, tgtDir)
 }

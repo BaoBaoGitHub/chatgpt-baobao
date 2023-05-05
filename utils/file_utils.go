@@ -314,7 +314,11 @@ func GetPredictionWithoutCommentsFromJSONFIle(sourcePath string, tgtDir string) 
 			if strings.Contains(message, "\n\npublic") && strings.Contains(message, "\n}\n\n") {
 				begin := strings.Index(message, "\n\npublic")
 				end := strings.Index(message, "\n}\n\n") + 4
-				code = message[begin:end]
+				if begin < end {
+					code = message[begin:end]
+				} else {
+					code = message
+				}
 			} else {
 				code = message
 			}

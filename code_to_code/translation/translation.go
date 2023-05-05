@@ -204,9 +204,6 @@ func GenQueryBasedPrompts(code, api, exception string, promptsMode string) strin
 		{
 			res = "Translate C# code delimited by triple backticks into concise Java code.\nDo not provide annotation.\n" + fmt.Sprintf("```%s```", code)
 		}
-		//TaskPromptsWithBackticksAndAnnotationAndAPI             = "task_prompts_backtick_annotation_api"
-		//TaskPromptsWithBackticksAndAnnotationAndException       = "task_prompts_backtick_annotation_exception"
-		//TaskPromptsWithBackticksAndAnnotationAndAPIAndException = "task_prompts_backtick_annotation_api_exception"
 	case chat.TaskPromptsWithAnnotation:
 		{
 			res = "Translate C# code into Java code:\nDo not provide annotation.\n" + code

@@ -84,8 +84,8 @@ func main() {
 	splitResponsePath := make([]string, concurrentNum)
 	for i, srcPath := range splitConcodePath {
 		//TODO 是否使用带有session的版本
-		//go code_generation.CodeGenerationFromFileTokeninfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, wg.Done, splitAPIPath[i], splitExceptionPath[i])
-		go code_generation.CodeGenerationFromFileTokeninfoVersionWithSession(srcPath, tgtDir, promptsMode, tokenInfo, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		go code_generation.CodeGenerationFromFileTokeninfoVersion(srcPath, tgtDir, promptsMode, tokenInfo, wg.Done, splitAPIPath[i], splitExceptionPath[i])
+		//go code_generation.CodeGenerationFromFileTokeninfoVersionWithSession(srcPath, tgtDir, promptsMode, tokenInfo, wg.Done, splitAPIPath[i], splitExceptionPath[i])
 		splitResponsePath[i] = tgtDir + utils.AddSuffix(filepath.Base(srcPath), "response")
 	}
 
