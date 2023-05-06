@@ -5,10 +5,14 @@ import (
 	"bytes"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"log"
+	"math/rand"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
+	"time"
 )
 
 // 判断所给路径文件/文件夹是否存在
@@ -350,4 +354,93 @@ func removeComments(code string) string {
 		}
 	}
 	return strings.Join(codeWithoutComments, "\n")
+}
+
+// randLinesFromFile 对每个paths文件，读取不重复的linesNum行并写入到文件中去
+func randLinesFromFileWithRandSlice(linesNum []int, paths []string) {
+	for _, v := range paths {
+		file, err := os.Open(v)
+		if err != nil {
+			panic(err)
+		}
+		defer file.Close()
+		scanner := bufio.NewScanner(file)
+
+		lenOfLinesNum := len(linesNum)
+		dstFile, err := os.Create(AddSuffix(v, fmt.Sprintf("rand%d", lenOfLinesNum)))
+		if err != nil {
+			panic(err)
+		}
+		defer dstFile.Close()
+		writer := bufio.NewWriter(dstFile)
+
+		for i := 0; scanner.Scan(); i++ {
+			text := scanner.Text()
+			for _, n := range linesNum {
+				if i+1 == n {
+					writer.WriteString(text + "\n")
+				}
+			}
+		}
+		writer.Flush()
+	}
+}
+
+// generateRandomNumbers 生成n个0到m-1的随机数
+func generateRandomNumbers(n, m int) []int {
+	if n > m {
+		panic("n不应该大于m")
+	}
+
+	numbers := make([]int, n)
+	used := make(map[int]bool)
+	rand.Seed(time.Now().UnixNano())
+
+	for i := 0; i < n; {
+		num := rand.Intn(m)
+		if !used[num] {
+			numbers[i] = num
+			used[num] = true
+			i++
+		}
+	}
+
+	sort.Ints(numbers)
+
+	return numbers
+}
+
+// getValFromJSONFile 从json文件中读取key对应的value，并写入到key文件中去
+func getValFromJSONFile(path, key string) {
+	file, err := os.Create(filepath.Join(filepath.Dir(path), key+".txt"))
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+	writer := bufio.NewWriter(file)
+	dataLines := ReadFromJsonFile(path)
+	for _, line := range dataLines {
+		v, ok := line[key].(string)
+		if !ok {
+			panic(fmt.Sprintf("%s对应的value不存在！", key))
+		}
+		writer.WriteString(v + "\n")
+	}
+	writer.Flush()
+}
+
+// getAllFileNames 获取dirPath下的所有文件名
+func getAllFileNames(dirPath string) ([]string, error) {
+	files, err := ioutil.ReadDir(dirPath)
+	if err != nil {
+		return nil, err
+	}
+	var fileNames []string
+	for _, f := range files {
+		if f.IsDir() {
+			continue
+		}
+		fileNames = append(fileNames, f.Name())
+	}
+	return fileNames, nil
 }

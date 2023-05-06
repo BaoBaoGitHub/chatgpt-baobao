@@ -70,3 +70,29 @@ func TestFinishText2Code(t *testing.T) {
 	tgtDir := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\text_to_code\\dataset\\guided_prompts_api_exception_conciseness\\round2"
 	GetPredictionWithoutCommentsWithSpaceFromJSONFile(responsePath, tgtDir)
 }
+
+func TestRandNLinesFromPath(t *testing.T) {
+	dir := "D:\\学习\\研一\\Guiding ChatGPT for SE tasks\\人工评估\\code2code\\源数据"
+	lineNumbers := generateRandomNumbers(200, 1000)
+	fmt.Println(lineNumbers)
+	fileNames, err := getAllFileNames(dir)
+	var filePaths []string
+	for _, name := range fileNames {
+		filePaths = append(filePaths, filepath.Join(dir, name))
+	}
+	if err != nil {
+		panic("目录不存在")
+	}
+	randLinesFromFileWithRandSlice(lineNumbers, filePaths)
+}
+
+func TestGetValFromJSONFile(t *testing.T) {
+	path := "D:\\学习\\研一\\Guiding ChatGPT for SE tasks\\人工评估\\text2code\\抽样数据\\test_shuffled_with_path_and_id_concode_rand200.json"
+	getValFromJSONFile(path, "nl")
+}
+
+func TestGetPredictionWithoutCommentsFromJSONFIle(t *testing.T) {
+	srcPath := "D:\\Code\\Go\\src\\github.com\\BaoBaoGitHub\\chatgpt-for-se-tasks\\code_to_code\\dataset\\task_prompts_backticks_conciseness\\round2_session\\test.java-cs.txt_response.json"
+	tgtDir := filepath.Dir(srcPath)
+	GetPredictionWithoutCommentsFromJSONFIle(srcPath, tgtDir)
+}
